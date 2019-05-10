@@ -60,29 +60,43 @@
 		
 		<option value="//api/name/Connect">- Connect</option>
 		
+		<option value="//api/name/cmdControlBuzzer:">- cmdControlBuzzer:</option>
+		
+		<option value="//api/name/cmdGetBuzzerOperationMode:">- cmdGetBuzzerOperationMode:</option>
+		
 		<option value="//api/name/cmdGetDeviceInformation">- cmdGetDeviceInformation</option>
 		
 		<option value="//api/name/cmdGetFrequencyList:">- cmdGetFrequencyList:</option>
+		
+		<option value="//api/name/cmdGetQValue:">- cmdGetQValue:</option>
 		
 		<option value="//api/name/cmdGetRfPower:">- cmdGetRfPower:</option>
 		
 		<option value="//api/name/cmdGetSensitivity:">- cmdGetSensitivity:</option>
 		
-		<option value="//api/name/cmdGetTriggerSource:">- cmdGetTriggerSource:</option>
+		<option value="//api/name/cmdGetSessionAndTarget:">- cmdGetSessionAndTarget:</option>
+		
+		<option value="//api/name/cmdGetTriggerType:">- cmdGetTriggerType:</option>
 		
 		<option value="//api/name/cmdInitializeSettings:">- cmdInitializeSettings:</option>
 		
 		<option value="//api/name/cmdReadEPC:">- cmdReadEPC:</option>
 		
+		<option value="//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:">- cmdSetBuzzerOperationMode:BuzzerOperationMode:</option>
+		
 		<option value="//api/name/cmdSetFrequencyList:List:">- cmdSetFrequencyList:List:</option>
+		
+		<option value="//api/name/cmdSetQValue:QValue:">- cmdSetQValue:QValue:</option>
 		
 		<option value="//api/name/cmdSetRfPower:RFPower:">- cmdSetRfPower:RFPower:</option>
 		
-		<option value="//api/name/cmdSetScanMode:::">- cmdSetScanMode:::</option>
+		<option value="//api/name/cmdSetScanMode:ScanMode:">- cmdSetScanMode:ScanMode:</option>
 		
 		<option value="//api/name/cmdSetSensitivity:RfSensitivityLevel:">- cmdSetSensitivity:RfSensitivityLevel:</option>
 		
-		<option value="//api/name/cmdSetTriggerSourec:RFScanTriggerSource:">- cmdSetTriggerSourec:RFScanTriggerSource:</option>
+		<option value="//api/name/cmdSetSessionAndTarget:Target:Session:">- cmdSetSessionAndTarget:Target:Session:</option>
+		
+		<option value="//api/name/cmdSetTriggerType:TriggerType:">- cmdSetTriggerType:TriggerType:</option>
 		
 		<option value="//api/name/cmdStartInventory:">- cmdStartInventory:</option>
 		
@@ -339,6 +353,377 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/cmdControlBuzzer:" title="cmdControlBuzzer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdControlBuzzer:">&ndash;&nbsp;cmdControlBuzzer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+<a href="../Constants/Control.html">Control</a> Buzzer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdControlBuzzer:(BuzzerCtrlMode)<em>buzzerCtrl</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buzzerCtrl</code></th>
+						<td><p>buzzerMode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+<a href="../Constants/Control.html">Control</a> Buzzer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetBuzzerOperationMode:" title="cmdGetBuzzerOperationMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetBuzzerOperationMode:">&ndash;&nbsp;cmdGetBuzzerOperationMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetBuzzerOperationMode:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:" title="cmdSetBuzzerOperationMode:BuzzerOperationMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:">&ndash;&nbsp;cmdSetBuzzerOperationMode:BuzzerOperationMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetBuzzerOperationMode:(BOOL)<em>isTemp</em> BuzzerOperationMode:(BuzzerOperationMode)<em>bom</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bom</code></th>
+						<td><p>Buzzer Operation Mode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetScanMode:ScanMode:" title="cmdSetScanMode:ScanMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetScanMode:ScanMode:">&ndash;&nbsp;cmdSetScanMode:ScanMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
+Set Scan Mode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetScanMode:(BOOL)<em>isTemp</em> ScanMode:(ScanMode)<em>scanMode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scanMode</code></th>
+						<td><p>Scan Mode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
+Set Scan Mode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetTriggerType:" title="cmdGetTriggerType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetTriggerType:">&ndash;&nbsp;cmdGetTriggerType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
+Get Trigger Source</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetTriggerType:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
+Get Trigger Source</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetTriggerType:TriggerType:" title="cmdSetTriggerType:TriggerType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetTriggerType:TriggerType:">&ndash;&nbsp;cmdSetTriggerType:TriggerType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
+Set Trigger Sourec</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetTriggerType:(BOOL)<em>isTemp</em> TriggerType:(TriggerType)<em>triggerType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>triggerType</code></th>
+						<td><p>The trigger source of inventory.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
+Set Trigger Sourec</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/cmdGetDeviceInformation" title="cmdGetDeviceInformation"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cmdGetDeviceInformation">&ndash;&nbsp;cmdGetDeviceInformation</a></code>
 </h3>
@@ -401,7 +786,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventory:(ActModeEventType)<em>tagPresentedType</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventory:(TagPresentedType)<em>tagPresentedType</em></code></div>
 
 		    
 			
@@ -454,7 +839,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>  Stop Inventory mEPC Tag.</p>
+				<p>Stop Inventory mEPC Tag.</p>
 			</div>
 			
 		    
@@ -471,7 +856,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>  Stop Inventory mEPC Tag.</p>
+				<p>Stop Inventory mEPC Tag.</p>
 			</div>
 			
 
@@ -489,8 +874,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cmdSetScanMode:::" title="cmdSetScanMode:::"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdSetScanMode:::">&ndash;&nbsp;cmdSetScanMode:::</a></code>
+	<a name="//api/name/cmdGetQValue:" title="cmdGetQValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetQValue:">&ndash;&nbsp;cmdGetQValue:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -500,12 +885,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set Scan Mode</p>
+				<p>Get Q Value</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)cmdSetScanMode:(BOOL)<em>isTemp</em> :</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetQValue:(BOOL)<em>isTemp</em></code></div>
 
 		    
 			
@@ -515,12 +900,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>scanMode</code></th>
-						<td><p>Scan Mode</p></td>
+						<td><p>temporary</p></td>
 					</tr>
 				
 				</table>
@@ -534,7 +914,196 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set Scan Mode</p>
+				<p>Get Q Value</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetQValue:QValue:" title="cmdSetQValue:QValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetQValue:QValue:">&ndash;&nbsp;cmdSetQValue:QValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Q Value</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetQValue:(BOOL)<em>isTemp</em> QValue:(Byte)<em>qvalue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>qvalue</code></th>
+						<td><p>&lt;#qvalue description#></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set Q Value</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetSessionAndTarget:" title="cmdGetSessionAndTarget:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetSessionAndTarget:">&ndash;&nbsp;cmdGetSessionAndTarget:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetSessionAndTarget:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetSessionAndTarget:Target:Session:" title="cmdSetSessionAndTarget:Target:Session:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetSessionAndTarget:Target:Session:">&ndash;&nbsp;cmdSetSessionAndTarget:Target:Session:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetSessionAndTarget:(BOOL)<em>isTemp</em> Target:(Target)<em>target</em> Session:(Session)<em>session</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p><a href="../Constants/Target.html">Target</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>session</code></th>
+						<td><p><a href="../Constants/Session.html">Session</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
 			</div>
 			
 
@@ -771,129 +1340,6 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 
 <p><p>
 RX Sensitivity setting defines the RX input sensitivity level.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdGetTriggerSource:" title="cmdGetTriggerSource:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdGetTriggerSource:">&ndash;&nbsp;cmdGetTriggerSource:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
-Get Trigger Source</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdGetTriggerSource:(BOOL)<em>isTemp</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>temporary</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
-Get Trigger Source</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdSetTriggerSourec:RFScanTriggerSource:" title="cmdSetTriggerSourec:RFScanTriggerSource:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdSetTriggerSourec:RFScanTriggerSource:">&ndash;&nbsp;cmdSetTriggerSourec:RFScanTriggerSource:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set Trigger Sourec</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdSetTriggerSourec:(BOOL)<em>isTemp</em> RFScanTriggerSource:(RFScanTriggerSource)<em>triggerSource</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>triggerSource</code></th>
-						<td><p>The trigger source of inventory.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set Trigger Sourec</p>
 			</div>
 			
 
@@ -1213,7 +1659,7 @@ Get Trigger Source</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-04-30</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-05-10</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -60,23 +60,29 @@
 		
 		<option value="//api/name/didDeviceInformation:">- didDeviceInformation:</option>
 		
+		<option value="//api/name/didEventTagPresented:">- didEventTagPresented:</option>
+		
+		<option value="//api/name/didEventTagRemoved:">- didEventTagRemoved:</option>
+		
 		<option value="//api/name/didGeneralERROR:ErrMessage:">- didGeneralERROR:ErrMessage:</option>
 		
 		<option value="//api/name/didGeneralSuccess:">- didGeneralSuccess:</option>
 		
+		<option value="//api/name/didGetBuzzerOperationMode:">- didGetBuzzerOperationMode:</option>
+		
 		<option value="//api/name/didGetFrequencyList:">- didGetFrequencyList:</option>
+		
+		<option value="//api/name/didGetQValue:">- didGetQValue:</option>
 		
 		<option value="//api/name/didGetRfPower:">- didGetRfPower:</option>
 		
 		<option value="//api/name/didGetSensitivity:">- didGetSensitivity:</option>
 		
-		<option value="//api/name/didGetTriggerSource:">- didGetTriggerSource:</option>
+		<option value="//api/name/didGetSessionAnd:Target:">- didGetSessionAnd:Target:</option>
+		
+		<option value="//api/name/didGetTriggerType:">- didGetTriggerType:</option>
 		
 		<option value="//api/name/didReadTag:">- didReadTag:</option>
-		
-		<option value="//api/name/onEventTagPresented:">- onEventTagPresented:</option>
-		
-		<option value="//api/name/onEventTagRemoved:">- onEventTagRemoved:</option>
 		
 	</optgroup>
 	
@@ -415,8 +421,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/didGetTriggerSource:" title="didGetTriggerSource:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/didGetTriggerSource:">&ndash;&nbsp;didGetTriggerSource:</a></code>
+	<a name="//api/name/didGetTriggerType:" title="didGetTriggerType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didGetTriggerType:">&ndash;&nbsp;didGetTriggerType:</a></code>
 <span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
@@ -427,12 +433,12 @@
 			
 			<div class="method-subsection brief-description">
 				<p>only <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
-Callback of GetTriggerSource</p>
+Callback of Get<a href="../Constants/TriggerType.html">TriggerType</a></p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)didGetTriggerSource:(RFScanTriggerSource)<em>triggerSource</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)didGetTriggerType:(TriggerType)<em>triggerType</em></code></div>
 
 		    
 			
@@ -441,7 +447,7 @@ Callback of GetTriggerSource</p>
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>triggerSource</code></th>
+						<th scope="row" class="argument-name"><code>triggerType</code></th>
 						<td><p>The trigger source of inventory.</p></td>
 					</tr>
 				
@@ -457,7 +463,7 @@ Callback of GetTriggerSource</p>
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>only <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
-Callback of GetTriggerSource</p>
+Callback of Get<a href="../Constants/TriggerType.html">TriggerType</a></p>
 			</div>
 			
 
@@ -591,9 +597,171 @@ Callback of GetTriggerSource</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/onEventTagPresented:" title="onEventTagPresented:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/onEventTagPresented:">&ndash;&nbsp;onEventTagPresented:</a></code>
+	<a name="//api/name/didGetSessionAnd:Target:" title="didGetSessionAnd:Target:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didGetSessionAnd:Target:">&ndash;&nbsp;didGetSessionAnd:Target:</a></code>
 <span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>**</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didGetSessionAnd:(Session)<em>session</em> Target:(Target)<em>target</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>**</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didGetQValue:" title="didGetQValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didGetQValue:">&ndash;&nbsp;didGetQValue:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Callback of GetQValue</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didGetQValue:(Byte)<em>qValue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>qValue</code></th>
+						<td><p>&lt;#qValue description#></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Callback of GetQValue</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didGetBuzzerOperationMode:" title="didGetBuzzerOperationMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didGetBuzzerOperationMode:">&ndash;&nbsp;didGetBuzzerOperationMode:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Callback of Get<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didGetBuzzerOperationMode:(BuzzerOperationMode)<em>bom</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bom</code></th>
+						<td><p>Buzzer Operation Mode</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Callback of Get<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didEventTagPresented:" title="didEventTagPresented:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didEventTagPresented:">&ndash;&nbsp;didEventTagPresented:</a></code>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -607,7 +775,7 @@ Callback of GetTriggerSource</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)onEventTagPresented:(GNPTagInfo *)<em>taginfo</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)didEventTagPresented:(GNPTagInfo *)<em>taginfo</em></code></div>
 
 		    
 			
@@ -649,9 +817,9 @@ Callback of GetTriggerSource</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/onEventTagRemoved:" title="onEventTagRemoved:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/onEventTagRemoved:">&ndash;&nbsp;onEventTagRemoved:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+	<a name="//api/name/didEventTagRemoved:" title="didEventTagRemoved:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didEventTagRemoved:">&ndash;&nbsp;didEventTagRemoved:</a></code>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -665,7 +833,7 @@ Callback of GetTriggerSource</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)onEventTagRemoved:(GNPTagInfo *)<em>taginfo</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)didEventTagRemoved:(GNPTagInfo *)<em>taginfo</em></code></div>
 
 		    
 			
@@ -716,7 +884,7 @@ Callback of GetTriggerSource</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-04-30</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-05-10</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

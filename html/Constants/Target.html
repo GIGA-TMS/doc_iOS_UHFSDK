@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>GTDevConnStatus Constants Reference</title>
+	<title>Target Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">GTDevConnStatus Constants Reference</h1>
+					<h1 class="title">Target Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GTCommonHeader.h</td>
+	<td>IUHFDeviceListener.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,23 +75,41 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">GTDevConnStatus</h3>
+                    <h3 class="subsubtitle method-title">Target</h3>
                     
+					
+					<div class="section section-overview">
+                        <p>Target</p>
+
+<ul>
+<li>A: Tagget A selected for S0 to S3.</li>
+<li>B: Tagget B selected for S0 to S3.</li>
+<li>A_B: Toggle target A, B for S0 to S3.</li>
+<li>deSL: Target A selected for SL session.</li>
+<li>SL: Target B selected for SL session.</li>
+<li>SL_deSL: Toggle target A, B for SL session.</li>
+</ul>
+
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(int, GTDevConnStatus ) {<br>
+                        <code>typedef NS_ENUM(Byte, Target ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">DevConntPwdError</a> = -2,<br>
+                            &nbsp;&nbsp; <a href="">A</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">DevConntError</a> = -1,<br>
+                            &nbsp;&nbsp; <a href="">B</a> = 0 x01,<br>
                             
-                            &nbsp;&nbsp; <a href="">DevDisconnected</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">A_B</a> = 0 x02,<br>
                             
-                            &nbsp;&nbsp; <a href="">DevConnecting</a> = 1,<br>
+                            &nbsp;&nbsp; <a href="">deSL</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">DevConnected</a> = 2,<br>
+                            &nbsp;&nbsp; <a href="">SL</a> = 0 x01,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SL_deSL</a> = 0 x02,<br>
                             
                             };</code>
                     
@@ -101,52 +119,104 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="DevConntPwdError"></a><code>DevConntPwdError</code></dt>
+                            <dt><a name="" title="A"></a><code>A</code></dt>
 <dd>
+
+
+<p>Target</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="DevConntError"></a><code>DevConntError</code></dt>
+                            <dt><a name="" title="B"></a><code>B</code></dt>
 <dd>
+
+
+<p>Target</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="DevDisconnected"></a><code>DevDisconnected</code></dt>
+                            <dt><a name="" title="A_B"></a><code>A_B</code></dt>
 <dd>
+
+
+<p>Target</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="DevConnecting"></a><code>DevConnecting</code></dt>
+                            <dt><a name="" title="deSL"></a><code>deSL</code></dt>
 <dd>
+
+
+<p>Target</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="DevConnected"></a><code>DevConnected</code></dt>
+                            <dt><a name="" title="SL"></a><code>SL</code></dt>
 <dd>
+
+
+<p>Target</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SL_deSL"></a><code>SL_deSL</code></dt>
+<dd>
+
+
+<p>Target</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
@@ -155,6 +225,17 @@
                     </div>
                     
 
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
+                    </div>
+                    
                     
                     
                     

@@ -52,6 +52,12 @@
 
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/uhfListener">uhfListener</option>
+		
+	</optgroup>
+	
 
 	
 
@@ -152,6 +158,52 @@
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/uhfListener" title="uhfListener"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uhfListener">&nbsp;&nbsp;uhfListener</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UHF Device callback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;IUHFDeviceListener&gt; uhfListener</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>UHF Device callback</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/setListener:" title="setListener:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/setListener:">&ndash;&nbsp;setListener:</a></code>
 </h3>
@@ -221,7 +273,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get SDK Version number</p>
+				<p>Gets the version of SDK library</p>
 			</div>
 			
 		    
@@ -243,7 +295,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get SDK Version number</p>
+				<p>Gets the version of SDK library</p>
 			</div>
 			
 
@@ -318,7 +370,8 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initialize Settings</p>
+				<p>Initialize Settings
+Initializes the device settings.</p>
 			</div>
 			
 		    
@@ -335,7 +388,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initialize Settings</p>
+				<p>Initialize Settings
+Initializes the device settings.</p>
 			</div>
 			
 
@@ -365,7 +419,7 @@
 			
 			<div class="method-subsection brief-description">
 				<p>Only for <a href="../Classes/TS100.html">TS100</a>
-<a href="../Constants/Control.html">Control</a> Buzzer</p>
+<a href="../Constants/Control.html">Control</a> reader to make a specified sound beep.</p>
 			</div>
 			
 		    
@@ -395,7 +449,7 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Only for <a href="../Classes/TS100.html">TS100</a>
-<a href="../Constants/Control.html">Control</a> Buzzer</p>
+<a href="../Constants/Control.html">Control</a> reader to make a specified sound beep.</p>
 			</div>
 			
 
@@ -424,7 +478,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+				<p>Gets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 		    
@@ -453,7 +507,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+				<p>Gets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 
@@ -482,7 +536,8 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
+Sets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 		    
@@ -502,7 +557,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>bom</code></th>
-						<td><p>Buzzer Operation Mode</p></td>
+						<td><p>Buzzer Operation Mode:Specifies the repeats mode of sounding the beep with the same pattern.</p></td>
 					</tr>
 				
 				</table>
@@ -516,7 +571,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></p>
+				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
+Sets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 
@@ -735,7 +791,8 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get Device Information</p>
+				<p>Get Device Information
+Gets the firmware program version running on the device.</p>
 			</div>
 			
 		    
@@ -752,7 +809,8 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get Device Information</p>
+				<p>Get Device Information
+Gets the firmware program version running on the device.</p>
 			</div>
 			
 
@@ -781,7 +839,8 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Start Inventory mEPC Tag.</p>
+				<p>Start Inventory mEPC Tag.
+Starts the process of tag inventory using specified trigger source.</p>
 			</div>
 			
 		    
@@ -796,7 +855,7 @@ Set Trigger Sourec</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>tagPresentedType</code></th>
-						<td><p>tagPresentedType</p></td>
+						<td><p>Specify the way of triggering the RF power to read tag data.</p></td>
 					</tr>
 				
 				</table>
@@ -810,12 +869,25 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Start Inventory mEPC Tag.</p>
+				<p>Start Inventory mEPC Tag.
+Starts the process of tag inventory using specified trigger source.</p>
 			</div>
 			
 
 			
 
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/IUHFDeviceListener.html">IUHFDeviceListener</a></p></code></li>
+					
+					<li><code><p>didEventTagPresented:
+@seealso <a href="../Classes/GNPTagInfo.html">GNPTagInfo</a></p></code></li>
+					
+				</ul>
+			</div>
 			
 
 			
@@ -839,7 +911,8 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Stop Inventory mEPC Tag.</p>
+				<p>Stop Inventory mEPC Tag.
+Stops the process of tag inventory.</p>
 			</div>
 			
 		    
@@ -856,12 +929,22 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Stop Inventory mEPC Tag.</p>
+				<p>Stop Inventory mEPC Tag.
+Stops the process of tag inventory.</p>
 			</div>
 			
 
 			
 
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/didGeneralSuccess:">- didGeneralSuccess:</a></p></code></li>
+					
+				</ul>
+			</div>
 			
 
 			
@@ -885,7 +968,8 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get Q Value</p>
+				<p>Get Q Value
+Gets the starting Q value for the number of slots in the round.</p>
 			</div>
 			
 		    
@@ -914,7 +998,8 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get Q Value</p>
+				<p>Get Q Value
+Gets the starting Q value for the number of slots in the round.</p>
 			</div>
 			
 
@@ -943,7 +1028,8 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set Q Value</p>
+				<p>Set Q Value
+Sets the starting Q value for the number of slots in the round.</p>
 			</div>
 			
 		    
@@ -963,7 +1049,7 @@ Set Trigger Sourec</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>qvalue</code></th>
-						<td><p>&lt;#qvalue description#></p></td>
+						<td><p>The starting Q value for the number of slots in the round. The value ranges from 0 to 15.</p></td>
 					</tr>
 				
 				</table>
@@ -977,7 +1063,8 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set Q Value</p>
+				<p>Set Q Value
+Sets the starting Q value for the number of slots in the round.</p>
 			</div>
 			
 
@@ -1006,7 +1093,9 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+				<p>Get <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a>
+Gets the session flag used for inventory round.
+Gets the target for inventory round.</p>
 			</div>
 			
 		    
@@ -1035,7 +1124,9 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+				<p>Get <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a>
+Gets the session flag used for inventory round.
+Gets the target for inventory round.</p>
 			</div>
 			
 
@@ -1064,7 +1155,9 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+				<p>Set <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a>
+Sets the target for inventory round.
+Sets the session flag used for inventory round.</p>
 			</div>
 			
 		    
@@ -1079,17 +1172,17 @@ Set Trigger Sourec</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>temporary</p></td>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>target</code></th>
-						<td><p><a href="../Constants/Target.html">Target</a></p></td>
+						<td><p><a href="../Constants/Target.html">Target</a> indicates whether the Select modifies a Tag’s SL flag or its inventoried flag</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>session</code></th>
-						<td><p><a href="../Constants/Session.html">Session</a></p></td>
+						<td><p>The session flag to be selected for an inventory round</p></td>
 					</tr>
 				
 				</table>
@@ -1103,7 +1196,9 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a></p>
+				<p>Set <a href="../Constants/Session.html">Session</a> &amp; <a href="../Constants/Target.html">Target</a>
+Sets the target for inventory round.
+Sets the session flag used for inventory round.</p>
 			</div>
 			
 
@@ -1132,7 +1227,8 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get Rf Power</p>
+				<p>Get Rf Power
+Gets the RF Power strength.</p>
 			</div>
 			
 		    
@@ -1161,7 +1257,8 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get Rf Power</p>
+				<p>Get Rf Power
+Gets the RF Power strength.</p>
 			</div>
 			
 
@@ -1190,7 +1287,7 @@ Set Trigger Sourec</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set the RF Power of remote device.</p>
+				<p>Sets the RF Power strength.</p>
 			</div>
 			
 		    
@@ -1205,12 +1302,12 @@ Set Trigger Sourec</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>rfPower</code></th>
-						<td><p>The RF Power that is going to set to the remote device. (Range:1~27)</p></td>
+						<td><p>Specifies the RF Power strength. The value is ranging from 1 to 27. The default value is 11. (Range:1~27)</p></td>
 					</tr>
 				
 				</table>
@@ -1224,7 +1321,7 @@ Set Trigger Sourec</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set the RF Power of remote device.</p>
+				<p>Sets the RF Power strength.</p>
 			</div>
 			
 
@@ -1322,7 +1419,7 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>sensitivity</code></th>
-						<td><p>Sensitivity level.</p></td>
+						<td><p>Specifies the RF input sensitivity level.</p></td>
 					</tr>
 				
 				</table>
@@ -1368,7 +1465,8 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get Frequency List</p>
+				<p>Get Frequency List
+Gets the channel of hopping frequency in MHz.</p>
 			</div>
 			
 		    
@@ -1397,7 +1495,8 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get Frequency List</p>
+				<p>Get Frequency List
+Gets the channel of hopping frequency in MHz.</p>
 			</div>
 			
 
@@ -1426,7 +1525,8 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set Frequency List</p>
+				<p>Set Frequency List
+Sets the channel of hopping frequency in MHz.</p>
 			</div>
 			
 		    
@@ -1446,7 +1546,7 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>frequencyList</code></th>
-						<td><p>The frequency of TX RF.</p></td>
+						<td><p>Specifies the channel of hopping frequency for reading tag data.</p></td>
 					</tr>
 				
 				</table>
@@ -1460,7 +1560,8 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set Frequency List</p>
+				<p>Set Frequency List
+Sets the channel of hopping frequency in MHz.</p>
 			</div>
 			
 
@@ -1598,7 +1699,8 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Read EPC</p>
+				<p>Read EPC
+Reads tag data from given memory bank.</p>
 			</div>
 			
 		    
@@ -1627,7 +1729,8 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read EPC</p>
+				<p>Read EPC
+Reads tag data from given memory bank.</p>
 			</div>
 			
 
@@ -1659,7 +1762,7 @@ RX Sensitivity setting defines the RX input sensitivity level.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-05-10</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-06-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

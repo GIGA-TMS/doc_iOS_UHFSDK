@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>GTClassCode Constants Reference</title>
+	<title>TriggerType Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">GTClassCode Constants Reference</h1>
+					<h1 class="title">TriggerType Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GTCommonHeader.h</td>
+	<td>IUHFDeviceListener.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,17 +75,35 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">GTClassCode</h3>
+                    <h3 class="subsubtitle method-title">TriggerType</h3>
                     
+					
+					<div class="section section-overview">
+                        <p>TriggerType</p>
+
+<ul>
+<li>Command: Command  Trigger</li>
+<li>DigitalInput: DigitalInput  Trigger</li>
+<li>Sensor: Sensor  Trigger</li>
+<li>SensorAndDigitalInput: SensorAndDigitalInput  Trigger</li>
+</ul>
+
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(short, GTClassCode ) {<br>
+                        <code>typedef NS_ENUM(Byte, TriggerType ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">CC_SLI200</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">Command</a> = 0 x01,<br>
                             
-                            &nbsp;&nbsp; <a href="">CC_UHF</a> = 0 xFF,<br>
+                            &nbsp;&nbsp; <a href="">DigitalInput</a> = 0 x02,<br>
+                            
+                            &nbsp;&nbsp; <a href="">Sensor</a> = 0 x04,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SensorAndDigitalInput</a> = 0 x06,<br>
                             
                             };</code>
                     
@@ -95,22 +113,70 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="CC_SLI200"></a><code>CC_SLI200</code></dt>
+                            <dt><a name="" title="Command"></a><code>Command</code></dt>
 <dd>
+
+
+<p>TriggerType</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CC_UHF"></a><code>CC_UHF</code></dt>
+                            <dt><a name="" title="DigitalInput"></a><code>DigitalInput</code></dt>
 <dd>
+
+
+<p>TriggerType</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="Sensor"></a><code>Sensor</code></dt>
+<dd>
+
+
+<p>TriggerType</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SensorAndDigitalInput"></a><code>SensorAndDigitalInput</code></dt>
+<dd>
+
+
+<p>TriggerType</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
@@ -119,6 +185,17 @@
                     </div>
                     
 
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
+                    </div>
+                    
                     
                     
                     

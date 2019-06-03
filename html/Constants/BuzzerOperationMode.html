@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>GTClassCode Constants Reference</title>
+	<title>BuzzerOperationMode Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">GTClassCode Constants Reference</h1>
+					<h1 class="title">BuzzerOperationMode Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GTCommonHeader.h</td>
+	<td>IUHFDeviceListener.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,17 +75,32 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">GTClassCode</h3>
+                    <h3 class="subsubtitle method-title">BuzzerOperationMode</h3>
                     
+					
+					<div class="section section-overview">
+                        <p>Specifies the repeats mode of sounding the buzzer.</p>
+
+<ul>
+<li>BOM_DISABLE: Selects to turn off beep sound</li>
+<li>BOM_EANBLE_NOREPEAT: Selects to sound the beep once</li>
+<li>BOM_EANBLE_REPEAT: Selects to repeatly sound the beep</li>
+</ul>
+
+					</div>
+					
+					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(short, GTClassCode ) {<br>
+                        <code>typedef NS_ENUM(Byte, BuzzerOperationMode ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">CC_SLI200</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">BOM_DISABLE</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">CC_UHF</a> = 0 xFF,<br>
+                            &nbsp;&nbsp; <a href="">BOM_EANBLE_NOREPEAT</a> = 0 xFE,<br>
+                            
+                            &nbsp;&nbsp; <a href="">BOM_EANBLE_REPEAT</a> = 0 xFF,<br>
                             
                             };</code>
                     
@@ -95,22 +110,53 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="CC_SLI200"></a><code>CC_SLI200</code></dt>
+                            <dt><a name="" title="BOM_DISABLE"></a><code>BOM_DISABLE</code></dt>
 <dd>
+
+
+<p>Specifies the repeats mode of sounding the buzzer.</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CC_UHF"></a><code>CC_UHF</code></dt>
+                            <dt><a name="" title="BOM_EANBLE_NOREPEAT"></a><code>BOM_EANBLE_NOREPEAT</code></dt>
 <dd>
+
+
+<p>Specifies the repeats mode of sounding the buzzer.</p>
+
+
+
+
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="BOM_EANBLE_REPEAT"></a><code>BOM_EANBLE_REPEAT</code></dt>
+<dd>
+
+
+<p>Specifies the repeats mode of sounding the buzzer.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
@@ -119,6 +165,17 @@
                     </div>
                     
 
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
+                    </div>
+                    
                     
                     
                     

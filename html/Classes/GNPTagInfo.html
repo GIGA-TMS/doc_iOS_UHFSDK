@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>BaseDevice Class Reference</title>
+	<title>GNPTagInfo Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -52,17 +54,19 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/getDevInfo">- getDevInfo</option>
+		<option value="//api/name/EPCHexString">EPCHexString</option>
 		
-		<option value="//api/name/initBluetooth">- initBluetooth</option>
+		<option value="//api/name/RSSI">RSSI</option>
+		
+		<option value="//api/name/TIDHexString">TIDHexString</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -77,7 +81,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">BaseDevice Class Reference</h1>
+					<h1 class="title">GNPTagInfo Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -86,12 +90,20 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>BaseDevice.h<br />BaseDevice.m</td>
+	<td>GNPTagInfo.h<br />GNPTagInfo.m</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Tag Information Format</p>
+					</div>
+					
+					
 
 					
 					
@@ -104,8 +116,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/getDevInfo" title="getDevInfo"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getDevInfo">&ndash;&nbsp;getDevInfo</a></code>
+	<a name="//api/name/RSSI" title="RSSI"></a>
+	<h3 class="method-title"><code><a href="#//api/name/RSSI">&nbsp;&nbsp;RSSI</a></code>
 </h3>
 
 	<div class="method-info">
@@ -115,21 +127,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Description</p>
+				<p>Presents the Received Signal Strength Indicator of reading tag.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (GTBaseDevInfo *)getDevInfo</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int RSSI</code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Device Info</p>
-			</div>
 			
 
 			
@@ -137,7 +144,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Description</p>
+				<p>Presents the Received Signal Strength Indicator of reading tag.</p>
 			</div>
 			
 
@@ -148,15 +155,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">BaseDevice.h</code></p>
+				<p><code class="declared-in-ref">GNPTagInfo.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initBluetooth" title="initBluetooth"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initBluetooth">&ndash;&nbsp;initBluetooth</a></code>
+	<a name="//api/name/EPCHexString" title="EPCHexString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/EPCHexString">&nbsp;&nbsp;EPCHexString</a></code>
 </h3>
 
 	<div class="method-info">
@@ -166,13 +173,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Description
-<a href="https://forums.developer.apple.com/thread/54510">https://forums.developer.apple.com/thread/54510</a></p>
+				<p>Presents the PC, EPC ID In HEX String.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)initBluetooth</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *EPCHexString</code></div>
 
 		    
 			
@@ -184,8 +190,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Description
-<a href="https://forums.developer.apple.com/thread/54510">https://forums.developer.apple.com/thread/54510</a></p>
+				<p>Presents the PC, EPC ID In HEX String.</p>
 			</div>
 			
 
@@ -196,7 +201,53 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">BaseDevice.h</code></p>
+				<p><code class="declared-in-ref">GNPTagInfo.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/TIDHexString" title="TIDHexString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/TIDHexString">&nbsp;&nbsp;TIDHexString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Presents the TID In HEX String.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nullable) NSString *TIDHexString</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Presents the TID In HEX String.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GNPTagInfo.h</code></p>
 			</div>
 			
 			

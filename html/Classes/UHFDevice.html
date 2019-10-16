@@ -76,11 +76,17 @@
 		
 		<option value="//api/name/cmdGetQValue:">- cmdGetQValue:</option>
 		
+		<option value="//api/name/cmdGetRepeatTime:">- cmdGetRepeatTime:</option>
+		
 		<option value="//api/name/cmdGetRfPower:">- cmdGetRfPower:</option>
 		
 		<option value="//api/name/cmdGetSensitivity:">- cmdGetSensitivity:</option>
 		
 		<option value="//api/name/cmdGetSessionAndTarget:">- cmdGetSessionAndTarget:</option>
+		
+		<option value="//api/name/cmdGetTagPresentRepeatInterval:">- cmdGetTagPresentRepeatInterval:</option>
+		
+		<option value="//api/name/cmdGetTagRemoveThreshold:">- cmdGetTagRemoveThreshold:</option>
 		
 		<option value="//api/name/cmdGetTriggerType:">- cmdGetTriggerType:</option>
 		
@@ -94,6 +100,8 @@
 		
 		<option value="//api/name/cmdSetQValue:QValue:">- cmdSetQValue:QValue:</option>
 		
+		<option value="//api/name/cmdSetRepeatTime:Time:">- cmdSetRepeatTime:Time:</option>
+		
 		<option value="//api/name/cmdSetRfPower:RFPower:">- cmdSetRfPower:RFPower:</option>
 		
 		<option value="//api/name/cmdSetScanMode:ScanMode:">- cmdSetScanMode:ScanMode:</option>
@@ -102,9 +110,15 @@
 		
 		<option value="//api/name/cmdSetSessionAndTarget:Target:Session:">- cmdSetSessionAndTarget:Target:Session:</option>
 		
+		<option value="//api/name/cmdSetTagPresentRepeatInterval:Time:">- cmdSetTagPresentRepeatInterval:Time:</option>
+		
+		<option value="//api/name/cmdSetTagRemoveThreshold:Round:">- cmdSetTagRemoveThreshold:Round:</option>
+		
 		<option value="//api/name/cmdSetTriggerType:TriggerType:">- cmdSetTriggerType:TriggerType:</option>
 		
 		<option value="//api/name/cmdStartInventory:">- cmdStartInventory:</option>
+		
+		<option value="//api/name/cmdStartInventoryEx:">- cmdStartInventoryEx:</option>
 		
 		<option value="//api/name/cmdStopInventory">- cmdStopInventory</option>
 		
@@ -324,7 +338,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>  Connect to remote device.</p>
+				<p>Connect to remote device.</p>
 			</div>
 			
 		    
@@ -341,7 +355,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>  Connect to remote device.</p>
+				<p>Connect to remote device.</p>
 			</div>
 			
 
@@ -478,7 +492,8 @@ Initializes the device settings.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Gets the repeats mode of sounding the beep with the same pattern.</p>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Gets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 		    
@@ -507,7 +522,8 @@ Initializes the device settings.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Gets the repeats mode of sounding the beep with the same pattern.</p>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Gets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 
@@ -536,7 +552,8 @@ Initializes the device settings.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
 Sets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
@@ -571,8 +588,133 @@ Sets the repeats mode of sounding the beep with the same pattern.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
 Sets the repeats mode of sounding the beep with the same pattern.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetRepeatTime:Time:" title="cmdSetRepeatTime:Time:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetRepeatTime:Time:">&ndash;&nbsp;cmdSetRepeatTime:Time:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SetRepeatTime</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetRepeatTime:(BOOL)<em>isTemp</em> Time:(Byte)<em>time</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>time</code></th>
+						<td><p>Unit: 0.1 seconds
+0: Immediately
+1~253: 0.1~25.3 seconds
+*254: Never repeat</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SetRepeatTime</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetRepeatTime:" title="cmdGetRepeatTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetRepeatTime:">&ndash;&nbsp;cmdGetRepeatTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>cmdGetRepeatTime</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetRepeatTime:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>temporary</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>cmdGetRepeatTime</p>
 			</div>
 			
 
@@ -888,6 +1030,70 @@ Starts the process of tag inventory using specified trigger source.</p>
 					
 				</ul>
 			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdStartInventoryEx:" title="cmdStartInventoryEx:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdStartInventoryEx:">&ndash;&nbsp;cmdStartInventoryEx:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Start inventory tags with specific encoded data type.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventoryEx:(TagDataEncodeType)<em>tagDataEncodeType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tagDataEncodeType</code></th>
+						<td><p>ex:tagDataEncodeType = UDC | EAN_UPC_EAS;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>Start inventory tags with specific encoded data type.</li>
+</ul>
+
+			</div>
+			
+
+			
+
 			
 
 			
@@ -1747,6 +1953,248 @@ Reads tag data from given memory bank.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetTagPresentRepeatInterval:Time:" title="cmdSetTagPresentRepeatInterval:Time:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetTagPresentRepeatInterval:Time:">&ndash;&nbsp;cmdSetTagPresentRepeatInterval:Time:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the threshold to raise a TagPresentedEvent(UHFCallback.didDiscoveredTag).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetTagPresentRepeatInterval:(BOOL)<em>isTemp</em> Time:(int)<em>time</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>time</code></th>
+						<td><p>The period to raising a TagPresentedEvent. range: 1~255 (Unit: 100ms), 0:Always repeating raising event, 255: Never repeating raising event.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the threshold to raise a TagPresentedEvent(UHFCallback.didDiscoveredTag).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetTagPresentRepeatInterval:" title="cmdGetTagPresentRepeatInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetTagPresentRepeatInterval:">&ndash;&nbsp;cmdGetTagPresentRepeatInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the threshold to raise a TagRemovedEvent(UHFCallback.didDiscoveredTag).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetTagPresentRepeatInterval:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the threshold to raise a TagRemovedEvent(UHFCallback.didDiscoveredTag).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetTagRemoveThreshold:Round:" title="cmdSetTagRemoveThreshold:Round:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetTagRemoveThreshold:Round:">&ndash;&nbsp;cmdSetTagRemoveThreshold:Round:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the threshold to raise a TagRemovedEvent(UHFCallback.didTagRemoved).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetTagRemoveThreshold:(BOOL)<em>isTemp</em> Round:(int)<em>round</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>threshold</code></th>
+						<td><p>The count of missing discovering tag threshold of inventory rounds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the threshold to raise a TagRemovedEvent(UHFCallback.didTagRemoved).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetTagRemoveThreshold:" title="cmdGetTagRemoveThreshold:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetTagRemoveThreshold:">&ndash;&nbsp;cmdGetTagRemoveThreshold:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the threshold to raise a TagRemovedEvent(UHFCallback.didTagRemoved).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetTagRemoveThreshold:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the threshold to raise a TagRemovedEvent(UHFCallback.didTagRemoved).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1762,7 +2210,7 @@ Reads tag data from given memory bank.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-06-03</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-10-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

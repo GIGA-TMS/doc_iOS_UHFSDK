@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Session Constants Reference</title>
+	<title>UdcOutputDataType Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">Session Constants Reference</h1>
+					<h1 class="title">UdcOutputDataType Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>IUHFDeviceListener.h</td>
+	<td>GNPDecodedTagData.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,38 +75,17 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">Session</h3>
+                    <h3 class="subsubtitle method-title">UdcOutputDataType</h3>
                     
-					
-					<div class="section section-overview">
-                        <p>Session</p>
-
-<ul>
-<li>S0: Session 0 is selected for an inventory round.</li>
-<li>S1: Session 1 is selected for an inventory round.</li>
-<li>S2: Session 2 is selected for an inventory round.</li>
-<li>S3: Session 3 is selected for an inventory round.</li>
-<li>Session_SL: A selected flag, SL, which a reader may assert or deassert using a Select command.</li>
-</ul>
-
-					</div>
-					
-					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, Session ) {<br>
+                        <code>typedef NS_ENUM(Byte, UdcOutputDataType ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">S0</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">BCD</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">S1</a> = 0 x01,<br>
-                            
-                            &nbsp;&nbsp; <a href="">S2</a> = 0 x02,<br>
-                            
-                            &nbsp;&nbsp; <a href="">S3</a> = 0 x03,<br>
-                            
-                            &nbsp;&nbsp; <a href="">Session_SL</a> = 0 x04,<br>
+                            &nbsp;&nbsp; <a href="">UDC_ASCII</a> = 0 x01,<br>
                             
                             };</code>
                     
@@ -116,87 +95,22 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="S0"></a><code>S0</code></dt>
+                            <dt><a name="" title="BCD"></a><code>BCD</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GNPDecodedTagData.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="S1"></a><code>S1</code></dt>
+                            <dt><a name="" title="UDC_ASCII"></a><code>UDC_ASCII</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="S2"></a><code>S2</code></dt>
-<dd>
-
-
-<p>Session</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="S3"></a><code>S3</code></dt>
-<dd>
-
-
-<p>Session</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="Session_SL"></a><code>Session_SL</code></dt>
-<dd>
-
-
-<p>Session</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GNPDecodedTagData.h</code>.
 	</p>
 	
 </dd>
@@ -205,17 +119,6 @@
                     </div>
                     
 
-                    
-                    
-
-                    
-
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
-                    </div>
-                    
                     
                     
                     

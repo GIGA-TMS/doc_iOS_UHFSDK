@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/gianni/Library/Developer/Shared/Documentation/DocSets/com.GigaTms.GIGATMSSDK.docset
+Time: 2019-07-05 08:55:43 +0000

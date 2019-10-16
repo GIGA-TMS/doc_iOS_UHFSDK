@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Session Constants Reference</title>
+	<title>OutputInterface Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,7 +59,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">Session Constants Reference</h1>
+					<h1 class="title">OutputInterface Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -75,18 +75,17 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">Session</h3>
+                    <h3 class="subsubtitle method-title">OutputInterface</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>Session</p>
+                        <p>multiple</p>
 
 <ul>
-<li>S0: Session 0 is selected for an inventory round.</li>
-<li>S1: Session 1 is selected for an inventory round.</li>
-<li>S2: Session 2 is selected for an inventory round.</li>
-<li>S3: Session 3 is selected for an inventory round.</li>
-<li>Session_SL: A selected flag, SL, which a reader may assert or deassert using a Select command.</li>
+<li>OI_HID_N_VCOM: &lt;#OI_HID_N_VCOM description#></li>
+<li>OI_BLE: &lt;#OI_BLE description#></li>
+<li>OI_TCP_CLIENT: &lt;#OI_TCP_CLIENT description#></li>
+<li>OI_TCP_SERVER: &lt;#OI_TCP_SERVER description#></li>
 </ul>
 
 					</div>
@@ -96,17 +95,15 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, Session ) {<br>
+                        <code>typedef NS_ENUM(Byte, OutputInterface ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">S0</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">OI_HID_N_VCOM</a> = 0 x08,<br>
                             
-                            &nbsp;&nbsp; <a href="">S1</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">OI_BLE</a> = 0 x10,<br>
                             
-                            &nbsp;&nbsp; <a href="">S2</a> = 0 x02,<br>
+                            &nbsp;&nbsp; <a href="">OI_TCP_CLIENT</a> = 0 x20,<br>
                             
-                            &nbsp;&nbsp; <a href="">S3</a> = 0 x03,<br>
-                            
-                            &nbsp;&nbsp; <a href="">Session_SL</a> = 0 x04,<br>
+                            &nbsp;&nbsp; <a href="">OI_TCP_SERVER</a> = 0 x40,<br>
                             
                             };</code>
                     
@@ -116,11 +113,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="S0"></a><code>S0</code></dt>
+                            <dt><a name="" title="OI_HID_N_VCOM"></a><code>OI_HID_N_VCOM</code></dt>
 <dd>
 
 
-<p>Session</p>
+<p>multiple</p>
 
 
 
@@ -133,11 +130,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="S1"></a><code>S1</code></dt>
+                            <dt><a name="" title="OI_BLE"></a><code>OI_BLE</code></dt>
 <dd>
 
 
-<p>Session</p>
+<p>multiple</p>
 
 
 
@@ -150,11 +147,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="S2"></a><code>S2</code></dt>
+                            <dt><a name="" title="OI_TCP_CLIENT"></a><code>OI_TCP_CLIENT</code></dt>
 <dd>
 
 
-<p>Session</p>
+<p>multiple</p>
 
 
 
@@ -167,28 +164,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="S3"></a><code>S3</code></dt>
+                            <dt><a name="" title="OI_TCP_SERVER"></a><code>OI_TCP_SERVER</code></dt>
 <dd>
 
 
-<p>Session</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="Session_SL"></a><code>Session_SL</code></dt>
-<dd>
-
-
-<p>Session</p>
+<p>multiple</p>
 
 
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>ErrorCode Constants Reference</title>
+	<title>CommonCmdCode Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,7 +59,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">ErrorCode Constants Reference</h1>
+					<h1 class="title">CommonCmdCode Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -75,49 +75,55 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">ErrorCode</h3>
+                    <h3 class="subsubtitle method-title">CommonCmdCode</h3>
                     
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, ErrorCode ) {<br>
+                        <code>typedef NS_ENUM(Byte, CommonCmdCode ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_SUCCESS</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">START_MESSAGE</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_BUSY</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">POLL</a> = 0 x01,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_ACCESS_DENIED</a> = 0 x02,<br>
+                            &nbsp;&nbsp; <a href="">GET_FIRMWARE_INFORMATION</a> = 0 x02,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_INVALID_PARAMETER</a> = 0 x03,<br>
+                            &nbsp;&nbsp; <a href="">GET_DEVICE_SERIAL_NUMBER</a> = 0 x03,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_CHECK</a> = 0 x04,<br>
+                            &nbsp;&nbsp; <a href="">REBOOT</a> = 0 x04,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_UNKNOWN</a> = 0 x05,<br>
+                            &nbsp;&nbsp; <a href="">JUMP_TO_ISP</a> = 0 x05,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_INVALID_COMMAND</a> = 0 x06,<br>
+                            &nbsp;&nbsp; <a href="">ECHO</a> = 0 x06,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_TIMEOUT</a> = 0 x07,<br>
+                            &nbsp;&nbsp; <a href="">INITIALIZE</a> = 0 x07,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_MEMORY_FULL</a> = 0 x08,<br>
+                            &nbsp;&nbsp; <a href="">UPDATE_SETTINGS</a> = 0 x08,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_REQUEST</a> = 0 x09,<br>
+                            &nbsp;&nbsp; <a href="">LOGIN</a> = 0 x09,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_COMMAND_LENGTH</a> = 0 x0A,<br>
+                            &nbsp;&nbsp; <a href="">LOGOUT</a> = 0 x0A,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_UNEXPECTED_PACKET_NUMBER</a> = 0 x0B,<br>
+                            &nbsp;&nbsp; <a href="">SET_LOGIN_PASSWORD</a> = 0 x0B,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_NOT_SUPPORT_SECURITY_BLOCK</a> = 0 x0C,<br>
+                            &nbsp;&nbsp; <a href="">WRITE_EEPROM</a> = 0 x0C,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_SECURITY_STATUS_NOT_MET</a> = 0 x0D,<br>
+                            &nbsp;&nbsp; <a href="">READ_EEPROM</a> = 0 x0D,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_BIO_TYPE_NOT_SUPPORTED</a> = 0 x0E,<br>
+                            &nbsp;&nbsp; <a href="">SET_DATE_TIME</a> = 0 x0E,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_BIO_FORMAT_NOT_SUPPORTED</a> = 0 x0F,<br>
+                            &nbsp;&nbsp; <a href="">GET_DATE_TIME</a> = 0 x0F,<br>
                             
-                            &nbsp;&nbsp; <a href="">ERR_UNABLE_PROCESS_CMD_DATA</a> = 0 x10,<br>
+                            &nbsp;&nbsp; <a href="">CONTROL_OUTPUT_STATE</a> = 0 x10,<br>
                             
-                            &nbsp;&nbsp; <a href="">NO_DEFINE</a> = 0 xFF,<br>
+                            &nbsp;&nbsp; <a href="">GET_INPUT_STATE</a> = 0 x11,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CONTROL_BUZZER</a> = 0 x12,<br>
+                            
+                            &nbsp;&nbsp; <a href="">CONTROL_LED</a> = 0 x13,<br>
+                            
+                            &nbsp;&nbsp; <a href="">OUTPUT_TEXT</a> = 0 x14,<br>
                             
                             };</code>
                     
@@ -127,7 +133,7 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="ERR_SUCCESS"></a><code>ERR_SUCCESS</code></dt>
+                            <dt><a name="" title="START_MESSAGE"></a><code>START_MESSAGE</code></dt>
 <dd>
 
     
@@ -137,7 +143,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_BUSY"></a><code>ERR_BUSY</code></dt>
+                            <dt><a name="" title="POLL"></a><code>POLL</code></dt>
 <dd>
 
     
@@ -147,7 +153,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_ACCESS_DENIED"></a><code>ERR_ACCESS_DENIED</code></dt>
+                            <dt><a name="" title="GET_FIRMWARE_INFORMATION"></a><code>GET_FIRMWARE_INFORMATION</code></dt>
 <dd>
 
     
@@ -157,7 +163,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_INVALID_PARAMETER"></a><code>ERR_INVALID_PARAMETER</code></dt>
+                            <dt><a name="" title="GET_DEVICE_SERIAL_NUMBER"></a><code>GET_DEVICE_SERIAL_NUMBER</code></dt>
 <dd>
 
     
@@ -167,7 +173,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_CHECK"></a><code>ERR_CHECK</code></dt>
+                            <dt><a name="" title="REBOOT"></a><code>REBOOT</code></dt>
 <dd>
 
     
@@ -177,7 +183,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_UNKNOWN"></a><code>ERR_UNKNOWN</code></dt>
+                            <dt><a name="" title="JUMP_TO_ISP"></a><code>JUMP_TO_ISP</code></dt>
 <dd>
 
     
@@ -187,7 +193,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_INVALID_COMMAND"></a><code>ERR_INVALID_COMMAND</code></dt>
+                            <dt><a name="" title="ECHO"></a><code>ECHO</code></dt>
 <dd>
 
     
@@ -197,7 +203,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_TIMEOUT"></a><code>ERR_TIMEOUT</code></dt>
+                            <dt><a name="" title="INITIALIZE"></a><code>INITIALIZE</code></dt>
 <dd>
 
     
@@ -207,7 +213,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_MEMORY_FULL"></a><code>ERR_MEMORY_FULL</code></dt>
+                            <dt><a name="" title="UPDATE_SETTINGS"></a><code>UPDATE_SETTINGS</code></dt>
 <dd>
 
     
@@ -217,7 +223,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_REQUEST"></a><code>ERR_REQUEST</code></dt>
+                            <dt><a name="" title="LOGIN"></a><code>LOGIN</code></dt>
 <dd>
 
     
@@ -227,7 +233,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_COMMAND_LENGTH"></a><code>ERR_COMMAND_LENGTH</code></dt>
+                            <dt><a name="" title="LOGOUT"></a><code>LOGOUT</code></dt>
 <dd>
 
     
@@ -237,7 +243,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_UNEXPECTED_PACKET_NUMBER"></a><code>ERR_UNEXPECTED_PACKET_NUMBER</code></dt>
+                            <dt><a name="" title="SET_LOGIN_PASSWORD"></a><code>SET_LOGIN_PASSWORD</code></dt>
 <dd>
 
     
@@ -247,7 +253,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_NOT_SUPPORT_SECURITY_BLOCK"></a><code>ERR_NOT_SUPPORT_SECURITY_BLOCK</code></dt>
+                            <dt><a name="" title="WRITE_EEPROM"></a><code>WRITE_EEPROM</code></dt>
 <dd>
 
     
@@ -257,7 +263,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_SECURITY_STATUS_NOT_MET"></a><code>ERR_SECURITY_STATUS_NOT_MET</code></dt>
+                            <dt><a name="" title="READ_EEPROM"></a><code>READ_EEPROM</code></dt>
 <dd>
 
     
@@ -267,7 +273,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_BIO_TYPE_NOT_SUPPORTED"></a><code>ERR_BIO_TYPE_NOT_SUPPORTED</code></dt>
+                            <dt><a name="" title="SET_DATE_TIME"></a><code>SET_DATE_TIME</code></dt>
 <dd>
 
     
@@ -277,7 +283,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_BIO_FORMAT_NOT_SUPPORTED"></a><code>ERR_BIO_FORMAT_NOT_SUPPORTED</code></dt>
+                            <dt><a name="" title="GET_DATE_TIME"></a><code>GET_DATE_TIME</code></dt>
 <dd>
 
     
@@ -287,7 +293,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="ERR_UNABLE_PROCESS_CMD_DATA"></a><code>ERR_UNABLE_PROCESS_CMD_DATA</code></dt>
+                            <dt><a name="" title="CONTROL_OUTPUT_STATE"></a><code>CONTROL_OUTPUT_STATE</code></dt>
 <dd>
 
     
@@ -297,7 +303,37 @@
 	
 </dd>
                             
-                            <dt><a name="" title="NO_DEFINE"></a><code>NO_DEFINE</code></dt>
+                            <dt><a name="" title="GET_INPUT_STATE"></a><code>GET_INPUT_STATE</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CONTROL_BUZZER"></a><code>CONTROL_BUZZER</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="CONTROL_LED"></a><code>CONTROL_LED</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="OUTPUT_TEXT"></a><code>OUTPUT_TEXT</code></dt>
 <dd>
 
     

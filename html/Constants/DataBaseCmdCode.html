@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Session Constants Reference</title>
+	<title>DataBaseCmdCode Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">Session Constants Reference</h1>
+					<h1 class="title">DataBaseCmdCode Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>IUHFDeviceListener.h</td>
+	<td>GTPacketUtility.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,38 +75,31 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">Session</h3>
+                    <h3 class="subsubtitle method-title">DataBaseCmdCode</h3>
                     
-					
-					<div class="section section-overview">
-                        <p>Session</p>
-
-<ul>
-<li>S0: Session 0 is selected for an inventory round.</li>
-<li>S1: Session 1 is selected for an inventory round.</li>
-<li>S2: Session 2 is selected for an inventory round.</li>
-<li>S3: Session 3 is selected for an inventory round.</li>
-<li>Session_SL: A selected flag, SL, which a reader may assert or deassert using a Select command.</li>
-</ul>
-
-					</div>
-					
-					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, Session ) {<br>
+                        <code>typedef NS_ENUM(Byte, DataBaseCmdCode ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">S0</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">Get_TableInformation</a> = 0 x50,<br>
                             
-                            &nbsp;&nbsp; <a href="">S1</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">Open_Table</a> = 0 x51,<br>
                             
-                            &nbsp;&nbsp; <a href="">S2</a> = 0 x02,<br>
+                            &nbsp;&nbsp; <a href="">Close_Table</a> = 0 x52,<br>
                             
-                            &nbsp;&nbsp; <a href="">S3</a> = 0 x03,<br>
+                            &nbsp;&nbsp; <a href="">Get_Record_Count</a> = 0 x53,<br>
                             
-                            &nbsp;&nbsp; <a href="">Session_SL</a> = 0 x04,<br>
+                            &nbsp;&nbsp; <a href="">Get_Records</a> = 0 x54,<br>
+                            
+                            &nbsp;&nbsp; <a href="">Add_Record</a> = 0 x55,<br>
+                            
+                            &nbsp;&nbsp; <a href="">Update_Record</a> = 0 x56,<br>
+                            
+                            &nbsp;&nbsp; <a href="">Delete_Records</a> = 0 x57,<br>
+                            
+                            &nbsp;&nbsp; <a href="">Recover_Records</a> = 0 x58,<br>
                             
                             };</code>
                     
@@ -116,87 +109,92 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="S0"></a><code>S0</code></dt>
+                            <dt><a name="" title="Get_TableInformation"></a><code>Get_TableInformation</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="S1"></a><code>S1</code></dt>
+                            <dt><a name="" title="Open_Table"></a><code>Open_Table</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="S2"></a><code>S2</code></dt>
+                            <dt><a name="" title="Close_Table"></a><code>Close_Table</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="S3"></a><code>S3</code></dt>
+                            <dt><a name="" title="Get_Record_Count"></a><code>Get_Record_Count</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Session_SL"></a><code>Session_SL</code></dt>
+                            <dt><a name="" title="Get_Records"></a><code>Get_Records</code></dt>
 <dd>
-
-
-<p>Session</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="Add_Record"></a><code>Add_Record</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="Update_Record"></a><code>Update_Record</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="Delete_Records"></a><code>Delete_Records</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="Recover_Records"></a><code>Recover_Records</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
 	</p>
 	
 </dd>
@@ -205,17 +203,6 @@
                     </div>
                     
 
-                    
-                    
-
-                    
-
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">IUHFDeviceListener.h</code></p>
-                    </div>
-                    
                     
                     
                     

@@ -58,7 +58,29 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/cmdGetEventType:">- cmdGetEventType:</option>
+		
+		<option value="//api/name/cmdGetFilter:">- cmdGetFilter:</option>
+		
+		<option value="//api/name/cmdGetMemoryBankSelection:">- cmdGetMemoryBankSelection:</option>
+		
+		<option value="//api/name/cmdGetOutputInterface:">- cmdGetOutputInterface:</option>
+		
+		<option value="//api/name/cmdGetPostDataDelimiter:">- cmdGetPostDataDelimiter:</option>
+		
 		<option value="//api/name/cmdInitializeSettings">- cmdInitializeSettings</option>
+		
+		<option value="//api/name/cmdSetEventType:EventType:">- cmdSetEventType:EventType:</option>
+		
+		<option value="//api/name/cmdSetFilter:TagDataEncodeType:">- cmdSetFilter:TagDataEncodeType:</option>
+		
+		<option value="//api/name/cmdSetMemoryBankSelection:MemoryBankSelection:">- cmdSetMemoryBankSelection:MemoryBankSelection:</option>
+		
+		<option value="//api/name/cmdSetOutputInterface:KeyboardSimulation:OutputInterface:">- cmdSetOutputInterface:KeyboardSimulation:OutputInterface:</option>
+		
+		<option value="//api/name/cmdSetPostDataDelimiter:PostDataDelimiter:">- cmdSetPostDataDelimiter:PostDataDelimiter:</option>
+		
+		<option value="//api/name/cmdStartInventoryEx">- cmdStartInventoryEx</option>
 		
 	</optgroup>
 	
@@ -147,6 +169,666 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetFilter:" title="cmdGetFilter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetFilter:">&ndash;&nbsp;cmdGetFilter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Filter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetFilter:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Filter</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetFilter:TagDataEncodeType:" title="cmdSetFilter:TagDataEncodeType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetFilter:TagDataEncodeType:">&ndash;&nbsp;cmdSetFilter:TagDataEncodeType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Filters</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetFilter:(BOOL)<em>isTemp</em> TagDataEncodeType:(TagDataEncodeType)<em>filterTypes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filterTypes</code></th>
+						<td><p>Specifies the decoded type for reading tag data.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set Filters</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetPostDataDelimiter:" title="cmdGetPostDataDelimiter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetPostDataDelimiter:">&ndash;&nbsp;cmdGetPostDataDelimiter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Post Data Delimiter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetPostDataDelimiter:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Post Data Delimiter</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetPostDataDelimiter:PostDataDelimiter:" title="cmdSetPostDataDelimiter:PostDataDelimiter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetPostDataDelimiter:PostDataDelimiter:">&ndash;&nbsp;cmdSetPostDataDelimiter:PostDataDelimiter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Post Data Delimiter</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetPostDataDelimiter:(BOOL)<em>isTemp</em> PostDataDelimiter:(PostDataDelimiter)<em>postDataDelimiter</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>postDataDelimiter</code></th>
+						<td><p>Specifies the delimiter append to the end of output data.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set Post Data Delimiter</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetMemoryBankSelection:" title="cmdGetMemoryBankSelection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetMemoryBankSelection:">&ndash;&nbsp;cmdGetMemoryBankSelection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Memory Bank Selection setting.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetMemoryBankSelection:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Memory Bank Selection setting.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetMemoryBankSelection:MemoryBankSelection:" title="cmdSetMemoryBankSelection:MemoryBankSelection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetMemoryBankSelection:MemoryBankSelection:">&ndash;&nbsp;cmdSetMemoryBankSelection:MemoryBankSelection:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Memory Bank Selections setting.
+When the filter is disable (<code>disableFilter</code>).This setting decides the output memory bank data.
+The data will get from <code>UHFCallback.didDiscoverTagInfoEx</code> and <a href="../Constants/KeyboardSimulation.html">KeyboardSimulation</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetMemoryBankSelection:(BOOL)<em>isTemp</em> MemoryBankSelection:(MemoryBankSelection)<em>memoryBankSelections</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memoryBankSelections</code></th>
+						<td><p>Memory Bank Selections setting.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set Memory Bank Selections setting.
+When the filter is disable (<code>disableFilter</code>).This setting decides the output memory bank data.
+The data will get from <code>UHFCallback.didDiscoverTagInfoEx</code> and <a href="../Constants/KeyboardSimulation.html">KeyboardSimulation</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdStartInventoryEx" title="cmdStartInventoryEx"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdStartInventoryEx">&ndash;&nbsp;cmdStartInventoryEx</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start inventory tags with specific encoded data type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventoryEx</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Start inventory tags with specific encoded data type.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetEventType:" title="cmdGetEventType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetEventType:">&ndash;&nbsp;cmdGetEventType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the event command type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetEventType:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets the event command type.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetEventType:EventType:" title="cmdSetEventType:EventType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetEventType:EventType:">&ndash;&nbsp;cmdSetEventType:EventType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the event command type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetEventType:(BOOL)<em>isTemp</em> EventType:(EventType)<em>eventType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>eventType</code></th>
+						<td><p>The type for the event command.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the event command type.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetOutputInterface:" title="cmdGetOutputInterface:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetOutputInterface:">&ndash;&nbsp;cmdGetOutputInterface:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the data output interface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetOutputInterface:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets the data output interface.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetOutputInterface:KeyboardSimulation:OutputInterface:" title="cmdSetOutputInterface:KeyboardSimulation:OutputInterface:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetOutputInterface:KeyboardSimulation:OutputInterface:">&ndash;&nbsp;cmdSetOutputInterface:KeyboardSimulation:OutputInterface:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the data output interface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetOutputInterface:(BOOL)<em>isTemp</em> KeyboardSimulation:(KeyboardSimulation)<em>keyboardSimulation</em> OutputInterface:(OutputInterface)<em>outputInterface</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>keyboardSimulation</code></th>
+						<td><p>Keyboard Simulation</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outputInterface</code></th>
+						<td><p>The set of data output interface. also can &lsquo;outputInterface = OI_HID_N_VCOM | OI_BLE;&rsquo;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the data output interface.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS100.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -162,7 +844,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-10-17</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-10-22</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

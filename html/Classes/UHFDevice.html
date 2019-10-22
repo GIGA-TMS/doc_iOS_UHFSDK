@@ -70,7 +70,7 @@
 		
 		<option value="//api/name/cmdGetBuzzerOperationMode:">- cmdGetBuzzerOperationMode:</option>
 		
-		<option value="//api/name/cmdGetDeviceInformation">- cmdGetDeviceInformation</option>
+		<option value="//api/name/cmdGetFirmwareVersion">- cmdGetFirmwareVersion</option>
 		
 		<option value="//api/name/cmdGetFrequencyList:">- cmdGetFrequencyList:</option>
 		
@@ -125,6 +125,10 @@
 		<option value="//api/name/cmdUpdateEEPROMtoRegister">- cmdUpdateEEPROMtoRegister</option>
 		
 		<option value="//api/name/cmdWriteEPC:EPCData:">- cmdWriteEPC:EPCData:</option>
+		
+		<option value="//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:">- cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:</option>
+		
+		<option value="//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:">- cmdWriteTag:MemoryBank:StartAddr:Data:</option>
 		
 		<option value="//api/name/getSDKVersion">- getSDKVersion</option>
 		
@@ -922,8 +926,8 @@ Set Trigger Sourec</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cmdGetDeviceInformation" title="cmdGetDeviceInformation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdGetDeviceInformation">&ndash;&nbsp;cmdGetDeviceInformation</a></code>
+	<a name="//api/name/cmdGetFirmwareVersion" title="cmdGetFirmwareVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetFirmwareVersion">&ndash;&nbsp;cmdGetFirmwareVersion</a></code>
 </h3>
 
 	<div class="method-info">
@@ -939,7 +943,7 @@ Gets the firmware program version running on the device.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)cmdGetDeviceInformation</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetFirmwareVersion</code></div>
 
 		    
 			
@@ -1894,6 +1898,157 @@ Sets the channel of hopping frequency in MHz.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:" title="cmdWriteTag:MemoryBank:StartAddr:Data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:">&ndash;&nbsp;cmdWriteTag:MemoryBank:StartAddr:Data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write EPC</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdWriteTag:(NSString *)<em>password</em> MemoryBank:(MemoryBank)<em>writeBank</em> StartAddr:(int)<em>startWordAddress</em> Data:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Specifies the password to write data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>writeBank</code></th>
+						<td><p>Specifies which memory bank to write.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
+						<td><p>Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Specifies the data to write to memory bank.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write EPC</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:" title="cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:">&ndash;&nbsp;cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write EPC</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdWriteSelectTag:(NSString *)<em>epc</em> PWD:(NSString *)<em>password</em> MemoryBank:(MemoryBank)<em>writeBank</em> StartAddr:(int)<em>startWordAddress</em> Data:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>epc</code></th>
+						<td><p>Specifies the tag PC EPC to be selected.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Specifies the password to write data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>writeBank</code></th>
+						<td><p>Specifies which memory bank to write.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
+						<td><p>Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Specifies the data to write to memory bank.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write EPC</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/cmdReadEPC:" title="cmdReadEPC:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cmdReadEPC:">&ndash;&nbsp;cmdReadEPC:</a></code>
 </h3>
@@ -2210,7 +2365,7 @@ Reads tag data from given memory bank.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-10-17</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-10-22</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

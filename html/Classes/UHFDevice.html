@@ -76,6 +76,8 @@
 		
 		<option value="//api/name/cmdGetFrequencyList:">- cmdGetFrequencyList:</option>
 		
+		<option value="//api/name/cmdGetInventoryRoundInterval:">- cmdGetInventoryRoundInterval:</option>
+		
 		<option value="//api/name/cmdGetQValue:">- cmdGetQValue:</option>
 		
 		<option value="//api/name/cmdGetRepeatTime:">- cmdGetRepeatTime:</option>
@@ -94,9 +96,15 @@
 		
 		<option value="//api/name/cmdInitializeSettings:">- cmdInitializeSettings:</option>
 		
+		<option value="//api/name/cmdLockTag:">- cmdLockTag:</option>
+		
+		<option value="//api/name/cmdLockTag:LockInfos:">- cmdLockTag:LockInfos:</option>
+		
 		<option value="//api/name/cmdReadEPC:">- cmdReadEPC:</option>
 		
 		<option value="//api/name/cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:">- cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:</option>
+		
+		<option value="//api/name/cmdSet:InventoryRoundInterval:">- cmdSet:InventoryRoundInterval:</option>
 		
 		<option value="//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:">- cmdSetBuzzerOperationMode:BuzzerOperationMode:</option>
 		
@@ -1196,15 +1204,6 @@ Stops the process of tag inventory.</p>
 
 			
 
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="#//api/name/didGeneralSuccess:">- didGeneralSuccess:</a></p></code></li>
-					
-				</ul>
-			</div>
 			
 
 			
@@ -2432,6 +2431,247 @@ Reads tag data from given memory bank.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSet:InventoryRoundInterval:" title="cmdSet:InventoryRoundInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSet:InventoryRoundInterval:">&ndash;&nbsp;cmdSet:InventoryRoundInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the InventoryRoundInterval
+/// @param isTemp True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSet:(BOOL)<em>isTemp</em> InventoryRoundInterval:(int)<em>tenMilliSeconds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tenMilliSeconds</code></th>
+						<td><p>The period to start an inventory round. Range: 0~254*10s. 255 represent 0;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the InventoryRoundInterval
+/// @param isTemp True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdGetInventoryRoundInterval:" title="cmdGetInventoryRoundInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetInventoryRoundInterval:">&ndash;&nbsp;cmdGetInventoryRoundInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the InventoryRoundInterval</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetInventoryRoundInterval:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the InventoryRoundInterval</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdLockTag:LockInfos:" title="cmdLockTag:LockInfos:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdLockTag:LockInfos:">&ndash;&nbsp;cmdLockTag:LockInfos:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use <code>accessPassword</code> to Lock the first tag that is inventoried.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdLockTag:(NSString *)<em>accessPassword</em> LockInfos:(NSMutableArray *)<em>lockInfos</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessPassword</code></th>
+						<td><p>Access Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lockInfos</code></th>
+						<td><p>The Lock Action to specified memory bank. see GNPLockInfos.h</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use <code>accessPassword</code> to Lock the first tag that is inventoried.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdLockTag:" title="cmdLockTag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdLockTag:">&ndash;&nbsp;cmdLockTag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lock the first tag that is inventoried.
+The Access password is decided by the remote connected device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdLockTag:(NSMutableArray *)<em>lockInfos</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lockInfos</code></th>
+						<td><p>The Lock Action to specified memory bank. see GNPLockInfos.h</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Lock the first tag that is inventoried.
+The Access password is decided by the remote connected device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -2447,7 +2687,7 @@ Reads tag data from given memory bank.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-11-06</p>
+						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-11-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -68,8 +68,6 @@
 		
 		<option value="//api/name/cmdControlBuzzer:">- cmdControlBuzzer:</option>
 		
-		<option value="//api/name/cmdGetBLEFirmwareVersion">- cmdGetBLEFirmwareVersion</option>
-		
 		<option value="//api/name/cmdGetBuzzerOperationMode:">- cmdGetBuzzerOperationMode:</option>
 		
 		<option value="//api/name/cmdGetFirmwareVersion">- cmdGetFirmwareVersion</option>
@@ -96,13 +94,21 @@
 		
 		<option value="//api/name/cmdInitializeSettings:">- cmdInitializeSettings:</option>
 		
+		<option value="//api/name/cmdKillTag:">- cmdKillTag:</option>
+		
+		<option value="//api/name/cmdKillTag:KillPWD:">- cmdKillTag:KillPWD:</option>
+		
 		<option value="//api/name/cmdLockTag:">- cmdLockTag:</option>
 		
 		<option value="//api/name/cmdLockTag:LockInfos:">- cmdLockTag:LockInfos:</option>
 		
+		<option value="//api/name/cmdMarkMultiCMD:CMDCode:CMDCount:">- cmdMarkMultiCMD:CMDCode:CMDCount:</option>
+		
 		<option value="//api/name/cmdReadEPC:">- cmdReadEPC:</option>
 		
-		<option value="//api/name/cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:">- cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:</option>
+		<option value="//api/name/cmdReadTag:PWD:MemoryBank:StartAddr:ReadLen:">- cmdReadTag:PWD:MemoryBank:StartAddr:ReadLen:</option>
+		
+		<option value="//api/name/cmdReadTagWithPWD:MemoryBank:StartAddr:ReadLen:">- cmdReadTagWithPWD:MemoryBank:StartAddr:ReadLen:</option>
 		
 		<option value="//api/name/cmdSet:InventoryRoundInterval:">- cmdSet:InventoryRoundInterval:</option>
 		
@@ -141,6 +147,8 @@
 		<option value="//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:">- cmdWriteTag:MemoryBank:StartAddr:Data:</option>
 		
 		<option value="//api/name/getSDKVersion">- getSDKVersion</option>
+		
+		<option value="//api/name/sendGNetCMD:">- sendGNetCMD:</option>
 		
 		<option value="//api/name/setListener:">- setListener:</option>
 		
@@ -182,7 +190,7 @@
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -387,6 +395,132 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/cmdMarkMultiCMD:CMDCode:CMDCount:" title="cmdMarkMultiCMD:CMDCode:CMDCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdMarkMultiCMD:CMDCode:CMDCount:">&ndash;&nbsp;cmdMarkMultiCMD:CMDCode:CMDCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>send  Special Multi CMD</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdMarkMultiCMD:(NSMutableArray *)<em>datas</em> CMDCode:(Byte)<em>apiCode</em> CMDCount:(int)<em>cmdCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>datas</code></th>
+						<td><p>Special CMD format</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apiCode</code></th>
+						<td><p>software api code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cmdCount</code></th>
+						<td><p>cmd conunt</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>send  Special Multi CMD</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendGNetCMD:" title="sendGNetCMD:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendGNetCMD:">&ndash;&nbsp;sendGNetCMD:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>send  Special CMD</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendGNetCMD:(NSData *)<em>cmdData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cmdData</code></th>
+						<td><p>Special CMD format</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>send  Special CMD</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/cmdInitializeSettings:" title="cmdInitializeSettings:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cmdInitializeSettings:">&ndash;&nbsp;cmdInitializeSettings:</a></code>
 </h3>
@@ -478,133 +612,6 @@ Initializes the device settings.</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Only for <a href="../Classes/TS100.html">TS100</a>
 <a href="../Constants/Control.html">Control</a> reader to make a specified sound beep.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdGetBuzzerOperationMode:" title="cmdGetBuzzerOperationMode:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdGetBuzzerOperationMode:">&ndash;&nbsp;cmdGetBuzzerOperationMode:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Only for <a href="../Classes/TS100.html">TS100</a>
-Gets the repeats mode of sounding the beep with the same pattern.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdGetBuzzerOperationMode:(BOOL)<em>isTemp</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Only for <a href="../Classes/TS100.html">TS100</a>
-Gets the repeats mode of sounding the beep with the same pattern.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:" title="cmdSetBuzzerOperationMode:BuzzerOperationMode:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:">&ndash;&nbsp;cmdSetBuzzerOperationMode:BuzzerOperationMode:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Only for <a href="../Classes/TS100.html">TS100</a>
-Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
-Sets the repeats mode of sounding the beep with the same pattern.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdSetBuzzerOperationMode:(BOOL)<em>isTemp</em> BuzzerOperationMode:(BuzzerOperationMode)<em>bom</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isTemp</code></th>
-						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>bom</code></th>
-						<td><p>Buzzer Operation Mode:Specifies the repeats mode of sounding the beep with the same pattern.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Only for <a href="../Classes/TS100.html">TS100</a>
-Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
-Sets the repeats mode of sounding the beep with the same pattern.</p>
 			</div>
 			
 
@@ -919,286 +926,6 @@ Set Trigger Sourec</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Only for <a href="../Classes/TS800.html">TS800</a> &amp; <a href="../Classes/UR0250.html">UR0250</a>
 Set Trigger Sourec</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdGetBLEFirmwareVersion" title="cmdGetBLEFirmwareVersion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdGetBLEFirmwareVersion">&ndash;&nbsp;cmdGetBLEFirmwareVersion</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get Device BLE module
-Gets the firmware program version running on the device BLE module.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdGetBLEFirmwareVersion</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get Device BLE module
-Gets the firmware program version running on the device BLE module.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdGetFirmwareVersion" title="cmdGetFirmwareVersion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdGetFirmwareVersion">&ndash;&nbsp;cmdGetFirmwareVersion</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get Device Information
-Gets the firmware program version running on the device.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdGetFirmwareVersion</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get Device Information
-Gets the firmware program version running on the device.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdStartInventory:" title="cmdStartInventory:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdStartInventory:">&ndash;&nbsp;cmdStartInventory:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Start Inventory mEPC Tag.
-Starts the process of tag inventory using specified trigger source.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventory:(TagPresentedType)<em>tagPresentedType</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>tagPresentedType</code></th>
-						<td><p>Specify the way of triggering the RF power to read tag data.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Start Inventory mEPC Tag.
-Starts the process of tag inventory using specified trigger source.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection see-also-section">
-				<h4 class="method-subtitle">See Also</h4>
-				<ul>
-					
-					<li><code><p><a href="../Protocols/IUHFDeviceListener.html">IUHFDeviceListener</a></p></code></li>
-					
-					<li><code><p>didEventTagPresented:
-@seealso <a href="../Classes/GNPTagInfo.html">GNPTagInfo</a></p></code></li>
-					
-				</ul>
-			</div>
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdStartInventoryEx:" title="cmdStartInventoryEx:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdStartInventoryEx:">&ndash;&nbsp;cmdStartInventoryEx:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<ul>
-<li>Start inventory tags with specific encoded data type.</li>
-</ul>
-
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventoryEx:(TagDataEncodeType)<em>tagDataEncodeType</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>tagDataEncodeType</code></th>
-						<td><p>ex:tagDataEncodeType = UDC | EAN_UPC_EAS;</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<ul>
-<li>Start inventory tags with specific encoded data type.</li>
-</ul>
-
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdStopInventory" title="cmdStopInventory"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdStopInventory">&ndash;&nbsp;cmdStopInventory</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Stop Inventory mEPC Tag.
-Stops the process of tag inventory.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdStopInventory</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Stop Inventory mEPC Tag.
-Stops the process of tag inventory.</p>
 			</div>
 			
 
@@ -1838,358 +1565,6 @@ Sets the channel of hopping frequency in MHz.</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cmdWriteEPC:EPCData:" title="cmdWriteEPC:EPCData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdWriteEPC:EPCData:">&ndash;&nbsp;cmdWriteEPC:EPCData:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Write EPC</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdWriteEPC:(NSString *)<em>password</em> EPCData:(NSData *)<em>epc</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>The password of the tag.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>epc</code></th>
-						<td><p>The epc data that is going to write into tag.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Write EPC</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:" title="cmdWriteTag:MemoryBank:StartAddr:Data:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:">&ndash;&nbsp;cmdWriteTag:MemoryBank:StartAddr:Data:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Write EPC</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdWriteTag:(NSString *)<em>password</em> MemoryBank:(MemoryBank)<em>writeBank</em> StartAddr:(int)<em>startWordAddress</em> Data:(NSData *)<em>data</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Specifies the password to write data.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>writeBank</code></th>
-						<td><p>Specifies which memory bank to write.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
-						<td><p>Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>data</code></th>
-						<td><p>Specifies the data to write to memory bank.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Write EPC</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:" title="cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:">&ndash;&nbsp;cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Write EPC</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdWriteSelectTag:(NSString *)<em>epc</em> PWD:(NSString *)<em>password</em> MemoryBank:(MemoryBank)<em>writeBank</em> StartAddr:(int)<em>startWordAddress</em> Data:(NSData *)<em>data</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>epc</code></th>
-						<td><p>Specifies the tag PC EPC to be selected.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Specifies the password to write data.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>writeBank</code></th>
-						<td><p>Specifies which memory bank to write.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
-						<td><p>Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>data</code></th>
-						<td><p>Specifies the data to write to memory bank.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Write EPC</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdReadEPC:" title="cmdReadEPC:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdReadEPC:">&ndash;&nbsp;cmdReadEPC:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read EPC
-Reads tag data from given memory bank.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdReadEPC:(NSString *)<em>password</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password of the tag that is going to read. (4 byte/2 Hex String)</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read EPC
-Reads tag data from given memory bank.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:" title="cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:">&ndash;&nbsp;cmdReadTag:PWD:MemBankCode:OffSet:ReadLen:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read Tag</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)cmdReadTag:(BOOL)<em>isAnyTag</em> PWD:(NSData *)<em>pwd</em> MemBankCode:(char)<em>bmCode</em> OffSet:(NSData *)<em>offset</em> ReadLen:(NSData *)<em>readLen</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isAnyTag</code></th>
-						<td><p>Any Tag</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>pwd</code></th>
-						<td><p>Specifies the password to read data.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>bmCode</code></th>
-						<td><p>Specifies which memory bank to read.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>offset</code></th>
-						<td><p>Specifies the start word address of memory bank to read data.When read EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>readLen</code></th>
-						<td><p>Specifies the length to read from memory bank.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read Tag</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/cmdSetTagPresentRepeatInterval:Time:" title="cmdSetTagPresentRepeatInterval:Time:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cmdSetTagPresentRepeatInterval:Time:">&ndash;&nbsp;cmdSetTagPresentRepeatInterval:Time:</a></code>
 </h3>
@@ -2550,6 +1925,663 @@ Reads tag data from given memory bank.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/cmdGetFirmwareVersion" title="cmdGetFirmwareVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetFirmwareVersion">&ndash;&nbsp;cmdGetFirmwareVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Device Information
+Gets the firmware program version running on the device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetFirmwareVersion</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Device Information
+Gets the firmware program version running on the device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdStartInventory:" title="cmdStartInventory:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdStartInventory:">&ndash;&nbsp;cmdStartInventory:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start Inventory mEPC Tag.
+Starts the process of tag inventory using specified trigger source.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventory:(TagPresentedType)<em>tagPresentedType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tagPresentedType</code></th>
+						<td><p>Specify the way of triggering the RF power to read tag data.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Start Inventory mEPC Tag.
+Starts the process of tag inventory using specified trigger source.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/IUHFDeviceListener.html">IUHFDeviceListener</a></p></code></li>
+					
+					<li><code><p>didEventTagPresented:
+@seealso <a href="../Classes/GNPTagInfo.html">GNPTagInfo</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdStartInventoryEx:" title="cmdStartInventoryEx:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdStartInventoryEx:">&ndash;&nbsp;cmdStartInventoryEx:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>Start inventory tags with specific encoded data type.</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdStartInventoryEx:(TagDataEncodeType)<em>tagDataEncodeType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tagDataEncodeType</code></th>
+						<td><p>ex:tagDataEncodeType = UDC | EAN_UPC_EAS;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>Start inventory tags with specific encoded data type.</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdStopInventory" title="cmdStopInventory"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdStopInventory">&ndash;&nbsp;cmdStopInventory</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop Inventory mEPC Tag.
+Stops the process of tag inventory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdStopInventory</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stop Inventory mEPC Tag.
+Stops the process of tag inventory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdWriteEPC:EPCData:" title="cmdWriteEPC:EPCData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdWriteEPC:EPCData:">&ndash;&nbsp;cmdWriteEPC:EPCData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write EPC</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdWriteEPC:(NSString *)<em>hexAccessPassword</em> EPCData:(NSData *)<em>epcData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexAccessPassword</code></th>
+						<td><p>The password of the tag.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>epcData</code></th>
+						<td><p>The epc data that is going to write into tag.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write EPC</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:" title="cmdWriteTag:MemoryBank:StartAddr:Data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdWriteTag:MemoryBank:StartAddr:Data:">&ndash;&nbsp;cmdWriteTag:MemoryBank:StartAddr:Data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write EPC</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdWriteTag:(NSString *)<em>hexAccessPassword</em> MemoryBank:(MemoryBank)<em>memoryBank</em> StartAddr:(int)<em>startWordAddress</em> Data:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexAccessPassword</code></th>
+						<td><p>Specifies the password to write data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memoryBank</code></th>
+						<td><p>Specifies which memory bank to write.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
+						<td><p>Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Specifies the data to write to memory bank.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write EPC</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:" title="cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:">&ndash;&nbsp;cmdWriteSelectTag:PWD:MemoryBank:StartAddr:Data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Write EPC</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdWriteSelectTag:(NSString *)<em>hexSelectedPcEpc</em> PWD:(NSString *)<em>hexAccessPassword</em> MemoryBank:(MemoryBank)<em>memoryBank</em> StartAddr:(int)<em>startWordAddress</em> Data:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexSelectedPcEpc</code></th>
+						<td><p>Specifies the tag PC EPC to be selected.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexAccessPassword</code></th>
+						<td><p>Specifies the password to write data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memoryBank</code></th>
+						<td><p>Specifies which memory bank to write.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
+						<td><p>Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Specifies the data to write to memory bank.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Write EPC</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdReadEPC:" title="cmdReadEPC:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdReadEPC:">&ndash;&nbsp;cmdReadEPC:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read EPC
+Reads tag data from given memory bank.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdReadEPC:(NSString *)<em>password</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password of the tag that is going to read. (4 byte/2 Hex String)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Read EPC
+Reads tag data from given memory bank.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdReadTag:PWD:MemoryBank:StartAddr:ReadLen:" title="cmdReadTag:PWD:MemoryBank:StartAddr:ReadLen:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdReadTag:PWD:MemoryBank:StartAddr:ReadLen:">&ndash;&nbsp;cmdReadTag:PWD:MemoryBank:StartAddr:ReadLen:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read Tag</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdReadTag:(NSString *)<em>hexSelectedPcEpc</em> PWD:(NSString *)<em>hexAccessPassword</em> MemoryBank:(MemoryBank)<em>memoryBank</em> StartAddr:(int)<em>startWordAddress</em> ReadLen:(int)<em>readLength</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexSelectedPcEpc</code></th>
+						<td><p>Specifies the tag PC EPC to be selected.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexAccessPassword</code></th>
+						<td><p>Specifies the password to write data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memoryBank</code></th>
+						<td><p>Specifies which memory bank to write.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
+						<td><p>Specifies the start word address of memory bank to read data.When read EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>readLength</code></th>
+						<td><p>Specifies the length to read from memory bank.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Read Tag</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdReadTagWithPWD:MemoryBank:StartAddr:ReadLen:" title="cmdReadTagWithPWD:MemoryBank:StartAddr:ReadLen:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdReadTagWithPWD:MemoryBank:StartAddr:ReadLen:">&ndash;&nbsp;cmdReadTagWithPWD:MemoryBank:StartAddr:ReadLen:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Read Tag</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdReadTagWithPWD:(NSString *)<em>hexAccessPassword</em> MemoryBank:(MemoryBank)<em>memoryBank</em> StartAddr:(int)<em>startWordAddress</em> ReadLen:(int)<em>readLength</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexAccessPassword</code></th>
+						<td><p>Specifies the password to write data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memoryBank</code></th>
+						<td><p>Specifies which memory bank to write.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startWordAddress</code></th>
+						<td><p>Specifies the start word address of memory bank to read data.When read EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>readLength</code></th>
+						<td><p>Specifies the length to read from memory bank.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Read Tag</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/cmdLockTag:LockInfos:" title="cmdLockTag:LockInfos:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cmdLockTag:LockInfos:">&ndash;&nbsp;cmdLockTag:LockInfos:</a></code>
 </h3>
@@ -2581,7 +2613,7 @@ Reads tag data from given memory bank.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>lockInfos</code></th>
-						<td><p>The Lock Action to specified memory bank. see GNPLockInfos.h</p></td>
+						<td><p>The Lock Action to specified memory bank. see <a href="../Classes/GNPLockInfos.html">GNPLockInfos</a>.h</p></td>
 					</tr>
 				
 				</table>
@@ -2640,7 +2672,7 @@ The Access password is decided by the remote connected device.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>lockInfos</code></th>
-						<td><p>The Lock Action to specified memory bank. see GNPLockInfos.h</p></td>
+						<td><p>The Lock Action to specified memory bank. see <a href="../Classes/GNPLockInfos.html">GNPLockInfos</a>.h</p></td>
 					</tr>
 				
 				</table>
@@ -2672,6 +2704,262 @@ The Access password is decided by the remote connected device.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdKillTag:KillPWD:" title="cmdKillTag:KillPWD:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdKillTag:KillPWD:">&ndash;&nbsp;cmdKillTag:KillPWD:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Kill Tag</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdKillTag:(NSString *)<em>hexAccessPassword</em> KillPWD:(NSString *)<em>hexKillPassword</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexAccessPassword</code></th>
+						<td><p>Access Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexKillPassword</code></th>
+						<td><p>Kill Password</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Kill Tag</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdKillTag:" title="cmdKillTag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdKillTag:">&ndash;&nbsp;cmdKillTag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Kill Tag</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdKillTag:(NSString *)<em>hexKillPassword</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexKillPassword</code></th>
+						<td><p>Kill Password</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Kill Tag</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cmdGetBuzzerOperationMode:" title="cmdGetBuzzerOperationMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdGetBuzzerOperationMode:">&ndash;&nbsp;cmdGetBuzzerOperationMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Gets the repeats mode of sounding the beep with the same pattern.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdGetBuzzerOperationMode:(BOOL)<em>isTemp</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Gets the repeats mode of sounding the beep with the same pattern.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:" title="cmdSetBuzzerOperationMode:BuzzerOperationMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cmdSetBuzzerOperationMode:BuzzerOperationMode:">&ndash;&nbsp;cmdSetBuzzerOperationMode:BuzzerOperationMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
+Sets the repeats mode of sounding the beep with the same pattern.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cmdSetBuzzerOperationMode:(BOOL)<em>isTemp</em> BuzzerOperationMode:(BuzzerOperationMode)<em>bom</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>If the value is true, this setting will write into EEPROM.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bom</code></th>
+						<td><p>Buzzer Operation Mode:Specifies the repeats mode of sounding the beep with the same pattern.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+Set<a href="../Constants/BuzzerOperationMode.html">BuzzerOperationMode</a>
+Sets the repeats mode of sounding the beep with the same pattern.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -2687,7 +2975,7 @@ The Access password is decided by the remote connected device.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 GigaTms. All rights reserved. Updated: 2019-11-12</p>
+						<p class="copyright">Copyright &copy; 2020 GigaTms. All rights reserved. Updated: 2020-02-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

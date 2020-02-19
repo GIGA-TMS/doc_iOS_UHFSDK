@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>TS800 Class Reference</title>
+	<title>GNetPlus Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,15 +52,15 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/cmdInitializeSettings">- cmdInitializeSettings</option>
+		<option value="//api/name/UM800LListener">UM800LListener</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -75,16 +75,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">TS800 Class Reference</h1>
+					<h1 class="title">GNetPlus Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td><a href="../Classes/UHFDevice.html">UHFDevice</a> : <a href="../Classes/BaseDevice.html">BaseDevice</a> : NSObject</td>
+	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>TS800.h<br />TS800.m</td>
+	<td>GNetPlus.h<br />GNetPlus.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -102,8 +102,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/cmdInitializeSettings" title="cmdInitializeSettings"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cmdInitializeSettings">&ndash;&nbsp;cmdInitializeSettings</a></code>
+	<a name="//api/name/UM800LListener" title="UM800LListener"></a>
+	<h3 class="method-title"><code><a href="#//api/name/UM800LListener">&nbsp;&nbsp;UM800LListener</a></code>
 </h3>
 
 	<div class="method-info">
@@ -113,12 +113,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initialize setting of TS800, please call it after connected with remote TS800.</p>
+				<p>The &ldquo;Access Password&rdquo; part of reserve bank(For Lock command only)</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)cmdInitializeSettings</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;IUM800LListener&gt; UM800LListener</code></div>
 
 		    
 			
@@ -130,7 +130,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initialize setting of TS800, please call it after connected with remote TS800.</p>
+				<p>The &ldquo;Access Password&rdquo; part of reserve bank(For Lock command only)</p>
 			</div>
 			
 
@@ -141,7 +141,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TS800.h</code></p>
+				<p><code class="declared-in-ref">GNetPlus.h</code></p>
 			</div>
 			
 			

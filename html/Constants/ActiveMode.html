@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Control Constants Reference</title>
+	<title>ActiveMode Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">Control Constants Reference</h1>
+					<h1 class="title">ActiveMode Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GTPacketUtility.h</td>
+	<td>IUHFDeviceListener.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,29 +75,33 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">Control</h3>
+                    <h3 class="subsubtitle method-title">ActiveMode</h3>
                     
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, Control ) {<br>
+                        <code>typedef NS_ENUM(Byte, ActiveMode ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">CMD_GET</a> = 0 x00,<br>
+                            &nbsp;&nbsp; <a href="">AM_READ</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">CMD_SET</a> = 0 x01,<br>
+                            &nbsp;&nbsp; <a href="">AM_COMMAND</a> = 0 x01,<br>
                             
-                            &nbsp;&nbsp; <a href="">CMD_METHOD</a> = 0 x02,<br>
+                            &nbsp;&nbsp; <a href="">AM_TAG_ANALYSIS</a> = 0 x04,<br>
                             
-                            &nbsp;&nbsp; <a href="">CMD_NOTIFY</a> = 0 x03,<br>
+                            &nbsp;&nbsp; <a href="">AM_VERIFY</a> = 0 x05,<br>
                             
-                            &nbsp;&nbsp; <a href="">CMD_POST</a> = 0 x04,<br>
+                            &nbsp;&nbsp; <a href="">AM_ENCODE</a> = 0 x06,<br>
                             
-                            &nbsp;&nbsp; <a href="">CTRL_SECURITY</a> = 0 x20,<br>
+                            &nbsp;&nbsp; <a href="">AM_CUSTOMIZED_READ</a> = 0 x07,<br>
                             
-                            &nbsp;&nbsp; <a href="">CTRL_PACKET</a> = 0 x40,<br>
+                            &nbsp;&nbsp; <a href="">AM_DEACTIVATE</a> = 0 x08,<br>
                             
-                            &nbsp;&nbsp; <a href="">CTRL_ADDRESS</a> = 0 x80,<br>
+                            &nbsp;&nbsp; <a href="">AM_REACTIVATE</a> = 0 x09,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AM_DEACTIVATE_USER_BANK</a> = 0 x0A,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AM_REACTIVATE_USER_BANK</a> = 0 x0B,<br>
                             
                             };</code>
                     
@@ -107,82 +111,102 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="CMD_GET"></a><code>CMD_GET</code></dt>
+                            <dt><a name="" title="AM_READ"></a><code>AM_READ</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CMD_SET"></a><code>CMD_SET</code></dt>
+                            <dt><a name="" title="AM_COMMAND"></a><code>AM_COMMAND</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CMD_METHOD"></a><code>CMD_METHOD</code></dt>
+                            <dt><a name="" title="AM_TAG_ANALYSIS"></a><code>AM_TAG_ANALYSIS</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CMD_NOTIFY"></a><code>CMD_NOTIFY</code></dt>
+                            <dt><a name="" title="AM_VERIFY"></a><code>AM_VERIFY</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CMD_POST"></a><code>CMD_POST</code></dt>
+                            <dt><a name="" title="AM_ENCODE"></a><code>AM_ENCODE</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CTRL_SECURITY"></a><code>CTRL_SECURITY</code></dt>
+                            <dt><a name="" title="AM_CUSTOMIZED_READ"></a><code>AM_CUSTOMIZED_READ</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CTRL_PACKET"></a><code>CTRL_PACKET</code></dt>
+                            <dt><a name="" title="AM_DEACTIVATE"></a><code>AM_DEACTIVATE</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="CTRL_ADDRESS"></a><code>CTRL_ADDRESS</code></dt>
+                            <dt><a name="" title="AM_REACTIVATE"></a><code>AM_REACTIVATE</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AM_DEACTIVATE_USER_BANK"></a><code>AM_DEACTIVATE_USER_BANK</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AM_REACTIVATE_USER_BANK"></a><code>AM_REACTIVATE_USER_BANK</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>DataBaseCmdCode Constants Reference</title>
+	<title>GCDAsyncSocketError Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">DataBaseCmdCode Constants Reference</h1>
+					<h1 class="title">GCDAsyncSocketError Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GTPacketUtility.h</td>
+	<td>GCDAsyncSocket.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,31 +75,31 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">DataBaseCmdCode</h3>
+                    <h3 class="subsubtitle method-title">GCDAsyncSocketError</h3>
                     
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, DataBaseCmdCode ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, GCDAsyncSocketError ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">Get_TableInformation</a> = 0 x50,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketNoError</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">Open_Table</a> = 0 x51,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketBadConfigError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Close_Table</a> = 0 x52,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketBadParamError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Get_Record_Count</a> = 0 x53,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketConnectTimeoutError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Get_Records</a> = 0 x54,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketReadTimeoutError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Add_Record</a> = 0 x55,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketWriteTimeoutError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Update_Record</a> = 0 x56,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketReadMaxedOutError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Delete_Records</a> = 0 x57,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketClosedError</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">Recover_Records</a> = 0 x58,<br>
+                            &nbsp;&nbsp; <a href="">GCDAsyncSocketOtherError</a>,<br>
                             
                             };</code>
                     
@@ -109,92 +109,92 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="Get_TableInformation"></a><code>Get_TableInformation</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketNoError"></a><code>GCDAsyncSocketNoError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Open_Table"></a><code>Open_Table</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketBadConfigError"></a><code>GCDAsyncSocketBadConfigError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Close_Table"></a><code>Close_Table</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketBadParamError"></a><code>GCDAsyncSocketBadParamError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Get_Record_Count"></a><code>Get_Record_Count</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketConnectTimeoutError"></a><code>GCDAsyncSocketConnectTimeoutError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Get_Records"></a><code>Get_Records</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketReadTimeoutError"></a><code>GCDAsyncSocketReadTimeoutError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Add_Record"></a><code>Add_Record</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketWriteTimeoutError"></a><code>GCDAsyncSocketWriteTimeoutError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Update_Record"></a><code>Update_Record</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketReadMaxedOutError"></a><code>GCDAsyncSocketReadMaxedOutError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Delete_Records"></a><code>Delete_Records</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketClosedError"></a><code>GCDAsyncSocketClosedError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="Recover_Records"></a><code>Recover_Records</code></dt>
+                            <dt><a name="" title="GCDAsyncSocketOtherError"></a><code>GCDAsyncSocketOtherError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GTPacketUtility.h</code>.
+		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
 	</p>
 	
 </dd>

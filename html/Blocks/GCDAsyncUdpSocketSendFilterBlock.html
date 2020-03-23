@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>UdcOutputDataType Constants Reference</title>
+	<title>GCDAsyncUdpSocketSendFilterBlock Block Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">UdcOutputDataType Constants Reference</h1>
+					<h1 class="title">GCDAsyncUdpSocketSendFilterBlock Block Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GNPDecodedTagData.h</td>
+	<td>GCDAsyncUdpSocket.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,53 +75,56 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">UdcOutputDataType</h3>
                     
-                    <div class="section">
-                        <!-- display enum values -->
-                        
-                        <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(Byte, UdcOutputDataType ) {<br>
-                            
-                            &nbsp;&nbsp; <a href="">BCD</a> = 0 x00,<br>
-                            
-                            &nbsp;&nbsp; <a href="">UDC_ASCII</a> = 0 x01,<br>
-                            
-                            };</code>
-                    
-                    </div>
-                    
-                    <div class="section section-methods">
-                        <h4 class="method-subtitle">Constants</h4>
-                        <dl class="termdef">
-                            
-                            <dt><a name="" title="BCD"></a><code>BCD</code></dt>
-<dd>
+          
+          <a title="Block Definition" name="instance_methods"></a>
+          <h4 class="method-subtitle parameter-title">Block Definition</h4>
+          <h3 class="subsubtitle method-title">GCDAsyncUdpSocketSendFilterBlock</h3>
 
-    
-	<p>
-		Declared In <code class="declared-in-ref">GNPDecodedTagData.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="UDC_ASCII"></a><code>UDC_ASCII</code></dt>
-<dd>
 
-    
-	<p>
-		Declared In <code class="declared-in-ref">GNPDecodedTagData.h</code>.
-	</p>
-	
-</dd>
-                            
-                        </dl>
-                    </div>
-                    
+<div class="method-subsection brief-description">
+  <p>You may optionally set a send filter for the socket.
+A filter can provide several interesting possibilities:</p>
+</div>
 
-                    
-                    
-                    
+
+
+<code>typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock) (NSData *data, NSData *address, long tag)</code>
+  
+  
+  
+  <div class="method-subsection discussion-section">
+  <h4 class="method-subtitle">Discussion</h4>
+  <p>You may optionally set a send filter for the socket.
+A filter can provide several interesting possibilities:</p>
+
+<ol>
+<li><p>Optional caching of resolved addresses for domain names.
+The cache could later be consulted, resulting in fewer system calls to getaddrinfo.</p></li>
+<li><p>Reusable modules of code for bandwidth monitoring.</p></li>
+<li><p>Sometimes traffic shapers are needed to simulate real world environments.
+A filter allows you to write custom code to simulate such environments.
+The ability to code this yourself is especially helpful when your simulated environment
+is more complicated than simple traffic shaping (e.g. simulating a cone port restricted router),
+or the system tools to handle this aren&rsquo;t available (e.g. on a mobile device).</p></li>
+</ol>
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="method-subsection declared-in-section">
+  <h4 class="method-subtitle">Declared In</h4>
+  <code class="declared-in-ref">GCDAsyncUdpSocket.h</code><br />
+  </div>
+  
+  
           
 				</main>
 

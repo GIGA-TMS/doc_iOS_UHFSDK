@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GTDevConnStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GTDevConnStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevConntPwdError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DevConntPwdError</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevConntError</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DevConntError</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevDisconnected</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DevDisconnected</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevConnecting</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DevConnecting</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevConnected</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DevConnected</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/ApplicationCmdCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/ApplicationCmdCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Broadcast_Ethernet_Device</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Broadcast_Ethernet_Device</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Output_AccountAndPassword</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Output_AccountAndPassword</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="23"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

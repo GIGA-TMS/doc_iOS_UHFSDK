@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PostDataDelimiter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PostDataDelimiter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_NONE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PDD_NONE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PDD_CARRIAGE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_LINE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PDD_LINE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE_LINE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PDD_CARRIAGE_LINE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_TAB</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PDD_TAB</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

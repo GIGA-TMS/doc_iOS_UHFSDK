@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>GIGATMSSDK</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="60"/>
+                        <NodeRef refid="61"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>BaseDevice</Name>
+            <Path>Classes/BaseDevice.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/BaseDevice.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/BaseDevice.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/BaseDevice.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>GCDAsyncReadPacket</Name>
+            <Path>Classes/GCDAsyncReadPacket.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCDAsyncReadPacket.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCDAsyncReadPacket.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCDAsyncReadPacket.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>GCDAsyncSocket</Name>
+            <Path>Classes/GCDAsyncSocket.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCDAsyncSocket.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCDAsyncSocket.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GCDAsyncSocket.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCDAsyncSocket.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCDAsyncSocket.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>GCDAsyncSocketPreBuffer</Name>
+            <Path>Classes/GCDAsyncSocketPreBuffer.html</Path>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>GCDAsyncSpecialPacket</Name>
+            <Path>Classes/GCDAsyncSpecialPacket.html</Path>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>GCDAsyncUdpSendPacket</Name>
+            <Path>Classes/GCDAsyncUdpSendPacket.html</Path>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>GCDAsyncUdpSocket</Name>
+            <Path>Classes/GCDAsyncUdpSocket.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GCDAsyncUdpSocket.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GCDAsyncUdpSocket.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCDAsyncUdpSocket.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/GCDAsyncUdpSocket.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>GCDAsyncWritePacket</Name>
+            <Path>Classes/GCDAsyncWritePacket.html</Path>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>GNPDecodedTagData</Name>
+            <Path>Classes/GNPDecodedTagData.html</Path>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>GNPTagInfo</Name>
+            <Path>Classes/GNPTagInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GNPTagInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GNPTagInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GNPTagInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>GNetPlus</Name>
+            <Path>Classes/GNetPlus.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/GNetPlus.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/GNetPlus.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/GNetPlus.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>TS100</Name>
+            <Path>Classes/TS100.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TS100.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TS100.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TS100.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>TS800</Name>
+            <Path>Classes/TS800.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TS800.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TS800.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TS800.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>UHFDevice</Name>
+            <Path>Classes/UHFDevice.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UHFDevice.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UHFDevice.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/UHFDevice.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UHFDevice.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>UHFScanner</Name>
+            <Path>Classes/UHFScanner.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UHFScanner.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UHFScanner.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UHFScanner.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>UR0250</Name>
+            <Path>Classes/UR0250.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/UR0250.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/UR0250.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/UR0250.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="17" type="file" documentType="reference">
+            <Name>DevConnectionCallback</Name>
+            <Path>Protocols/DevConnectionCallback.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/DevConnectionCallback.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/DevConnectionCallback.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/DevConnectionCallback.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>GCDAsyncSocketDelegate</Name>
+            <Path>Protocols/GCDAsyncSocketDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/GCDAsyncSocketDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/GCDAsyncSocketDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/GCDAsyncSocketDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>GCDAsyncUdpSocketDelegate</Name>
+            <Path>Protocols/GCDAsyncUdpSocketDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/GCDAsyncUdpSocketDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/GCDAsyncUdpSocketDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/GCDAsyncUdpSocketDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>IUHFDeviceListener</Name>
+            <Path>Protocols/IUHFDeviceListener.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/IUHFDeviceListener.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/IUHFDeviceListener.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/IUHFDeviceListener.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>UHFScannerCallback</Name>
+            <Path>Protocols/UHFScannerCallback.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/UHFScannerCallback.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/UHFScannerCallback.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/UHFScannerCallback.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="22" type="file" documentType="reference">
+            <Name>ActiveMode</Name>
+            <Path>Constants/ActiveMode.html</Path>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>ApplicationCmdCode</Name>
+            <Path>Constants/ApplicationCmdCode.html</Path>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>BuzzerOperationMode</Name>
+            <Path>Constants/BuzzerOperationMode.html</Path>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>CMDFormat</Name>
+            <Path>Constants/CMDFormat.html</Path>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>CommonCmdCode</Name>
+            <Path>Constants/CommonCmdCode.html</Path>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>CompanyPrefixLength</Name>
+            <Path>Constants/CompanyPrefixLength.html</Path>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>Control</Name>
+            <Path>Constants/Control.html</Path>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>DataBaseCmdCode</Name>
+            <Path>Constants/DataBaseCmdCode.html</Path>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>EanUpcOutputDataType</Name>
+            <Path>Constants/EanUpcOutputDataType.html</Path>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>EpcHeader</Name>
+            <Path>Constants/EpcHeader.html</Path>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>ErrorCode</Name>
+            <Path>Constants/ErrorCode.html</Path>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>EventType</Name>
+            <Path>Constants/EventType.html</Path>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>Filter</Name>
+            <Path>Constants/Filter.html</Path>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>FindTagAction</Name>
+            <Path>Constants/FindTagAction.html</Path>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>GTClassCode</Name>
+            <Path>Constants/GTClassCode.html</Path>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>GTConnectType</Name>
+            <Path>Constants/GTConnectType.html</Path>
+            
+        </Node>
+		<Node id="38" type="file" documentType="reference">
+            <Name>GTDevConnStatus</Name>
+            <Path>Constants/GTDevConnStatus.html</Path>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>InfoOutputDataType</Name>
+            <Path>Constants/InfoOutputDataType.html</Path>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>InputDecodeType</Name>
+            <Path>Constants/InputDecodeType.html</Path>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>KeyboardSimulation</Name>
+            <Path>Constants/KeyboardSimulation.html</Path>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>LockAction</Name>
+            <Path>Constants/LockAction.html</Path>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
+            <Name>MemoryBank</Name>
+            <Path>Constants/MemoryBank.html</Path>
+            
+        </Node>
+		<Node id="44" type="file" documentType="reference">
+            <Name>MemoryBankSelection</Name>
+            <Path>Constants/MemoryBankSelection.html</Path>
+            
+        </Node>
+		<Node id="45" type="file" documentType="reference">
+            <Name>OutputInterface</Name>
+            <Path>Constants/OutputInterface.html</Path>
+            
+        </Node>
+		<Node id="46" type="file" documentType="reference">
+            <Name>PostDataDelimiter</Name>
+            <Path>Constants/PostDataDelimiter.html</Path>
+            
+        </Node>
+		<Node id="47" type="file" documentType="reference">
+            <Name>ProtocolType</Name>
+            <Path>Constants/ProtocolType.html</Path>
+            
+        </Node>
+		<Node id="48" type="file" documentType="reference">
+            <Name>RfSensitivityLevel</Name>
+            <Path>Constants/RfSensitivityLevel.html</Path>
+            
+        </Node>
+		<Node id="49" type="file" documentType="reference">
+            <Name>SEC_BLK_TYPE</Name>
+            <Path>Constants/SEC_BLK_TYPE.html</Path>
+            
+        </Node>
+		<Node id="50" type="file" documentType="reference">
+            <Name>SecurityCmdCode</Name>
+            <Path>Constants/SecurityCmdCode.html</Path>
+            
+        </Node>
+		<Node id="51" type="file" documentType="reference">
+            <Name>Session</Name>
+            <Path>Constants/Session.html</Path>
+            
+        </Node>
+		<Node id="52" type="file" documentType="reference">
+            <Name>SoftwareAPINameCode</Name>
+            <Path>Constants/SoftwareAPINameCode.html</Path>
+            
+        </Node>
+		<Node id="53" type="file" documentType="reference">
+            <Name>TS100SpecialCode</Name>
+            <Path>Constants/TS100SpecialCode.html</Path>
+            
+        </Node>
+		<Node id="54" type="file" documentType="reference">
+            <Name>TagDataEncodeType</Name>
+            <Path>Constants/TagDataEncodeType.html</Path>
+            
+        </Node>
+		<Node id="55" type="file" documentType="reference">
+            <Name>TagOutputDataType</Name>
+            <Path>Constants/TagOutputDataType.html</Path>
+            
+        </Node>
+		<Node id="56" type="file" documentType="reference">
+            <Name>Target</Name>
+            <Path>Constants/Target.html</Path>
+            
+        </Node>
+		<Node id="57" type="file" documentType="reference">
+            <Name>TriggerType</Name>
+            <Path>Constants/TriggerType.html</Path>
+            
+        </Node>
+		<Node id="58" type="file" documentType="reference">
+            <Name>UdcOutputDataType</Name>
+            <Path>Constants/UdcOutputDataType.html</Path>
+            
+        </Node>
+		<Node id="59" type="file" documentType="reference">
+            <Name>_TS100_EEPROM_Address</Name>
+            <Path>Constants/_TS100_EEPROM_Address.html</Path>
+            
+        </Node>
+		
+        <Node id="60" type="file" documentType="reference">
+            <Name>GCDAsyncUdpSocketReceiveFilterBlock</Name>
+            <Path>Blocks/GCDAsyncUdpSocketReceiveFilterBlock.html</Path>
+            
+        </Node>
+        <Node id="61" type="file" documentType="reference">
+            <Name>GCDAsyncUdpSocketSendFilterBlock</Name>
+            <Path>Blocks/GCDAsyncUdpSocketSendFilterBlock.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

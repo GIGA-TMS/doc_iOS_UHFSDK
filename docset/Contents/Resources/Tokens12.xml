@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TS100.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TS100</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdInitializeSettings</TokenIdentifier>
+			<Abstract type="html">Initialize setting of TS100, please call it after connected with remote TS100.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdInitializeSettings</Declaration>
+			
+			
+			<Anchor>//api/name/cmdInitializeSettings</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetFilter:</TokenIdentifier>
+			<Abstract type="html">Get Filter</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetFilter:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdGetFilter:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdSetFilter:TagDataEncodeType:</TokenIdentifier>
+			<Abstract type="html">Set Filters</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdSetFilter:(BOOL)isTemp TagDataEncodeType:(TagDataEncodeType)filterTypes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>filterTypes</Name>
+					<Abstract type="html">Specifies the decoded type for reading tag data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdSetFilter:TagDataEncodeType:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetPostDataDelimiterAndMemoryBankSelection:</TokenIdentifier>
+			<Abstract type="html">Get Post Data Delimiter &amp;amp; Memory Bank Selection setting.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetPostDataDelimiterAndMemoryBankSelection:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdGetPostDataDelimiterAndMemoryBankSelection:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdSet:PostDataDelimiter:MemoryBankSelection:</TokenIdentifier>
+			<Abstract type="html">Set Post Data Delimiter</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdSet:(BOOL)isTemp PostDataDelimiter:(PostDataDelimiter)postDataDelimiter MemoryBankSelection:(MemoryBankSelection)memoryBankSelections</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>postDataDelimiter</Name>
+					<Abstract type="html">Specifies the delimiter append to the end of output data.</Abstract>
+				</Parameter><Parameter>
+					<Name>memoryBankSelections</Name>
+					<Abstract type="html">Memory Bank Selections setting.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdSet:PostDataDelimiter:MemoryBankSelection:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdStartInventoryEx</TokenIdentifier>
+			<Abstract type="html">Start inventory tags with specific encoded data type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdStartInventoryEx</Declaration>
+			
+			
+			<Anchor>//api/name/cmdStartInventoryEx</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetEventType:</TokenIdentifier>
+			<Abstract type="html">Gets the event command type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetEventType:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdGetEventType:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdSet:EventType:</TokenIdentifier>
+			<Abstract type="html">Sets the event command type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdSet:(BOOL)isTemp EventType:(EventType)eventType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>eventType</Name>
+					<Abstract type="html">The type for the event command.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdSet:EventType:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetOutputInterface:</TokenIdentifier>
+			<Abstract type="html">Gets the data output interface.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetOutputInterface:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdGetOutputInterface:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdSet:KeyboardSimulation:OutputInterface:</TokenIdentifier>
+			<Abstract type="html">Set the data output interface.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdSet:(BOOL)isTemp KeyboardSimulation:(KeyboardSimulation)keyboardSimulation OutputInterface:(OutputInterface)outputInterface</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyboardSimulation</Name>
+					<Abstract type="html">Keyboard Simulation</Abstract>
+				</Parameter><Parameter>
+					<Name>outputInterface</Name>
+					<Abstract type="html">The set of data output interface. also can &apos;outputInterface = OIHIDNVCOM | OIBLE;&apos;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdSet:KeyboardSimulation:OutputInterface:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetBleRomVersion</TokenIdentifier>
+			<Abstract type="html">Get Device BLE module
+Gets the firmware program version running on the device BLE module.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetBleRomVersion</Declaration>
+			
+			
+			<Anchor>//api/name/cmdGetBleRomVersion</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetBleDeviceName</TokenIdentifier>
+			<Abstract type="html">Get Device BLE Neme</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetBleDeviceName</Declaration>
+			
+			
+			<Anchor>//api/name/cmdGetBleDeviceName</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdSetBleDeviceName:</TokenIdentifier>
+			<Abstract type="html">Set Device BLE Neme</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdSetBleDeviceName:(NSString *)devName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>devName</Name>
+					<Abstract type="html">Device BLE Neme</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdSetBleDeviceName:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdGetBuzzerOperationMode:</TokenIdentifier>
+			<Abstract type="html">Only for TS100
+Gets the repeats mode of sounding the beep with the same pattern.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdGetBuzzerOperationMode:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">If the value is true, this setting will write into EEPROM.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdGetBuzzerOperationMode:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdSet:BuzzerOperationMode:</TokenIdentifier>
+			<Abstract type="html">Only for TS100
+SetBuzzerOperationMode
+Sets the repeats mode of sounding the beep with the same pattern.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdSet:(BOOL)isTemp BuzzerOperationMode:(BuzzerOperationMode)bom</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">If the value is true, this setting will write into EEPROM.</Abstract>
+				</Parameter><Parameter>
+					<Name>bom</Name>
+					<Abstract type="html">Buzzer Operation Mode:Specifies the repeats mode of sounding the beep with the same pattern.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdSet:BuzzerOperationMode:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdControlBuzzer:</TokenIdentifier>
+			<Abstract type="html">Only for TS100
+Control reader to make a specified sound beep.</Abstract>
+			<DeclaredIn>TS100.m</DeclaredIn>
+			
+			<Declaration>- (void)cmdControlBuzzer:(BuzzerAction)buzzerAct</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buzzerCtrl</Name>
+					<Abstract type="html">buzzerMode</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdControlBuzzer:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

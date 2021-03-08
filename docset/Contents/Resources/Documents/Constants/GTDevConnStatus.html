@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>GCDAsyncUdpSocketError Constants Reference</title>
+	<title>GTDevConnStatus Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -18,7 +18,7 @@
 			</h1>
 
 			<p id="developer-home">
-				<a href="../index.html">GigaTms</a>
+				<a href="../index.html">GIGATMS.INC</a>
 			</p>
 			
 		</div>
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">GCDAsyncUdpSocketError Constants Reference</h1>
+					<h1 class="title">GTDevConnStatus Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GCDAsyncUdpSocket.h</td>
+	<td>GTCommonHeader.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,25 +75,23 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">GCDAsyncUdpSocketError</h3>
+                    <h3 class="subsubtitle method-title">GTDevConnStatus</h3>
                     
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSInteger, GCDAsyncUdpSocketError ) {<br>
+                        <code>typedef NS_ENUM(int, GTDevConnStatus ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncUdpSocketNoError</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">DevConntPwdError</a> = -2,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncUdpSocketBadConfigError</a>,<br>
+                            &nbsp;&nbsp; <a href="">DevConntError</a> = -1,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncUdpSocketBadParamError</a>,<br>
+                            &nbsp;&nbsp; <a href="">DevDisconnected</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncUdpSocketSendTimeoutError</a>,<br>
+                            &nbsp;&nbsp; <a href="">DevConnecting</a> = 1,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncUdpSocketClosedError</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">GCDAsyncUdpSocketOtherError</a>,<br>
+                            &nbsp;&nbsp; <a href="">DevConnected</a> = 2,<br>
                             
                             };</code>
                     
@@ -103,62 +101,52 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="GCDAsyncUdpSocketNoError"></a><code>GCDAsyncUdpSocketNoError</code></dt>
+                            <dt><a name="" title="DevConntPwdError"></a><code>DevConntPwdError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncUdpSocket.h</code>.
+		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncUdpSocketBadConfigError"></a><code>GCDAsyncUdpSocketBadConfigError</code></dt>
+                            <dt><a name="" title="DevConntError"></a><code>DevConntError</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncUdpSocket.h</code>.
+		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncUdpSocketBadParamError"></a><code>GCDAsyncUdpSocketBadParamError</code></dt>
+                            <dt><a name="" title="DevDisconnected"></a><code>DevDisconnected</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncUdpSocket.h</code>.
+		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncUdpSocketSendTimeoutError"></a><code>GCDAsyncUdpSocketSendTimeoutError</code></dt>
+                            <dt><a name="" title="DevConnecting"></a><code>DevConnecting</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncUdpSocket.h</code>.
+		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncUdpSocketClosedError"></a><code>GCDAsyncUdpSocketClosedError</code></dt>
+                            <dt><a name="" title="DevConnected"></a><code>DevConnected</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncUdpSocket.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="GCDAsyncUdpSocketOtherError"></a><code>GCDAsyncUdpSocketOtherError</code></dt>
-<dd>
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncUdpSocket.h</code>.
+		Declared In <code class="declared-in-ref">GTCommonHeader.h</code>.
 	</p>
 	
 </dd>
@@ -176,7 +164,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 GigaTms. All rights reserved. Updated: 2020-03-19</p>
+						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-08</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

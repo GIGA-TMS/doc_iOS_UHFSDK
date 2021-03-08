@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/DataBaseCmdCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/DataBaseCmdCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Get_TableInformation</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Get_TableInformation</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Open_Table</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Open_Table</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Close_Table</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Close_Table</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Get_Record_Count</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Get_Record_Count</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Get_Records</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Get_Records</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Add_Record</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Add_Record</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Update_Record</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Update_Record</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Delete_Records</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Delete_Records</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Recover_Records</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Recover_Records</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

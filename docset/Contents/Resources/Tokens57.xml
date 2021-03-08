@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TriggerType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TriggerType</TokenIdentifier>
+			<Abstract type="html">TriggerType</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Command</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Command</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="57"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DigitalInput</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DigitalInput</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="57"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Sensor</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Sensor</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="57"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SensorAndDigitalInput</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SensorAndDigitalInput</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="57"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UHFScanner.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UHFScanner</TokenIdentifier>
+			<Abstract type="html">UHFScanner scans UHF Device.</Abstract>
+			<DeclaredIn>UHFScanner.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFScanner/changeClassVer:</TokenIdentifier>
+			<Abstract type="html">start Scan Device</Abstract>
+			<DeclaredIn>UHFScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)changeClassVer:(Byte)classVer</Declaration>
+			
+			
+			<Anchor>//api/name/changeClassVer:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BaseDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BaseDevice</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseDevice/getDevInfo</TokenIdentifier>
+			<Abstract type="html">Description</Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+			
+			<Declaration>- (GTBaseDevInfo *)getDevInfo</Declaration>
+			
+			<ReturnValue><Abstract type="html">Device Info</Abstract></ReturnValue>
+			<Anchor>//api/name/getDevInfo</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseDevice/initBluetooth</TokenIdentifier>
+			<Abstract type="html">Description
+https://forums.developer.apple.com/thread/54510</Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)initBluetooth</Declaration>
+			
+			
+			<Anchor>//api/name/initBluetooth</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GNPTagInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GNPTagInfo</TokenIdentifier>
+			<Abstract type="html">Tag Information Format</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNPTagInfo/setRSSI:</TokenIdentifier>
+			<Abstract type="html">Presents the Received Signal Strength Indicator of reading tag.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int RSSI</Declaration>
+			
+			
+			<Anchor>//api/name/RSSI</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNPTagInfo/RSSI</TokenIdentifier>
+			<Abstract type="html">Presents the Received Signal Strength Indicator of reading tag.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int RSSI</Declaration>
+			
+			
+			<Anchor>//api/name/RSSI</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GNPTagInfo/RSSI</TokenIdentifier>
+			<Abstract type="html">Presents the Received Signal Strength Indicator of reading tag.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int RSSI</Declaration>
+			
+			
+			<Anchor>//api/name/RSSI</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNPTagInfo/setEPCHexString:</TokenIdentifier>
+			<Abstract type="html">Presents the PC, EPC ID In HEX String.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *EPCHexString</Declaration>
+			
+			
+			<Anchor>//api/name/EPCHexString</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNPTagInfo/EPCHexString</TokenIdentifier>
+			<Abstract type="html">Presents the PC, EPC ID In HEX String.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *EPCHexString</Declaration>
+			
+			
+			<Anchor>//api/name/EPCHexString</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GNPTagInfo/EPCHexString</TokenIdentifier>
+			<Abstract type="html">Presents the PC, EPC ID In HEX String.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *EPCHexString</Declaration>
+			
+			
+			<Anchor>//api/name/EPCHexString</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNPTagInfo/setTIDHexString:</TokenIdentifier>
+			<Abstract type="html">Presents the TID In HEX String.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nullable) NSString *TIDHexString</Declaration>
+			
+			
+			<Anchor>//api/name/TIDHexString</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNPTagInfo/TIDHexString</TokenIdentifier>
+			<Abstract type="html">Presents the TID In HEX String.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nullable) NSString *TIDHexString</Declaration>
+			
+			
+			<Anchor>//api/name/TIDHexString</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GNPTagInfo/TIDHexString</TokenIdentifier>
+			<Abstract type="html">Presents the TID In HEX String.</Abstract>
+			<DeclaredIn>GNPTagInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nullable) NSString *TIDHexString</Declaration>
+			
+			
+			<Anchor>//api/name/TIDHexString</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

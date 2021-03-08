@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EventType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EventType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresented</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ET_TagPresented</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedWithRemoved</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ET_TagPresentedWithRemoved</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedEx</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ET_TagPresentedEx</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

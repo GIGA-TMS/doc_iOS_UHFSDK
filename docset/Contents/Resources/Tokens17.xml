@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DevConnectionCallback.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DevConnectionCallback</TokenIdentifier>
+			<Abstract type="html">The callback protocol getting communication state from remote device.</Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DevConnectionCallback/didUpdateConnectionStatus:Status:err_code:</TokenIdentifier>
+			<Abstract type="html">A callback that get the connection status between local and remote.</Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)didUpdateConnectionStatus:(BaseDevice *)dev Status:(GTDevConnStatus)connectedState err_code:(int)nErrCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dev</Name>
+					<Abstract type="html">The remote device.</Abstract>
+				</Parameter><Parameter>
+					<Name>connectedState</Name>
+					<Abstract type="html">Connection state between local and remote.</Abstract>
+				</Parameter><Parameter>
+					<Name>nErrCode</Name>
+					<Abstract type="html">The error code, see ErrorCode.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didUpdateConnectionStatus:Status:err_code:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

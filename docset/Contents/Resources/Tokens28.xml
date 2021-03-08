@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/Control.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/Control</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_GET</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CMD_GET</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_SET</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CMD_SET</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_METHOD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CMD_METHOD</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_NOTIFY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CMD_NOTIFY</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_POST</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CMD_POST</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CTRL_SECURITY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CTRL_SECURITY</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CTRL_PACKET</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CTRL_PACKET</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CTRL_ADDRESS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CTRL_ADDRESS</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CompanyPrefixLength.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CompanyPrefixLength</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_6</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_6</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_7</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_7</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_8</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_8</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_9</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_9</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_10</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_10</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_11</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_11</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_12</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DIGITS_12</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

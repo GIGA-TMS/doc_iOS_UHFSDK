@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/InputDecodeType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/InputDecodeType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TAG_DATA</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TAG_DATA</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="40"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UDC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UDC</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="40"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EAN_UPC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EAN_UPC</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="40"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/INFO</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>INFO</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="40"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

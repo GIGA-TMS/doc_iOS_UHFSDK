@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UR0250.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UR0250</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UR0250/cmdInitializeSettings</TokenIdentifier>
+			<Abstract type="html">Initialize setting of UR0250, please call it after connected with remote UR0250.</Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdInitializeSettings</Declaration>
+			
+			
+			<Anchor>//api/name/cmdInitializeSettings</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

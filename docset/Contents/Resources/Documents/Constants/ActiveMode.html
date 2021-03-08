@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>GCDAsyncSocketError Constants Reference</title>
+	<title>ActiveMode Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -18,7 +18,7 @@
 			</h1>
 
 			<p id="developer-home">
-				<a href="../index.html">GigaTms</a>
+				<a href="../index.html">GIGATMS.INC</a>
 			</p>
 			
 		</div>
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">GCDAsyncSocketError Constants Reference</h1>
+					<h1 class="title">ActiveMode Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>GCDAsyncSocket.h</td>
+	<td>IUHFDeviceListener.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,31 +75,33 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">GCDAsyncSocketError</h3>
+                    <h3 class="subsubtitle method-title">ActiveMode</h3>
                     
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSInteger, GCDAsyncSocketError ) {<br>
+                        <code>typedef NS_ENUM(Byte, ActiveMode ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketNoError</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">AM_READ</a> = 0 x00,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketBadConfigError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_COMMAND</a> = 0 x01,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketBadParamError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_TAG_ANALYSIS</a> = 0 x04,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketConnectTimeoutError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_VERIFY</a> = 0 x05,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketReadTimeoutError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_ENCODE</a> = 0 x06,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketWriteTimeoutError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_CUSTOMIZED_READ</a> = 0 x07,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketReadMaxedOutError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_DEACTIVATE</a> = 0 x08,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketClosedError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_REACTIVATE</a> = 0 x09,<br>
                             
-                            &nbsp;&nbsp; <a href="">GCDAsyncSocketOtherError</a>,<br>
+                            &nbsp;&nbsp; <a href="">AM_DEACTIVATE_USER_BANK</a> = 0 x0A,<br>
+                            
+                            &nbsp;&nbsp; <a href="">AM_REACTIVATE_USER_BANK</a> = 0 x0B,<br>
                             
                             };</code>
                     
@@ -109,92 +111,102 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="GCDAsyncSocketNoError"></a><code>GCDAsyncSocketNoError</code></dt>
+                            <dt><a name="" title="AM_READ"></a><code>AM_READ</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketBadConfigError"></a><code>GCDAsyncSocketBadConfigError</code></dt>
+                            <dt><a name="" title="AM_COMMAND"></a><code>AM_COMMAND</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketBadParamError"></a><code>GCDAsyncSocketBadParamError</code></dt>
+                            <dt><a name="" title="AM_TAG_ANALYSIS"></a><code>AM_TAG_ANALYSIS</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketConnectTimeoutError"></a><code>GCDAsyncSocketConnectTimeoutError</code></dt>
+                            <dt><a name="" title="AM_VERIFY"></a><code>AM_VERIFY</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketReadTimeoutError"></a><code>GCDAsyncSocketReadTimeoutError</code></dt>
+                            <dt><a name="" title="AM_ENCODE"></a><code>AM_ENCODE</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketWriteTimeoutError"></a><code>GCDAsyncSocketWriteTimeoutError</code></dt>
+                            <dt><a name="" title="AM_CUSTOMIZED_READ"></a><code>AM_CUSTOMIZED_READ</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketReadMaxedOutError"></a><code>GCDAsyncSocketReadMaxedOutError</code></dt>
+                            <dt><a name="" title="AM_DEACTIVATE"></a><code>AM_DEACTIVATE</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketClosedError"></a><code>GCDAsyncSocketClosedError</code></dt>
+                            <dt><a name="" title="AM_REACTIVATE"></a><code>AM_REACTIVATE</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="GCDAsyncSocketOtherError"></a><code>GCDAsyncSocketOtherError</code></dt>
+                            <dt><a name="" title="AM_DEACTIVATE_USER_BANK"></a><code>AM_DEACTIVATE_USER_BANK</code></dt>
 <dd>
 
     
 	<p>
-		Declared In <code class="declared-in-ref">GCDAsyncSocket.h</code>.
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="AM_REACTIVATE_USER_BANK"></a><code>AM_REACTIVATE_USER_BANK</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">IUHFDeviceListener.h</code>.
 	</p>
 	
 </dd>
@@ -212,7 +224,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 GigaTms. All rights reserved. Updated: 2020-03-19</p>
+						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-08</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

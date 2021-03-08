@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/MemoryBank.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/MemoryBank</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBC_Reserve</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBC_Reserve</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="43"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBC_EPC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBC_EPC</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="43"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBC_TID</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBC_TID</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="43"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBC_UserMemory</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBC_UserMemory</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="43"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBC_KILL_PASSWORD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBC_KILL_PASSWORD</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="43"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBC_ACCESS_PASSWORD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBC_ACCESS_PASSWORD</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="43"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

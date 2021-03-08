@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EpcHeader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EpcHeader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BaseTagData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EPC_SGTIN96</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EPC_SGTIN96</Declaration>
+            
+            <DeclaredIn>BaseTagData.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EPC_EAS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EPC_EAS</Declaration>
+            
+            <DeclaredIn>BaseTagData.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EPC_UDC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EPC_UDC</Declaration>
+            
+            <DeclaredIn>BaseTagData.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

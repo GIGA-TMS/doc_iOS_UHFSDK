@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GCDAsyncSpecialPacket.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncSpecialPacket</TokenIdentifier>
+			<Abstract type="html">The GCDAsyncSpecialPacket encompasses special instructions for interruptions in the read/write queues.
+This class my be altered to support more than just TLS in the future.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

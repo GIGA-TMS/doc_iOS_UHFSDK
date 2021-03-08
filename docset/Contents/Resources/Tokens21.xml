@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UHFScannerCallback.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UHFScannerCallback</TokenIdentifier>
+			<Abstract type="html">The callback protocol getting scanning operation result.</Abstract>
+			<DeclaredIn>UHFScanner.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHFScannerCallback/didScanStop</TokenIdentifier>
+			<Abstract type="html">This method is called when scanning operation is stopped.</Abstract>
+			<DeclaredIn>UHFScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)didScanStop</Declaration>
+			
+			
+			<Anchor>//api/name/didScanStop</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHFScannerCallback/didDiscoverDevice:</TokenIdentifier>
+			<Abstract type="html">This method is called when a device is scanned.</Abstract>
+			<DeclaredIn>UHFScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)didDiscoverDevice:(BaseDevice *)dev</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dev</Name>
+					<Abstract type="html">The device which is discovered.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didDiscoverDevice:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHFScannerCallback/didError:</TokenIdentifier>
+			<Abstract type="html">This method is called when an erro is happended.</Abstract>
+			<DeclaredIn>UHFScanner.h</DeclaredIn>
+			
+			<Declaration>- (void)didError:(NSString *)strError</Declaration>
+			
+			
+			<Anchor>//api/name/didError:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

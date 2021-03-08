@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/Session.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/Session</TokenIdentifier>
+			<Abstract type="html">Session</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/S0</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>S0</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="51"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/S1</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>S1</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="51"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/S2</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>S2</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="51"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/S3</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>S3</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="51"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Session_SL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Session_SL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="51"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

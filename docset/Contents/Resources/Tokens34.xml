@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/Filter.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/Filter</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ALL_OTHERS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ALL_OTHERS</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/POS_TRADE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>POS_TRADE</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TRANSPORT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TRANSPORT</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RESERVED_3</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>RESERVED_3</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/HANDLING</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>HANDLING</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RESERVED_5</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>RESERVED_5</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UNIT_LOAD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UNIT_LOAD</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UNIT_INSIDE_TRADE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UNIT_INSIDE_TRADE</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

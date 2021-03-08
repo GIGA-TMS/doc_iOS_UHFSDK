@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GCDAsyncSocketPreBuffer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncSocketPreBuffer</TokenIdentifier>
+			<Abstract type="html">A PreBuffer is used when there is more data available on the socket
+than is being requested by current read request.
+In this case we slurp up all data from the socket (to minimize sys calls),
+and store additional yet unread data in a &quot;prebuffer&quot;.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

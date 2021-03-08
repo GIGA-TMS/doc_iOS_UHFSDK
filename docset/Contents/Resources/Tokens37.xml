@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/GTConnectType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/GTConnectType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_UDP</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Type_WiFi_UDP</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_TCP</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Type_WiFi_TCP</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Type_BLE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Type_BLE</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

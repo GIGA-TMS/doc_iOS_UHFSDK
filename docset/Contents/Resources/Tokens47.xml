@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/ProtocolType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/ProtocolType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GigaTms</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PT_GigaTms</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="47"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GNetPlus</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PT_GNetPlus</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="47"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GNet</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PT_GNet</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="47"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PT_OSDP</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PT_OSDP</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="47"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

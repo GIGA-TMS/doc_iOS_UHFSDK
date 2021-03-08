@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/EanUpcOutputDataType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/EanUpcOutputDataType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WITHOUT_EAS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>WITHOUT_EAS</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="30"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WITH_EAS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>WITH_EAS</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="30"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

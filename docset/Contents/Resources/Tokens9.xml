@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GNPDecodedTagData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GNPDecodedTagData</TokenIdentifier>
+			<Abstract type="html">Decoded Tag Data Format</Abstract>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

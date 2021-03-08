@@ -43,7 +43,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/UHFScannerCallback/didError:</TokenIdentifier>
-			<Abstract type="html">This method is called when an erro is happended.</Abstract>
+			<Abstract type="html">This method is called when an error is happended.</Abstract>
 			<DeclaredIn>UHFScanner.h</DeclaredIn>
 			
 			<Declaration>- (void)didError:(NSString *)strError</Declaration>

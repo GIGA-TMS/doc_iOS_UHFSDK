@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ShortRange_ShortRangeType.html">
+	<File path="Constants/Session.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ShortRange_ShortRangeType</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>ShortRangeParameter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/Session</TokenIdentifier>
+			<Abstract type="html">Session</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="65"/>
@@ -14,21 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/NORMAL_RANGE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/S0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>NORMAL_RANGE</Declaration>
+            <Declaration>S0</Declaration>
             
-            <DeclaredIn>ShortRangeParameter.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="65"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SHORT_RANGE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/S1</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SHORT_RANGE</Declaration>
+            <Declaration>S1</Declaration>
             
-            <DeclaredIn>ShortRangeParameter.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="65"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/S2</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>S2</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="65"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/S3</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>S3</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="65"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Session_SL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Session_SL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="65"/>
         </Token>

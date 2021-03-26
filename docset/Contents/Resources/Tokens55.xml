@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/PostDataDelimiter.html">
+	<File path="Constants/OutputInterface.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/PostDataDelimiter</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/OutputInterface</TokenIdentifier>
+			<Abstract type="html">multiple</Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_NONE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_SERVER_1_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_NONE</Declaration>
+            <Declaration>OI_TCP_SERVER_1_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_Default_1_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_CARRIAGE</Declaration>
+            <Declaration>OI_Default_1_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_LINE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_HID_N_VCOM</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_LINE</Declaration>
+            <Declaration>OI_HID_N_VCOM</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE_LINE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_BLE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_CARRIAGE_LINE</Declaration>
+            <Declaration>OI_BLE</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -54,9 +54,19 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_TAB</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_CLIENT</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_TAB</Declaration>
+            <Declaration>OI_TCP_CLIENT</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="55"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_SERVER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OI_TCP_SERVER</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

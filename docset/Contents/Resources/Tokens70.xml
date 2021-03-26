@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TagMemorySelection.html">
+	<File path="Constants/TagDataEncodeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TagMemorySelection</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/TagDataEncodeType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TM_PC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_UDC</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TM_PC</Declaration>
+            <Declaration>TDE_UDC</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TM_EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_SGTIN_96_EAS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TM_EPC</Declaration>
+            <Declaration>TDE_SGTIN_96_EAS</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TM_TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_SGTIN_96</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TM_TID</Declaration>
+            <Declaration>TDE_SGTIN_96</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TM_EPC_ASCII</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_RAW_DATA</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TM_EPC_ASCII</Declaration>
+            <Declaration>TDE_RAW_DATA</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -54,9 +54,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TM_USER</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_ADI</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TM_USER</Declaration>
+            <Declaration>TDE_ADI</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

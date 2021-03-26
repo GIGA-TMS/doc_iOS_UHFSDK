@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/GTDevConnStatus.html">
+	<File path="Constants/GTConnectType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/GTDevConnStatus</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/GTConnectType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConntPwdError</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_UDP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevConntPwdError</Declaration>
+            <Declaration>Type_WiFi_UDP</Declaration>
             
             <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConntError</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_TCP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevConntError</Declaration>
+            <Declaration>Type_WiFi_TCP</Declaration>
             
             <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
@@ -34,29 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevDisconnected</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Type_BLE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevDisconnected</Declaration>
-            
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
-            
-            <NodeRef refid="44"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConnecting</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DevConnecting</Declaration>
-            
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
-            
-            <NodeRef refid="44"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConnected</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DevConnected</Declaration>
+            <Declaration>Type_BLE</Declaration>
             
             <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             

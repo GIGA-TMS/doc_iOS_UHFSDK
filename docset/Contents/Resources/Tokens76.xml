@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Untraceable_EPC.html">
+	<File path="Constants/UdcOutputDataType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_EPC</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/UdcOutputDataType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UntraceableParameter.h</DeclaredIn>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
 			
 			<NodeRef refid="76"/>
@@ -14,21 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EPC_SHOW</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BCD</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EPC_SHOW</Declaration>
+            <Declaration>BCD</Declaration>
             
-            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="76"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EPC_HIDE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UDC_ASCII</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EPC_HIDE</Declaration>
+            <Declaration>UDC_ASCII</Declaration>
             
-            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="76"/>
         </Token>

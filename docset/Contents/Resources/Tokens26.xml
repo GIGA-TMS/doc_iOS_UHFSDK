@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/BarcodeFormat.html">
+	<File path="Constants/ApplicationCmdCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/BarcodeFormat</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/ApplicationCmdCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
 			
 			<NodeRef refid="26"/>
@@ -14,41 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GTIN_14</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Broadcast_Ethernet_Device</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>GTIN_14</Declaration>
+            <Declaration>Broadcast_Ethernet_Device</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="26"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GTIN_13</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Output_AccountAndPassword</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>GTIN_13</Declaration>
+            <Declaration>Output_AccountAndPassword</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="26"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GTIN_12</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>GTIN_12</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="26"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GTIN_8</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>GTIN_8</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="26"/>
         </Token>

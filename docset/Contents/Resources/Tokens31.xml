@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Control.html">
+	<File path="Constants/CompanyPrefixLength.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Control</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/CompanyPrefixLength</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+			<DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
 			
 			<NodeRef refid="31"/>
@@ -14,81 +14,71 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_GET</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_6</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_GET</Declaration>
+            <Declaration>DIGITS_6</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_SET</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_7</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_SET</Declaration>
+            <Declaration>DIGITS_7</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_METHOD</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_8</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_METHOD</Declaration>
+            <Declaration>DIGITS_8</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_NOTIFY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_9</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_NOTIFY</Declaration>
+            <Declaration>DIGITS_9</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_POST</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_10</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_POST</Declaration>
+            <Declaration>DIGITS_10</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CTRL_SECURITY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_11</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CTRL_SECURITY</Declaration>
+            <Declaration>DIGITS_11</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CTRL_PACKET</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DIGITS_12</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CTRL_PACKET</Declaration>
+            <Declaration>DIGITS_12</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CTRL_ADDRESS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>CTRL_ADDRESS</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>

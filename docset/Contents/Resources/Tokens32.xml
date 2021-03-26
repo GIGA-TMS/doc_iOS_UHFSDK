@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/DataBaseCmdCode.html">
+	<File path="Constants/Control.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/DataBaseCmdCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/Control</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Get_TableInformation</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_GET</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Get_TableInformation</Declaration>
+            <Declaration>CMD_GET</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Open_Table</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_SET</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Open_Table</Declaration>
+            <Declaration>CMD_SET</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Close_Table</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_METHOD</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Close_Table</Declaration>
+            <Declaration>CMD_METHOD</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Get_Record_Count</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_NOTIFY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Get_Record_Count</Declaration>
+            <Declaration>CMD_NOTIFY</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -54,9 +54,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Get_Records</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CMD_POST</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Get_Records</Declaration>
+            <Declaration>CMD_POST</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -64,9 +64,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Add_Record</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CTRL_SECURITY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Add_Record</Declaration>
+            <Declaration>CTRL_SECURITY</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -74,9 +74,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Update_Record</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CTRL_PACKET</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Update_Record</Declaration>
+            <Declaration>CTRL_PACKET</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -84,19 +84,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Delete_Records</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CTRL_ADDRESS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Delete_Records</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="32"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Recover_Records</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>Recover_Records</Declaration>
+            <Declaration>CTRL_ADDRESS</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             

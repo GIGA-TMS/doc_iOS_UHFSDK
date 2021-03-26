@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/gigatms/Library/Developer/Shared/Documentation/DocSets/gigatms.GIGATMSSDK_UHF.docset
-Time: 2021-03-26 05:10:04 +0000
+Path: /Users/gigatms/Library/Developer/Shared/Documentation/DocSets/gigatms.GIGATMSSDK.docset
+Time: 2021-03-26 08:03:50 +0000

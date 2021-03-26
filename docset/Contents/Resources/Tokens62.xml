@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ScanMode.html">
+	<File path="Constants/SEC_BLK_TYPE.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ScanMode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/SEC_BLK_TYPE</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
 			
 			<NodeRef refid="62"/>
@@ -14,61 +14,81 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_LEVEL_CONTROL</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_11</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SM_TRIGGER_A_LEVEL_CONTROL</Declaration>
+            <Declaration>SCS_11</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="62"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_LEVEL_CONTROL_AND_OFF_DELAY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_12</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SM_TRIGGER_A_LEVEL_CONTROL_AND_OFF_DELAY</Declaration>
+            <Declaration>SCS_12</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="62"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_AND_RE_TRIGGER</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_13</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SM_TRIGGER_A_AND_RE_TRIGGER</Declaration>
+            <Declaration>SCS_13</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="62"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_TRIGGER_ONLY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_14</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SM_TRIGGER_A_TRIGGER_ONLY</Declaration>
+            <Declaration>SCS_14</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="62"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_TRIGGER_AND_LEVEL_OFF</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_15</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SM_TRIGGER_A_TRIGGER_AND_LEVEL_OFF</Declaration>
+            <Declaration>SCS_15</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="62"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SM_ALWAYS_SCAN</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_16</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SM_ALWAYS_SCAN</Declaration>
+            <Declaration>SCS_16</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="62"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_17</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SCS_17</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="62"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SCS_18</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SCS_18</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="62"/>
         </Token>

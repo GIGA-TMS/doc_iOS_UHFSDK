@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EanUpcOutputDataType.html">
+	<File path="Constants/DeviceDataProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EanUpcOutputDataType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/DeviceDataProtocol</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="34"/>
@@ -14,21 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WITHOUT_EAS</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DD_RemoteHost_TCP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>WITHOUT_EAS</Declaration>
+            <Declaration>DD_RemoteHost_TCP</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="34"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/WITH_EAS</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DD_RemoteHost_UDP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>WITH_EAS</Declaration>
+            <Declaration>DD_RemoteHost_UDP</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="34"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DD_RemoteHost_SSL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DD_RemoteHost_SSL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="34"/>
         </Token>

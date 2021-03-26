@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/UHFDevice</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">UHFDevice communicates with remote UHF device.</Abstract>
 			<DeclaredIn>UHFDevice.h</DeclaredIn>
             
 			

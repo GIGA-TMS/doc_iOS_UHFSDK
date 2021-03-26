@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/FindTagAction.html">
+	<File path="Constants/Filter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/FindTagAction</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/Filter</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>XEPCLentT.h</DeclaredIn>
+			<DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
 			
 			<NodeRef refid="41"/>
@@ -14,41 +14,81 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindAnyTagAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ALL_OTHERS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindAnyTagAction</Declaration>
+            <Declaration>ALL_OTHERS</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="41"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindPreviousTagWithoutXepcResponseAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/POS_TRADE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindPreviousTagWithoutXepcResponseAction</Declaration>
+            <Declaration>POS_TRADE</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="41"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindSpecificTagXepcWithExtendHeaderAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TRANSPORT</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindSpecificTagXepcWithExtendHeaderAction</Declaration>
+            <Declaration>TRANSPORT</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="41"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindSpecificTagAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/RESERVED_3</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindSpecificTagAction</Declaration>
+            <Declaration>RESERVED_3</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="41"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/HANDLING</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>HANDLING</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="41"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RESERVED_5</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>RESERVED_5</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="41"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UNIT_LOAD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UNIT_LOAD</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            
+            <NodeRef refid="41"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/UNIT_INSIDE_TRADE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>UNIT_INSIDE_TRADE</Declaration>
+            
+            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
             
             <NodeRef refid="41"/>
         </Token>

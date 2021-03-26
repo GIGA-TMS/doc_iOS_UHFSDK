@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/QTWrite_QT_SR.html">
+	<File path="Constants/QTWrite_QT_MEM.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/QTWrite_QT_SR</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/QTWrite_QT_MEM</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/QT_SR_TAG_DOSE_NOT_REDUCES_RANGE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/QT_MEM_USE_PRIVATE_MEMORY_MAP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>QT_SR_TAG_DOSE_NOT_REDUCES_RANGE</Declaration>
+            <Declaration>QT_MEM_USE_PRIVATE_MEMORY_MAP</Declaration>
             
             <DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/QT_SR_TAG_REDUCES_RANGE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/QT_MEM_USE_PUBLIC_MEMORY_MAP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>QT_SR_TAG_REDUCES_RANGE</Declaration>
+            <Declaration>QT_MEM_USE_PUBLIC_MEMORY_MAP</Declaration>
             
             <DeclaredIn>QTWriteParameter.h</DeclaredIn>
             

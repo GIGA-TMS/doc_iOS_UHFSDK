@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ApplicationCmdCode.html">
+	<File path="Constants/ActiveMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ApplicationCmdCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/ActiveMode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="25"/>
@@ -14,21 +14,101 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Broadcast_Ethernet_Device</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/AM_READ</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Broadcast_Ethernet_Device</Declaration>
+            <Declaration>AM_READ</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="25"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Output_AccountAndPassword</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/AM_COMMAND</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Output_AccountAndPassword</Declaration>
+            <Declaration>AM_COMMAND</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_TAG_ANALYSIS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_TAG_ANALYSIS</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_VERIFY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_VERIFY</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_ENCODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_ENCODE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_CUSTOMIZED_READ</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_CUSTOMIZED_READ</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_DEACTIVATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_DEACTIVATE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_REACTIVATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_REACTIVATE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_DEACTIVATE_USER_BANK</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_DEACTIVATE_USER_BANK</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="25"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_REACTIVATE_USER_BANK</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_REACTIVATE_USER_BANK</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="25"/>
         </Token>

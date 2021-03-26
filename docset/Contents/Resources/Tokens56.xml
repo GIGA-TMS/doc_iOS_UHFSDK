@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ProtocolType.html">
+	<File path="Constants/PostDataDelimiter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ProtocolType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/PostDataDelimiter</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="56"/>
@@ -14,41 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_GigaTms</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_NONE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_GigaTms</Declaration>
+            <Declaration>PDD_NONE</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_GNetPlus</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_GNetPlus</Declaration>
+            <Declaration>PDD_CARRIAGE</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_GNet</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_LINE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_GNet</Declaration>
+            <Declaration>PDD_LINE</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_OSDP</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE_LINE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_OSDP</Declaration>
+            <Declaration>PDD_CARRIAGE_LINE</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="56"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_TAB</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PDD_TAB</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>

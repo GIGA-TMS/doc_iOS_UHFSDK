@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Untraceable_FlagU.html">
+	<File path="Constants/Untraceable_EPC.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_FlagU</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_EPC</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FlagU_DEASSERT_U</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EPC_SHOW</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FlagU_DEASSERT_U</Declaration>
+            <Declaration>EPC_SHOW</Declaration>
             
             <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FlagU_ASSERT_U</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EPC_HIDE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FlagU_ASSERT_U</Declaration>
+            <Declaration>EPC_HIDE</Declaration>
             
             <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             

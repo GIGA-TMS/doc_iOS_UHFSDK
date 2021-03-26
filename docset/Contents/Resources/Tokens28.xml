@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CMDFormat.html">
+	<File path="Constants/BuzzerOperationMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CMDFormat</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/BuzzerOperationMode</TokenIdentifier>
+			<Abstract type="html">Specifies the repeats mode of sounding the buzzer.</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="28"/>
@@ -14,131 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mHEADER</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BOM_Off</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>mHEADER</Declaration>
+            <Declaration>BOM_Off</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="28"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mCTRL_CODE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BOM_Once</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>mCTRL_CODE</Declaration>
+            <Declaration>BOM_Once</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="28"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mPACKET_LENGTH</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BOM_Repeat</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>mPACKET_LENGTH</Declaration>
+            <Declaration>BOM_Repeat</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mADDRESS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mADDRESS</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mPACKET_NUMBER</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mPACKET_NUMBER</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_LENGTH</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mSECURITY_BLOCK_LENGTH</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_TYPE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mSECURITY_BLOCK_TYPE</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_DATA</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mSECURITY_BLOCK_DATA</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mREPLY_STATUS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mREPLY_STATUS</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mCMD_CODE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mCMD_CODE</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mDATA</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mDATA</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mMAC</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mMAC</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="28"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mCRC</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mCRC</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="28"/>
         </Token>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Session.html">
+	<File path="Constants/SecurityCmdCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Session</TokenIdentifier>
-			<Abstract type="html">Session</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/SecurityCmdCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
 			
 			<NodeRef refid="64"/>
@@ -14,51 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/S0</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Set_Base_Key</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>S0</Declaration>
+            <Declaration>Set_Base_Key</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="64"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/S1</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Challenge_And_Initialize</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>S1</Declaration>
+            <Declaration>Challenge_And_Initialize</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="64"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/S2</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Synchronize_Encryption_Key</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>S2</Declaration>
+            <Declaration>Synchronize_Encryption_Key</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="64"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/S3</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>S3</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="64"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Session_SL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>Session_SL</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="64"/>
         </Token>

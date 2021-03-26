@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TriggerType.html">
+	<File path="Constants/Target.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TriggerType</TokenIdentifier>
-			<Abstract type="html">TriggerType</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/Target</TokenIdentifier>
+			<Abstract type="html">Target</Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Command</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/A</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Command</Declaration>
+            <Declaration>A</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DigitalInput</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/B</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DigitalInput</Declaration>
+            <Declaration>B</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Sensor</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/A_B</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Sensor</Declaration>
+            <Declaration>A_B</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -44,9 +44,29 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SensorAndDigitalInput</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/deSL</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SensorAndDigitalInput</Declaration>
+            <Declaration>deSL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="74"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SL_deSL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SL_deSL</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

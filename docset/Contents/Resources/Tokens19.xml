@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/UHFScanner</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">UHFScanner scans for UHF devices</Abstract>
 			<DeclaredIn>UHFScanner.h</DeclaredIn>
             
 			

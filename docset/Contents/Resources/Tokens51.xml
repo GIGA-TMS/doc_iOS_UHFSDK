@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/MemoryBank.html">
+	<File path="Constants/LockAction.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/MemoryBank</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/LockAction</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_Reserve</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LA_UNLOCK</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_Reserve</Declaration>
+            <Declaration>LA_UNLOCK</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LA_LOCK</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_EPC</Declaration>
+            <Declaration>LA_LOCK</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LA_PERMA_UNLOCK</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_TID</Declaration>
+            <Declaration>LA_PERMA_UNLOCK</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -44,29 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_UserMemory</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LA_PERMA_LOCK</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_UserMemory</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="51"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_KILL_PASSWORD</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>MBC_KILL_PASSWORD</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="51"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_ACCESS_PASSWORD</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>MBC_ACCESS_PASSWORD</Declaration>
+            <Declaration>LA_PERMA_LOCK</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

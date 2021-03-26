@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TagDataEncodeType.html">
+	<File path="Constants/TS100SpecialCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TagDataEncodeType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/TS100SpecialCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>TS100.h</DeclaredIn>
             
 			
 			<NodeRef refid="69"/>
@@ -14,51 +14,11 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_UDC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getBleDeviceName</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TDE_UDC</Declaration>
+            <Declaration>SW_EE_TS100_getBleDeviceName</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="69"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_SGTIN_96_EAS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TDE_SGTIN_96_EAS</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="69"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_SGTIN_96</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TDE_SGTIN_96</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="69"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_RAW_DATA</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TDE_RAW_DATA</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="69"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_ADI</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>TDE_ADI</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>TS100.h</DeclaredIn>
             
             <NodeRef refid="69"/>
         </Token>

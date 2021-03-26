@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/BuzzerOperationMode.html">
+	<File path="Constants/BarcodeFormat.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/BuzzerOperationMode</TokenIdentifier>
-			<Abstract type="html">Specifies the repeats mode of sounding the buzzer.</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/BarcodeFormat</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BOM_Off</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/GTIN_14</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BOM_Off</Declaration>
+            <Declaration>GTIN_14</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BOM_Once</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/GTIN_13</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BOM_Once</Declaration>
+            <Declaration>GTIN_13</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,19 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BOM_Repeat</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/GTIN_12</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BOM_Repeat</Declaration>
+            <Declaration>GTIN_12</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="27"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GTIN_8</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>GTIN_8</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

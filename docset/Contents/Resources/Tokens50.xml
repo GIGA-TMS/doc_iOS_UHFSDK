@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/LockAction.html">
+	<File path="Constants/KeyboardSimulation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/LockAction</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/KeyboardSimulation</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LA_UNLOCK</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/KS_DISABLE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LA_UNLOCK</Declaration>
+            <Declaration>KS_DISABLE</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LA_LOCK</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/KS_HID_KEYBOARD</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LA_LOCK</Declaration>
+            <Declaration>KS_HID_KEYBOARD</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,19 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LA_PERMA_UNLOCK</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/KS_BLE_KEYBOARD</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LA_PERMA_UNLOCK</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="50"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LA_PERMA_LOCK</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>LA_PERMA_LOCK</Declaration>
+            <Declaration>KS_BLE_KEYBOARD</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

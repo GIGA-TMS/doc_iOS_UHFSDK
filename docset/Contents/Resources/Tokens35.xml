@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EncodeType.html">
+	<File path="Constants/EanUpcOutputDataType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EncodeType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/EanUpcOutputDataType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
 			
 			<NodeRef refid="35"/>
@@ -14,51 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WITHOUT_EAS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EM_SGTIN_96</Declaration>
+            <Declaration>WITHOUT_EAS</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EPC_PRERIX</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/WITH_EAS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EM_SGTIN_96_AND_EPC_PRERIX</Declaration>
+            <Declaration>WITH_EAS</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="35"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EAS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>EM_SGTIN_96_AND_EAS</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="35"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EAS_AND_EPC_PRERIX</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>EM_SGTIN_96_AND_EAS_AND_EPC_PRERIX</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="35"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EM_ALL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>EM_ALL</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>

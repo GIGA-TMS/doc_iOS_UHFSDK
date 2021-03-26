@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/QTWrite_AccessOption.html">
+	<File path="Constants/ProtocolType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/QTWrite_AccessOption</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/ProtocolType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>QTWriteParameter.h</DeclaredIn>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
 			
 			<NodeRef refid="57"/>
@@ -14,21 +14,41 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/QTWrite_VOLATILE_MEMORY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GigaTms</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>QTWrite_VOLATILE_MEMORY</Declaration>
+            <Declaration>PT_GigaTms</Declaration>
             
-            <DeclaredIn>QTWriteParameter.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="57"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/QTWrite_NVM_MEMORY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GNetPlus</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>QTWrite_NVM_MEMORY</Declaration>
+            <Declaration>PT_GNetPlus</Declaration>
             
-            <DeclaredIn>QTWriteParameter.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="57"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GNet</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PT_GNet</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="57"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PT_OSDP</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>PT_OSDP</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="57"/>
         </Token>

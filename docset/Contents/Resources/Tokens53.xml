@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/OutputFormat.html">
+	<File path="Constants/MemoryBankSelection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/OutputFormat</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/MemoryBankSelection</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OF_DISABLED</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OF_DISABLED</Declaration>
+            <Declaration>MBS_EPC</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,49 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OF_AI_BARCODE_SERIAL_NUMBER</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_TID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OF_AI_BARCODE_SERIAL_NUMBER</Declaration>
+            <Declaration>MBS_TID</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="53"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_PC_EPC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBS_PC_EPC</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="53"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC_TID</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBS_EPC_TID</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="53"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_PC_EPC_TID</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBS_PC_EPC_TID</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="53"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC_ASCII</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MBS_EPC_ASCII</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

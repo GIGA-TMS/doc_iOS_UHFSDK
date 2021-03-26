@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/GTConnectType.html">
+	<File path="Constants/GTClassCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/GTConnectType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/GTClassCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_UDP</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CC_SLI200</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Type_WiFi_UDP</Declaration>
+            <Declaration>CC_SLI200</Declaration>
             
             <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
@@ -24,19 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_TCP</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CC_UHF</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Type_WiFi_TCP</Declaration>
-            
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
-            
-            <NodeRef refid="43"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Type_BLE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>Type_BLE</Declaration>
+            <Declaration>CC_UHF</Declaration>
             
             <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             

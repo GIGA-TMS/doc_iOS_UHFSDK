@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Filter.html">
+	<File path="Constants/EventType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Filter</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/EventType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="40"/>
@@ -14,81 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ALL_OTHERS</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresented</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>ALL_OTHERS</Declaration>
+            <Declaration>ET_TagPresented</Declaration>
             
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="40"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/POS_TRADE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedWithRemoved</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>POS_TRADE</Declaration>
+            <Declaration>ET_TagPresentedWithRemoved</Declaration>
             
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="40"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TRANSPORT</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedEx</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TRANSPORT</Declaration>
+            <Declaration>ET_TagPresentedEx</Declaration>
             
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="40"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RESERVED_3</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>RESERVED_3</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="40"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/HANDLING</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>HANDLING</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="40"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RESERVED_5</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>RESERVED_5</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="40"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UNIT_LOAD</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UNIT_LOAD</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="40"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UNIT_INSIDE_TRADE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>UNIT_INSIDE_TRADE</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="40"/>
         </Token>

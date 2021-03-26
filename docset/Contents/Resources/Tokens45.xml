@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/IONumber.html">
+	<File path="Constants/GTDevConnStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/IONumber</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/GTDevConnStatus</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
 			
 			<NodeRef refid="45"/>
@@ -14,41 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_0</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConntPwdError</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OUTPUT_PIN_0</Declaration>
+            <Declaration>DevConntPwdError</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="45"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_1</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConntError</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OUTPUT_PIN_1</Declaration>
+            <Declaration>DevConntError</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="45"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_2</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevDisconnected</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OUTPUT_PIN_2</Declaration>
+            <Declaration>DevDisconnected</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="45"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/INPUT_PIN_0</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConnecting</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>INPUT_PIN_0</Declaration>
+            <Declaration>DevConnecting</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            
+            <NodeRef refid="45"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/DevConnected</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>DevConnected</Declaration>
+            
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="45"/>
         </Token>

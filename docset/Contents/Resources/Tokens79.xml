@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Untraceable_TID.html">
+	<File path="Constants/Untraceable_Range.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_TID</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_Range</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TID_SHOW</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Range_NORMAL</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TID_SHOW</Declaration>
+            <Declaration>Range_NORMAL</Declaration>
             
             <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TID_HIDE_SHOME</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Range_TOGGLE_TEMPORARILY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TID_HIDE_SHOME</Declaration>
+            <Declaration>Range_TOGGLE_TEMPORARILY</Declaration>
             
             <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TID_HIDE_ALL</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Range_REDUCE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TID_HIDE_ALL</Declaration>
+            <Declaration>Range_REDUCE</Declaration>
             
             <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             

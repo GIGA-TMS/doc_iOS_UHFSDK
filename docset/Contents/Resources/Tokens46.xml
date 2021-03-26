@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/IOState.html">
+	<File path="Constants/IONumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/IOState</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/IONumber</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/LOW</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>LOW</Declaration>
+            <Declaration>OUTPUT_PIN_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,29 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/HIGHT</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_1</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>HIGHT</Declaration>
+            <Declaration>OUTPUT_PIN_1</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_2</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OUTPUT_PIN_2</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="46"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/INPUT_PIN_0</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>INPUT_PIN_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

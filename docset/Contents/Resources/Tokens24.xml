@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ActiveMode.html">
+	<File path="Protocols/IUHFDeviceListener.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ActiveMode</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/intf/IUHFDeviceListener</TokenIdentifier>
+			<Abstract type="html">The callback protocol getting UHF operation result.</Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -12,106 +12,863 @@
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_READ</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_READ</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGeneralSuccess:</TokenIdentifier>
+			<Abstract type="html">Callback that indicates the operation of command is success.</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGeneralSuccess:(NSString *)strCMDName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strCMDName</Name>
+					<Abstract type="html">The command name.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGeneralSuccess:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_COMMAND</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_COMMAND</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGeneralERROR:ErrMessage:</TokenIdentifier>
+			<Abstract type="html">Callback that indicates the operation of command is error.
+Notifies the application that an error has been detected and a suitable response is necessary to process the error condition.</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGeneralERROR:(NSString *)strCMDName ErrMessage:(NSString *)strErrorMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strCMDName</Name>
+					<Abstract type="html">The command name.</Abstract>
+				</Parameter><Parameter>
+					<Name>strErrorMessage</Name>
+					<Abstract type="html">The error message.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGeneralERROR:ErrMessage:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_TAG_ANALYSIS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_TAG_ANALYSIS</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGeneralTimeout:ErrMessage:Data:</TokenIdentifier>
+			<Abstract type="html">Callback that indicates the operation of command is timeout.</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGeneralTimeout:(NSString *)strCMDName ErrMessage:(NSString *)strErrorMessage Data:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strCMDName</Name>
+					<Abstract type="html">The command name.</Abstract>
+				</Parameter><Parameter>
+					<Name>strErrorMessage</Name>
+					<Abstract type="html">The error message.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The received data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGeneralTimeout:ErrMessage:Data:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_VERIFY</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_VERIFY</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didDiscoverTagInfo:</TokenIdentifier>
+			<Abstract type="html">Indicates that the reader reads a new tag.
+If the remote device is invertory and has detected a tag.</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didDiscoverTagInfo:(GNPTagInfo *)taginfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>taginfo</Name>
+					<Abstract type="html">The tag which is inventoried.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didDiscoverTagInfo:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_ENCODE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_ENCODE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didTagRemoved:</TokenIdentifier>
+			<Abstract type="html">Callback of stopInventory:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didTagRemoved:(GNPTagInfo *)taginfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>taginfo</Name>
+					<Abstract type="html">The tag which is inventoried.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didTagRemoved:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_CUSTOMIZED_READ</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_CUSTOMIZED_READ</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didReadTag:</TokenIdentifier>
+			<Abstract type="html">Callback of readTag:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didReadTag:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">the Tag data which is going to write to the tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didReadTag:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_DEACTIVATE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_DEACTIVATE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetDeviceID:</TokenIdentifier>
+			<Abstract type="html">Callback of GetDeviceID</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetDeviceID:(Byte)deviceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceID</Name>
+					<Abstract type="html">deviceID description</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetDeviceID:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_REACTIVATE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_REACTIVATE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFirmwareVersion:</TokenIdentifier>
+			<Abstract type="html">Callback of getFirmwareVersion:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetFirmwareVersion:(NSString *)fwVer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fwVer</Name>
+					<Abstract type="html">The firmware version of the remote device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetFirmwareVersion:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_DEACTIVATE_USER_BANK</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_DEACTIVATE_USER_BANK</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetInventoryRoundInterval:</TokenIdentifier>
+			<Abstract type="html">Callback of getInventoryRoundInterval:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetInventoryRoundInterval:(int)tenMilliSeconds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tenMilliSeconds</Name>
+					<Abstract type="html">The period to start an inventory round. Range: 0~254*10s. 255 represent 0.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetInventoryRoundInterval:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/AM_REACTIVATE_USER_BANK</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>AM_REACTIVATE_USER_BANK</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetLinkFrequency:</TokenIdentifier>
+			<Abstract type="html">Callback of getLinkFrequency:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetLinkFrequency:(int)linkFrequency</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>linkFrequency</Name>
+					<Abstract type="html">The link frequency in KHz.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetLinkFrequency:</Anchor>
             <NodeRef refid="24"/>
-        </Token>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetProfile:</TokenIdentifier>
+			<Abstract type="html">Callback of getProfile:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetProfile:(int)profile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>profile</Name>
+					<Abstract type="html">Specifies the RF input sensitivity level.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetProfile:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetQValue:</TokenIdentifier>
+			<Abstract type="html">Callback of getQValue:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetQValue:(Byte)qValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>qValue</Name>
+					<Abstract type="html">The starting Q value for the number of slots in the round. The value ranges from 0 to 15.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetQValue:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetRfPower:</TokenIdentifier>
+			<Abstract type="html">Callback of getRfPower:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetRfPower:(int)rfPower</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rfPower</Name>
+					<Abstract type="html">Specifies the RF Power strength. The value is ranging from 1 to 27. The default value is 11. (Range:1~27)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetRfPower:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetRfSensitivity:</TokenIdentifier>
+			<Abstract type="html">Callback of getRfSensitivity:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetRfSensitivity:(RfSensitivityLevel)rfSensitivity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rfSensitivity</Name>
+					<Abstract type="html">Specifies the RF input sensitivity level.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetRfSensitivity:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetRxDecode:</TokenIdentifier>
+			<Abstract type="html">Callback of getRxDecode:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetRxDecode:(int)rxDecode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rxDecode</Name>
+					<Abstract type="html">Specifies the encoding of backscattered data (tag to reader).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetRxDecode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetSessionAnd:Target:</TokenIdentifier>
+			<Abstract type="html">Callback of getSessionAndTarget:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetSessionAnd:(Session)session Target:(Target)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>session</Name>
+					<Abstract type="html">The session flag to be selected for an inventory round.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target indicates whether the Select modifies a Tag’s SL flag or its inventoried flag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetSessionAnd:Target:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTagRemovedThreshold:</TokenIdentifier>
+			<Abstract type="html">Callback of getTagRemovedThreshold:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTagRemovedThreshold:(int)missingInventoryThreshold</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>missingInventoryThreshold</Name>
+					<Abstract type="html">The count of missing discovering tag threshold of inventory rounds.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTagRemovedThreshold:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetInventoryActiveMode:</TokenIdentifier>
+			<Abstract type="html">Callback of getInventoryActiveMode:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetInventoryActiveMode:(ActiveMode)activeMode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>activeMode</Name>
+					<Abstract type="html">The Active mode of the connected remote device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetInventoryActiveMode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didReadTagEx:</TokenIdentifier>
+			<Abstract type="html">Callback of readTagEx:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didReadTagEx:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data from EPC bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didReadTagEx:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBarcodeReadFormat:</TokenIdentifier>
+			<Abstract type="html">Callback of getBarcodeReadFormat:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetBarcodeReadFormat:(BarcodeFormat)barcodeFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>barcodeFormat</Name>
+					<Abstract type="html">The default format of barcode while reading a tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetBarcodeReadFormat:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBleDeviceName:</TokenIdentifier>
+			<Abstract type="html">Callback of getBLEDeviceName:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetBleDeviceName:(NSString *)devName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>devName</Name>
+					<Abstract type="html">The device name of BLE through BLE interface.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetBleDeviceName:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBleMacAddress:</TokenIdentifier>
+			<Abstract type="html">Callback of getBleMacAddress:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetBleMacAddress:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The BLE Mac Address.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetBleMacAddress:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBleRomVersion:</TokenIdentifier>
+			<Abstract type="html">Callback of getBleRomVersion:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetBleRomVersion:(NSString *)romVersion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>romVersion</Name>
+					<Abstract type="html">The firmware version of the ble module of the remote device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetBleRomVersion:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBuzzerOperationMode:</TokenIdentifier>
+			<Abstract type="html">Callback of getBuzzerOperationMode:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetBuzzerOperationMode:(BuzzerOperationMode)bom</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bom</Name>
+					<Abstract type="html">Buzzer Operation Mode: Specifies the repeats mode of sounding the beep with the same pattern.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetBuzzerOperationMode:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetDeactivateEpcPrefix:</TokenIdentifier>
+			<Abstract type="html">Callback of getDeactivateEpcPrefix:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetDeactivateEpcPrefix:(NSData *)getValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>getValue</Name>
+					<Abstract type="html">The value of EPC prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetDeactivateEpcPrefix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFieldSeparator:</TokenIdentifier>
+			<Abstract type="html">Callback of getFieldSeparator:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetFieldSeparator:(Byte)separator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>separator</Name>
+					<Abstract type="html">Seperator of ascii.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetFieldSeparator:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFilter:</TokenIdentifier>
+			<Abstract type="html">Callback of getFilter:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetFilter:(TagDataEncodeType)tagDataEncodeTypes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagDataEncodeTypes</Name>
+					<Abstract type="html">Specifies the decoded type for reading tag data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetFilter:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetOutputFormat:</TokenIdentifier>
+			<Abstract type="html">Callback of getOutputFormat:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetOutputFormat:(OutputFormat)outputFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>outputFormat</Name>
+					<Abstract type="html">The output format.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetOutputFormat:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetOutputInterfaces:</TokenIdentifier>
+			<Abstract type="html">Callback of getOutputInterfaces:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetOutputInterfaces:(int)outputInterfaces</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>outputInterfaces</Name>
+					<Abstract type="html">The set of data output interface. also can &apos;outputInterface = OIHIDNVCOM | OIBLE;&apos;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetOutputInterfaces:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetOutputInterface:OutputInterface:</TokenIdentifier>
+			<Abstract type="html">Callback of getOutputInterfaces:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetOutputInterface:(KeyboardSimulation)keyboardSimulation OutputInterface:(OutputInterface)outputInterface</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyboardSimulation</Name>
+					<Abstract type="html">Keyboard Simulation.</Abstract>
+				</Parameter><Parameter>
+					<Name>outputInterface</Name>
+					<Abstract type="html">The set of data output interface. also can &apos;outputInterface = OIHIDNVCOM | OIBLE;&apos;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetOutputInterface:OutputInterface:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetPostDataDelimiter:MemoryBankSelection:</TokenIdentifier>
+			<Abstract type="html">Callback of getPostDataDelimiter:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetPostDataDelimiter:(PostDataDelimiter)postDataDelimiter MemoryBankSelection:(MemoryBankSelection)memoryBankSelection</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>postDataDelimiter</Name>
+					<Abstract type="html">Specifies the delimiter append to the end of output data.</Abstract>
+				</Parameter><Parameter>
+					<Name>memoryBankSelection</Name>
+					<Abstract type="html">Memory bank selection setting.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetPostDataDelimiter:MemoryBankSelection:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetPrefix:</TokenIdentifier>
+			<Abstract type="html">Callback of getPrefix:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetPrefix:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data of prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetPrefix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetReactivateEpcPrefix:</TokenIdentifier>
+			<Abstract type="html">Callback of getReactivateEpcPrefix:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetReactivateEpcPrefix:(NSData *)getValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>getValue</Name>
+					<Abstract type="html">The value of EPC prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetReactivateEpcPrefix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetRemoteHost:InetSocketAddress:</TokenIdentifier>
+			<Abstract type="html">Callback of getRemoteHost</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetRemoteHost:(int)connectTimeout InetSocketAddress:(InetSocketAddress *)inetSocketAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connectTimeout</Name>
+					<Abstract type="html">The timeout of connection.</Abstract>
+				</Parameter><Parameter>
+					<Name>inetSocketAddress</Name>
+					<Abstract type="html">The InetSocketAddress.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetRemoteHost:InetSocketAddress:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetSuffix:</TokenIdentifier>
+			<Abstract type="html">Callback of getSuffix:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetSuffix:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data of suffix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetSuffix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetEventType:</TokenIdentifier>
+			<Abstract type="html">Callback of getEventType:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetEventType:(EventType)eventType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>eventType</Name>
+					<Abstract type="html">The type for the event command.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetEventType:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTagMemorySelection:</TokenIdentifier>
+			<Abstract type="html">Callback of getTagMemorySelection:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTagMemorySelection:(TagMemorySelection)tagMemorySelection</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagMemorySelection</Name>
+					<Abstract type="html">Memory bank selections setting.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTagMemorySelection:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTagPresentedRepeatInterval:</TokenIdentifier>
+			<Abstract type="html">Callback of getTagPresentedRepeatInterval:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTagPresentedRepeatInterval:(int)period</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>period</Name>
+					<Abstract type="html">The period to raising a TagPresentedEvent. range: 1~255 (Unit: 100ms), 0:Always repeating raising event, 255: Never repeating raising event.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTagPresentedRepeatInterval:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTagProtection:</TokenIdentifier>
+			<Abstract type="html">Callback of getTagProtection:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTagProtection:(TagProtection)tagProtection</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagProtection</Name>
+					<Abstract type="html">The tag protection mode.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTagProtection:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTagProtectionAccessPassword:</TokenIdentifier>
+			<Abstract type="html">Callback of getTagProtectionAccessPassword:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTagProtectionAccessPassword:(NSString *)accessPassword</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessPassword</Name>
+					<Abstract type="html">Access Password.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTagProtectionAccessPassword:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetUsbInterface:</TokenIdentifier>
+			<Abstract type="html">Callback of getUsbInterface:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetUsbInterface:(UsbInterface)usbInterface</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>usbInterface</Name>
+					<Abstract type="html">The USB interface.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetUsbInterface:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetWiFiMacAddress:</TokenIdentifier>
+			<Abstract type="html">Callback of getWiFiMacAddress:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetWiFiMacAddress:(NSString *)wifiMacAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>wifiMacAddress</Name>
+					<Abstract type="html">The MAC address of the Wi-Fi module.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetWiFiMacAddress:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetEncodeType:</TokenIdentifier>
+			<Abstract type="html">Callback of getEncodeType:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetEncodeType:(EncodeType)encodeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>encodeType</Name>
+					<Abstract type="html">The encode type.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetEncodeType:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTransformEpcState:</TokenIdentifier>
+			<Abstract type="html">Callback of getTransformEpcState:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTransformEpcState:(EpcPrefixState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The EPC prefix state.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTransformEpcState:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTransformEpcPrefix:</TokenIdentifier>
+			<Abstract type="html">Callback of getTransformEpcPrefix:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTransformEpcPrefix:(int)getValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>getValue</Name>
+					<Abstract type="html">The value of EPC prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTransformEpcPrefix:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetEpcNormalize:</TokenIdentifier>
+			<Abstract type="html">Callback of getEpcNormalize:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetEpcNormalize:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">The setting to enable/disable the EPC normalization.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetEpcNormalize:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBLEFirmwareVersion:</TokenIdentifier>
+			<Abstract type="html">Callback of getBLEFirmwareVersion:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetBLEFirmwareVersion:(NSString *)fwVer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fwVer</Name>
+					<Abstract type="html">The firmware version of the remote device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetBLEFirmwareVersion:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTriggerType:</TokenIdentifier>
+			<Abstract type="html">only TS800 &amp;amp; UR0250
+Callback of cmdGetTriggerType:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetTriggerType:(TriggerType)triggerType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>triggerType</Name>
+					<Abstract type="html">The trigger source of inventory.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetTriggerType:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFrequencyList:</TokenIdentifier>
+			<Abstract type="html">Callback of getFrequency:</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			
+			<Declaration>- (void)didGetFrequencyList:(NSArray *)frequencys</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequencys</Name>
+					<Abstract type="html">Specifies the channel of hopping frequency for reading tag data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/didGetFrequencyList:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
         
         
 	</File>

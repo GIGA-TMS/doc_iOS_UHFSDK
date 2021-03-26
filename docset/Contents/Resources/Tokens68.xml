@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TS100SpecialCode.html">
+	<File path="Constants/State.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TS100SpecialCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/State</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TS100.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="68"/>
@@ -14,11 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getBleDeviceName</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ON</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getBleDeviceName</Declaration>
+            <Declaration>ON</Declaration>
             
-            <DeclaredIn>TS100.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OFF</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OFF</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="68"/>
         </Token>

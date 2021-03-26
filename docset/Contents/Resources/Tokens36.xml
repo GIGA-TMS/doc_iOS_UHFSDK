@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EpcHeader.html">
+	<File path="Constants/EncodeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EpcHeader</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/EncodeType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>BaseTagData.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="36"/>
@@ -14,31 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EPC_SGTIN96</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EPC_SGTIN96</Declaration>
+            <Declaration>EM_SGTIN_96</Declaration>
             
-            <DeclaredIn>BaseTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EPC_EAS</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EPC_PRERIX</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EPC_EAS</Declaration>
+            <Declaration>EM_SGTIN_96_AND_EPC_PRERIX</Declaration>
             
-            <DeclaredIn>BaseTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EPC_UDC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EAS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EPC_UDC</Declaration>
+            <Declaration>EM_SGTIN_96_AND_EAS</Declaration>
             
-            <DeclaredIn>BaseTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EAS_AND_EPC_PRERIX</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EM_SGTIN_96_AND_EAS_AND_EPC_PRERIX</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="36"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EM_ALL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EM_ALL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>

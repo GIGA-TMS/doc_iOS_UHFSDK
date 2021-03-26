@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/SecurityCmdCode.html">
+	<File path="Constants/ScanMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/SecurityCmdCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/ScanMode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="63"/>
@@ -14,31 +14,61 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Set_Base_Key</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_LEVEL_CONTROL</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Set_Base_Key</Declaration>
+            <Declaration>SM_TRIGGER_A_LEVEL_CONTROL</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="63"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Challenge_And_Initialize</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_LEVEL_CONTROL_AND_OFF_DELAY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Challenge_And_Initialize</Declaration>
+            <Declaration>SM_TRIGGER_A_LEVEL_CONTROL_AND_OFF_DELAY</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="63"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Synchronize_Encryption_Key</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_AND_RE_TRIGGER</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Synchronize_Encryption_Key</Declaration>
+            <Declaration>SM_TRIGGER_A_AND_RE_TRIGGER</Declaration>
             
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="63"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_TRIGGER_ONLY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SM_TRIGGER_A_TRIGGER_ONLY</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="63"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SM_TRIGGER_A_TRIGGER_AND_LEVEL_OFF</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SM_TRIGGER_A_TRIGGER_AND_LEVEL_OFF</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="63"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SM_ALWAYS_SCAN</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SM_ALWAYS_SCAN</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="63"/>
         </Token>

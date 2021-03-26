@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/UsbInterface.html">
+	<File path="Constants/Untraceable_User.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/UsbInterface</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_User</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
 			
 			<NodeRef refid="81"/>
@@ -14,21 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UI_VIRTUAL_COMPORT</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/User_VIEW</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UI_VIRTUAL_COMPORT</Declaration>
+            <Declaration>User_VIEW</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
             <NodeRef refid="81"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UI_HID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/User_HIDE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UI_HID</Declaration>
+            <Declaration>User_HIDE</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
             
             <NodeRef refid="81"/>
         </Token>

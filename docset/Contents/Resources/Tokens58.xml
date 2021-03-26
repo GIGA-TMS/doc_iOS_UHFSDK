@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/QTWrite_QT_MEM.html">
+	<File path="Constants/QTWrite_AccessOption.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/QTWrite_QT_MEM</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/QTWrite_AccessOption</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/QT_MEM_USE_PRIVATE_MEMORY_MAP</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/QTWrite_VOLATILE_MEMORY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>QT_MEM_USE_PRIVATE_MEMORY_MAP</Declaration>
+            <Declaration>QTWrite_VOLATILE_MEMORY</Declaration>
             
             <DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/QT_MEM_USE_PUBLIC_MEMORY_MAP</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/QTWrite_NVM_MEMORY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>QT_MEM_USE_PUBLIC_MEMORY_MAP</Declaration>
+            <Declaration>QTWrite_NVM_MEMORY</Declaration>
             
             <DeclaredIn>QTWriteParameter.h</DeclaredIn>
             

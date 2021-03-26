@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Target.html">
+	<File path="Constants/TagProtection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Target</TokenIdentifier>
-			<Abstract type="html">Target</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/TagProtection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/A</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TP_Specified_Password</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>A</Declaration>
+            <Declaration>TP_Specified_Password</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/B</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TP_Dynamic_Password</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>B</Declaration>
+            <Declaration>TP_Dynamic_Password</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,39 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/A_B</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TP_Disabled</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>A_B</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="73"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/deSL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>deSL</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="73"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SL</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="73"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SL_deSL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SL_deSL</Declaration>
+            <Declaration>TP_Disabled</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

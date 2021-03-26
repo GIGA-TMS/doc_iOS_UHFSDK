@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>gigatms.GIGATMSSDK_UHF</string>
+	<string>gigatms.GIGATMSSDK</string>
 	<key>CFBundleName</key>
-	<string>GIGATMSSDK_UHF Documentation</string>
+	<string>GIGATMSSDK Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -17,7 +17,7 @@
 	
 	
 	<key>DocSetFeedName</key>
-	<string>GIGATMSSDK_UHF Documentation</string>
+	<string>GIGATMSSDK Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>

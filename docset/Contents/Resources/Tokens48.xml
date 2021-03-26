@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/InputDecodeType.html">
+	<File path="Constants/InfoOutputDataType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/InputDecodeType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/InfoOutputDataType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TAG_DATA</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CARD_TYPE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TAG_DATA</Declaration>
+            <Declaration>CARD_TYPE</Declaration>
             
             <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UDC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ISSUE_DATA</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UDC</Declaration>
+            <Declaration>ISSUE_DATA</Declaration>
             
             <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EAN_UPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BCD_USER_ID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EAN_UPC</Declaration>
+            <Declaration>BCD_USER_ID</Declaration>
             
             <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
@@ -44,9 +44,19 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/INFO</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ASCII_USER_ID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>INFO</Declaration>
+            <Declaration>ASCII_USER_ID</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="48"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/USER_NAME</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>USER_NAME</Declaration>
             
             <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             

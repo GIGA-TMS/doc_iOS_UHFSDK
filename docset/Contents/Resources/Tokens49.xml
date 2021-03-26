@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/KeyboardSimulation.html">
+	<File path="Constants/InputDecodeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/KeyboardSimulation</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/InputDecodeType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
 			
 			<NodeRef refid="49"/>
@@ -14,31 +14,41 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KS_DISABLE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/TAG_DATA</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>KS_DISABLE</Declaration>
+            <Declaration>TAG_DATA</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="49"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KS_HID_KEYBOARD</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UDC</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>KS_HID_KEYBOARD</Declaration>
+            <Declaration>UDC</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="49"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KS_BLE_KEYBOARD</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EAN_UPC</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>KS_BLE_KEYBOARD</Declaration>
+            <Declaration>EAN_UPC</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="49"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/INFO</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>INFO</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="49"/>
         </Token>

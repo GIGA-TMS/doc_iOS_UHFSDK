@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/ProtocolType.html">
+	<File path="Constants/InfoOutputDataType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/ProtocolType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/InfoOutputDataType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
+			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
 			
 			<NodeRef refid="47"/>
@@ -14,41 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_GigaTms</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/CARD_TYPE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_GigaTms</Declaration>
+            <Declaration>CARD_TYPE</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_GNetPlus</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ISSUE_DATA</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_GNetPlus</Declaration>
+            <Declaration>ISSUE_DATA</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_GNet</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BCD_USER_ID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_GNet</Declaration>
+            <Declaration>BCD_USER_ID</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PT_OSDP</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ASCII_USER_ID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PT_OSDP</Declaration>
+            <Declaration>ASCII_USER_ID</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            
+            <NodeRef refid="47"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/USER_NAME</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>USER_NAME</Declaration>
+            
+            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>

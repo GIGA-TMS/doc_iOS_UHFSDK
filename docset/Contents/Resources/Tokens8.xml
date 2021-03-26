@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GCDAsyncWritePacket.html">
+	<File path="Classes/GCDAsyncUdpSendPacket.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncWritePacket</TokenIdentifier>
-			<Abstract type="html">The GCDAsyncWritePacket encompasses the instructions for any given write.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncUdpSendPacket</TokenIdentifier>
+			<Abstract type="html">The GCDAsyncUdpSendPacket encompasses the instructions for a single send/write.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>

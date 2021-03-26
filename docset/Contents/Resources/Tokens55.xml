@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TagOutputDataType.html">
+	<File path="Constants/PostDataDelimiter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TagOutputDataType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/PostDataDelimiter</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="55"/>
@@ -14,81 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_NONE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PC</Declaration>
+            <Declaration>PDD_NONE</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="55"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>EPC</Declaration>
+            <Declaration>PDD_CARRIAGE</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="55"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PC_EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_LINE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PC_EPC</Declaration>
+            <Declaration>PDD_LINE</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="55"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE_LINE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TID</Declaration>
+            <Declaration>PDD_CARRIAGE_LINE</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="55"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/USER</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PDD_TAB</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>USER</Declaration>
+            <Declaration>PDD_TAB</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
-            
-            <NodeRef refid="55"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ASCII</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>ASCII</Declaration>
-            
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
-            
-            <NodeRef refid="55"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DEACTIVATE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DEACTIVATE</Declaration>
-            
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
-            
-            <NodeRef refid="55"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/REACTIVE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>REACTIVE</Declaration>
-            
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="55"/>
         </Token>

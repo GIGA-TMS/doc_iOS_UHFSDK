@@ -1,19 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GCDAsyncSocketPreBuffer.html">
+	<File path="Classes/GCDAsyncReadPacket.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncSocketPreBuffer</TokenIdentifier>
-			<Abstract type="html">A PreBuffer is used when there is more data available on the socket
-than is being requested by current read request.
-In this case we slurp up all data from the socket (to minimize sys calls),
-and store additional yet unread data in a &quot;prebuffer&quot;.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncReadPacket</TokenIdentifier>
+			<Abstract type="html">The GCDAsyncReadPacket encompasses the instructions for any given read.
+The content of a read packet allows the code to determine if we&apos;re:
+- reading to a certain length
+- reading to a certain separator
+- or simply reading the first chunk of available data</Abstract>
 			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/ensureCapacityForAdditionalDataOfLength:</TokenIdentifier>
+			<Abstract type="html">Increases the length of the buffer (if needed) to ensure a read of the given size will fit.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)ensureCapacityForAdditionalDataOfLength:(NSUInteger)bytesToRead</Declaration>
+			
+			
+			<Anchor>//api/name/ensureCapacityForAdditionalDataOfLength:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/optimalReadLengthWithDefault:shouldPreBuffer:</TokenIdentifier>
+			<Abstract type="html">This method is used when we do NOT know how much data is available to be read from the socket.
+This method returns the default value unless it exceeds the specified readLength or maxLength.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)optimalReadLengthWithDefault:(NSUInteger)defaultValue shouldPreBuffer:(BOOL *)shouldPreBufferPtr</Declaration>
+			
+			
+			<Anchor>//api/name/optimalReadLengthWithDefault:shouldPreBuffer:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/readLengthForNonTermWithHint:</TokenIdentifier>
+			<Abstract type="html">For read packets without a set terminator, returns the amount of data
+that can be read without exceeding the readLength or maxLength.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)readLengthForNonTermWithHint:(NSUInteger)bytesAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/readLengthForNonTermWithHint:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/readLengthForTermWithHint:shouldPreBuffer:</TokenIdentifier>
+			<Abstract type="html">For read packets with a set terminator, returns the amount of data
+that can be read without exceeding the maxLength.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)readLengthForTermWithHint:(NSUInteger)bytesAvailable shouldPreBuffer:(BOOL *)shouldPreBufferPtr</Declaration>
+			
+			
+			<Anchor>//api/name/readLengthForTermWithHint:shouldPreBuffer:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/readLengthForTermWithPreBuffer:found:</TokenIdentifier>
+			<Abstract type="html">For read packets with a set terminator,
+returns the amount of data that can be read from the given preBuffer,
+without going over a terminator or the maxLength.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)readLengthForTermWithPreBuffer:(GCDAsyncSocketPreBuffer *)preBuffer found:(BOOL *)foundPtr</Declaration>
+			
+			
+			<Anchor>//api/name/readLengthForTermWithPreBuffer:found:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/searchForTermAfterPreBuffering:</TokenIdentifier>
+			<Abstract type="html">For read packets with a set terminator, scans the packet buffer for the term.
+It is assumed the terminator had not been fully read prior to the new bytes.</Abstract>
+			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			
+			<Declaration>- (NSInteger)searchForTermAfterPreBuffering:(ssize_t)numBytes</Declaration>
+			
+			
+			<Anchor>//api/name/searchForTermAfterPreBuffering:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
 		
         
         

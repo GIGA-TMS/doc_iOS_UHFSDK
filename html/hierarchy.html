@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>GIGATMSSDK Hierarchy</title>
+	<title>GIGATMSSDK_UHF Hierarchy</title>
 
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="index.html">GIGATMSSDK </a>
+				<a href="index.html">GIGATMSSDK_UHF </a>
 			</h1>
 
 			<p id="developer-home">
@@ -38,7 +38,7 @@
 		<div id="overview-contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">GIGATMSSDK Hierarchy</h1>
+					<h1 class="title">GIGATMSSDK_UHF Hierarchy</h1>
 
 					
 					<div class="index-column hierarchy-column">
@@ -52,10 +52,18 @@
 	<li><a href="Classes/BaseDevice.html">BaseDevice</a>
 <ul>
 
+	<li><a href="Classes/DT205.html">DT205</a></li>
+
 	<li><a href="Classes/UHFDevice.html">UHFDevice</a>
 <ul>
 
-	<li><a href="Classes/TS100.html">TS100</a></li>
+	<li><a href="Classes/TS100.html">TS100</a>
+<ul>
+
+	<li><a href="Classes/TS100A.html">TS100A</a></li>
+
+</ul>
+</li>
 
 	<li><a href="Classes/TS800.html">TS800</a></li>
 
@@ -67,8 +75,10 @@
 </ul>
 </li>
 
-	<li>BaseScanner
+	<li><a href="Classes/BaseScanner.html">BaseScanner</a>
 <ul>
+
+	<li><a href="Classes/LoginReaderScanner.html">LoginReaderScanner</a></li>
 
 	<li><a href="Classes/UHFScanner.html">UHFScanner</a></li>
 
@@ -109,15 +119,11 @@
 						<h2 class="index-title">Protocol References</h2>
 						<ul>
 							
-							<li><a href="Protocols/DevConnectionCallback.html">DevConnectionCallback</a></li>
-							
 							<li><a href="Protocols/GCDAsyncSocketDelegate.html">GCDAsyncSocketDelegate</a></li>
 							
 							<li><a href="Protocols/GCDAsyncUdpSocketDelegate.html">GCDAsyncUdpSocketDelegate</a></li>
 							
 							<li><a href="Protocols/IUHFDeviceListener.html">IUHFDeviceListener</a></li>
-							
-							<li><a href="Protocols/UHFScannerCallback.html">UHFScannerCallback</a></li>
 							
 						</ul>
 						
@@ -128,6 +134,8 @@
 	                        <li><a href="Constants/ActiveMode.html">ActiveMode</a></li>
 	                        
 	                        <li><a href="Constants/ApplicationCmdCode.html">ApplicationCmdCode</a></li>
+	                        
+	                        <li><a href="Constants/BarcodeFormat.html">BarcodeFormat</a></li>
 	                        
 	                        <li><a href="Constants/BuzzerOperationMode.html">BuzzerOperationMode</a></li>
 	                        
@@ -141,9 +149,15 @@
 	                        
 	                        <li><a href="Constants/DataBaseCmdCode.html">DataBaseCmdCode</a></li>
 	                        
+	                        <li><a href="Constants/DeviceDataProtocol.html">DeviceDataProtocol</a></li>
+	                        
 	                        <li><a href="Constants/EanUpcOutputDataType.html">EanUpcOutputDataType</a></li>
 	                        
+	                        <li><a href="Constants/EncodeType.html">EncodeType</a></li>
+	                        
 	                        <li><a href="Constants/EpcHeader.html">EpcHeader</a></li>
+	                        
+	                        <li><a href="Constants/EpcPrefixState.html">EpcPrefixState</a></li>
 	                        
 	                        <li><a href="Constants/ErrorCode.html">ErrorCode</a></li>
 	                        
@@ -159,6 +173,10 @@
 	                        
 	                        <li><a href="Constants/GTDevConnStatus.html">GTDevConnStatus</a></li>
 	                        
+	                        <li><a href="Constants/IONumber.html">IONumber</a></li>
+	                        
+	                        <li><a href="Constants/IOState.html">IOState</a></li>
+	                        
 	                        <li><a href="Constants/InfoOutputDataType.html">InfoOutputDataType</a></li>
 	                        
 	                        <li><a href="Constants/InputDecodeType.html">InputDecodeType</a></li>
@@ -171,33 +189,63 @@
 	                        
 	                        <li><a href="Constants/MemoryBankSelection.html">MemoryBankSelection</a></li>
 	                        
+	                        <li><a href="Constants/OutputFormat.html">OutputFormat</a></li>
+	                        
 	                        <li><a href="Constants/OutputInterface.html">OutputInterface</a></li>
 	                        
 	                        <li><a href="Constants/PostDataDelimiter.html">PostDataDelimiter</a></li>
 	                        
 	                        <li><a href="Constants/ProtocolType.html">ProtocolType</a></li>
 	                        
+	                        <li><a href="Constants/QTWrite_AccessOption.html">QTWrite_AccessOption</a></li>
+	                        
+	                        <li><a href="Constants/QTWrite_QT_MEM.html">QTWrite_QT_MEM</a></li>
+	                        
+	                        <li><a href="Constants/QTWrite_QT_SR.html">QTWrite_QT_SR</a></li>
+	                        
 	                        <li><a href="Constants/RfSensitivityLevel.html">RfSensitivityLevel</a></li>
 	                        
 	                        <li><a href="Constants/SEC_BLK_TYPE.html">SEC_BLK_TYPE</a></li>
+	                        
+	                        <li><a href="Constants/ScanMode.html">ScanMode</a></li>
 	                        
 	                        <li><a href="Constants/SecurityCmdCode.html">SecurityCmdCode</a></li>
 	                        
 	                        <li><a href="Constants/Session.html">Session</a></li>
 	                        
+	                        <li><a href="Constants/ShortRange_ShortRangeType.html">ShortRange_ShortRangeType</a></li>
+	                        
 	                        <li><a href="Constants/SoftwareAPINameCode.html">SoftwareAPINameCode</a></li>
+	                        
+	                        <li><a href="Constants/State.html">State</a></li>
 	                        
 	                        <li><a href="Constants/TS100SpecialCode.html">TS100SpecialCode</a></li>
 	                        
 	                        <li><a href="Constants/TagDataEncodeType.html">TagDataEncodeType</a></li>
 	                        
+	                        <li><a href="Constants/TagMemorySelection.html">TagMemorySelection</a></li>
+	                        
 	                        <li><a href="Constants/TagOutputDataType.html">TagOutputDataType</a></li>
+	                        
+	                        <li><a href="Constants/TagProtection.html">TagProtection</a></li>
 	                        
 	                        <li><a href="Constants/Target.html">Target</a></li>
 	                        
 	                        <li><a href="Constants/TriggerType.html">TriggerType</a></li>
 	                        
 	                        <li><a href="Constants/UdcOutputDataType.html">UdcOutputDataType</a></li>
+	                        
+	                        <li><a href="Constants/Untraceable_EPC.html">Untraceable_EPC</a></li>
+	                        
+	                        <li><a href="Constants/Untraceable_FlagU.html">Untraceable_FlagU</a></li>
+	                        
+	                        <li><a href="Constants/Untraceable_Range.html">Untraceable_Range</a></li>
+	                        
+	                        <li><a href="Constants/Untraceable_TID.html">Untraceable_TID</a></li>
+	                        
+	                        <li><a href="Constants/Untraceable_User.html">Untraceable_User</a></li>
+	                        
+	                        <li><a href="Constants/UsbInterface.html">UsbInterface</a></li>
 	                        
 	                        <li><a href="Constants/_TS100_EEPROM_Address.html">_TS100_EEPROM_Address</a></li>
 	                        
@@ -210,7 +258,7 @@
 					<footer>
 						<div class="footer-copyright">
 							
-							<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-08</p>
+							<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-26</p>
 							
 							
 							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TS100SpecialCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TS100SpecialCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+            
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getBleDeviceName</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SW_EE_TS100_getBleDeviceName</Declaration>
+            
+            <DeclaredIn>TS100.h</DeclaredIn>
+            
+            <NodeRef refid="68"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

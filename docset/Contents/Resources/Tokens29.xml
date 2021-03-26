@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/DataBaseCmdCode.html">
+	<File path="Constants/CommonCmdCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/DataBaseCmdCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/CommonCmdCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Get_TableInformation</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/START_MESSAGE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Get_TableInformation</Declaration>
+            <Declaration>START_MESSAGE</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Open_Table</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/POLL</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Open_Table</Declaration>
+            <Declaration>POLL</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Close_Table</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/GET_FIRMWARE_INFORMATION</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Close_Table</Declaration>
+            <Declaration>GET_FIRMWARE_INFORMATION</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Get_Record_Count</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/GET_DEVICE_SERIAL_NUMBER</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Get_Record_Count</Declaration>
+            <Declaration>GET_DEVICE_SERIAL_NUMBER</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -54,9 +54,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Get_Records</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/REBOOT</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Get_Records</Declaration>
+            <Declaration>REBOOT</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -64,9 +64,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Add_Record</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/JUMP_TO_ISP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Add_Record</Declaration>
+            <Declaration>JUMP_TO_ISP</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -74,9 +74,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Update_Record</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ECHO</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Update_Record</Declaration>
+            <Declaration>ECHO</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -84,9 +84,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Delete_Records</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/INITIALIZE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Delete_Records</Declaration>
+            <Declaration>INITIALIZE</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -94,9 +94,129 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/Recover_Records</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/UPDATE_SETTINGS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>Recover_Records</Declaration>
+            <Declaration>UPDATE_SETTINGS</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOGIN</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOGIN</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LOGOUT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LOGOUT</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SET_LOGIN_PASSWORD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SET_LOGIN_PASSWORD</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/WRITE_EEPROM</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>WRITE_EEPROM</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/READ_EEPROM</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>READ_EEPROM</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SET_DATE_TIME</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SET_DATE_TIME</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GET_DATE_TIME</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>GET_DATE_TIME</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CONTROL_OUTPUT_STATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CONTROL_OUTPUT_STATE</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GET_INPUT_STATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>GET_INPUT_STATE</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CONTROL_BUZZER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CONTROL_BUZZER</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CONTROL_LED</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CONTROL_LED</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_TEXT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OUTPUT_TEXT</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             

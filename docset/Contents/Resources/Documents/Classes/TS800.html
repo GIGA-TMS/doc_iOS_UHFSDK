@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">GIGATMSSDK </a>
+				<a href="../index.html">GIGATMSSDK_UHF </a>
 			</h1>
 
 			<p id="developer-home">
@@ -59,6 +59,14 @@
 	<optgroup label="Instance Methods">
 		
 		<option value="//api/name/cmdInitializeSettings">- cmdInitializeSettings</option>
+		
+		<option value="//api/name/controlBuzzer:">- controlBuzzer:</option>
+		
+		<option value="//api/name/getBleDeviceName">- getBleDeviceName</option>
+		
+		<option value="//api/name/getBleRomVersion">- getBleRomVersion</option>
+		
+		<option value="//api/name/setBleDeviceName:">- setBleDeviceName:</option>
 		
 	</optgroup>
 	
@@ -147,6 +155,218 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBleDeviceName" title="getBleDeviceName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBleDeviceName">&ndash;&nbsp;getBleDeviceName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Device BLE Neme</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBleDeviceName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Device BLE Neme</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS800.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBleDeviceName:" title="setBleDeviceName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBleDeviceName:">&ndash;&nbsp;setBleDeviceName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set Device BLE Neme</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBleDeviceName:(NSString *)<em>devName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devName</code></th>
+						<td><p>Device BLE Neme</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set Device BLE Neme</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS800.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBleRomVersion" title="getBleRomVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBleRomVersion">&ndash;&nbsp;getBleRomVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Device BLE module
+Gets the firmware program version running on the device BLE module.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBleRomVersion</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Device BLE module
+Gets the firmware program version running on the device BLE module.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TS800.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controlBuzzer:" title="controlBuzzer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlBuzzer:">&ndash;&nbsp;controlBuzzer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+<a href="../Constants/Control.html">Control</a> reader to make a specified sound beep.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)controlBuzzer:(BuzzerAction)<em>buzzerAct</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>buzzerAct</code></th>
+						<td><p>Buzze ActionbuzzerAct</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Only for <a href="../Classes/TS100.html">TS100</a>
+<a href="../Constants/Control.html">Control</a> reader to make a specified sound beep.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHFDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -162,7 +382,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-08</p>
+						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-26</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

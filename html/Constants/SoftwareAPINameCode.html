@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">GIGATMSSDK </a>
+				<a href="../index.html">GIGATMSSDK_UHF </a>
 			</h1>
 
 			<p id="developer-home">
@@ -125,7 +125,7 @@
                             
                             &nbsp;&nbsp; <a href="">SW_EE_SetRfPower</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">SW_EE_SetSensitivity</a>,<br>
+                            &nbsp;&nbsp; <a href="">SW_EE_SetRfSensitivity</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_SetFrequencyList</a>,<br>
                             
@@ -136,6 +136,14 @@
                             &nbsp;&nbsp; <a href="">SW_EE_SetInventoryRoundInterval</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_SetSpecialSetting</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_SetRxDecodeType</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_SetLinkFrequency</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_SetProfileID</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_SetDeviceID</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_GetBuzzerOperationMode</a>,<br>
                             
@@ -151,7 +159,7 @@
                             
                             &nbsp;&nbsp; <a href="">SW_EE_GetRfPower</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">SW_EE_GetSensitivity</a>,<br>
+                            &nbsp;&nbsp; <a href="">SW_EE_GetRfSensitivity</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_GetFrequencyList</a>,<br>
                             
@@ -163,9 +171,21 @@
                             
                             &nbsp;&nbsp; <a href="">SW_EE_GetSpecialSetting</a>,<br>
                             
+                            &nbsp;&nbsp; <a href="">SW_EE_GetRxDecodeType</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_GetLinkFrequency</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_GetProfileID</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_GetDeviceID</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_DirectIO</a>,<br>
+                            
                             &nbsp;&nbsp; <a href="">SW_CC_TS100_getBleDeviceName</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_CC_TS100_setBleDeviceName</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_CC_TS100_getBleMacAddress</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_CC_TS100_getBleRomVersion</a>,<br>
                             
@@ -207,13 +227,97 @@
                             
                             &nbsp;&nbsp; <a href="">SW_EE_TS100_setWifiSettings</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">SW_EE_TS100_seWifiSettings</a>,<br>
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getWifiSettings</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_TS100_setTagPresentedRepeatInterval</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_TS100_getTagPresentedRepeatInterval</a>,<br>
                             
                             &nbsp;&nbsp; <a href="">SW_EE_TS100_getWiFiMacAddress</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setRemoteHost</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getRemoteHost</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_writeTagEx</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_readTagEx</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getTagMemroySelection</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setTagMemorySelection</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getBarcodeReadFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setBarcodeReadFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getFieldSeparator</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setFieldSeparator</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getSuffix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setSuffix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getDeactivateEpcPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setDeactivateEpcPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getReactivateEpcPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setReactivateEpcPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getTransformEpcState</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setTransformEpcState</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getTransformEpcPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setTransformEpcPrefix</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getEncodeType</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setEncodeType</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getTagProtection</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setTagProtection</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setTagProtectionAccessPassword</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getTagProtectionAccessPassword</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getUsbInterface</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setUsbInterface</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getOutputFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setOutputFormat</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_getEpcNormalize</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS100_setEpcNormalize</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_getIOState</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_setIOState</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_setOutputInterface</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_getOutputInterface</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_setCommandTriggerState</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_getCommandTriggerState</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_EE_TS800_getIpAddress</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">SW_CC_TS100_protectTagPrivacy</a>,<br>
                             
                             };</code>
                     
@@ -433,7 +537,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="SW_EE_SetSensitivity"></a><code>SW_EE_SetSensitivity</code></dt>
+                            <dt><a name="" title="SW_EE_SetRfSensitivity"></a><code>SW_EE_SetRfSensitivity</code></dt>
 <dd>
 
     
@@ -484,6 +588,46 @@
 </dd>
                             
                             <dt><a name="" title="SW_EE_SetSpecialSetting"></a><code>SW_EE_SetSpecialSetting</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_SetRxDecodeType"></a><code>SW_EE_SetRxDecodeType</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_SetLinkFrequency"></a><code>SW_EE_SetLinkFrequency</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_SetProfileID"></a><code>SW_EE_SetProfileID</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_SetDeviceID"></a><code>SW_EE_SetDeviceID</code></dt>
 <dd>
 
     
@@ -563,7 +707,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="SW_EE_GetSensitivity"></a><code>SW_EE_GetSensitivity</code></dt>
+                            <dt><a name="" title="SW_EE_GetRfSensitivity"></a><code>SW_EE_GetRfSensitivity</code></dt>
 <dd>
 
     
@@ -623,6 +767,56 @@
 	
 </dd>
                             
+                            <dt><a name="" title="SW_EE_GetRxDecodeType"></a><code>SW_EE_GetRxDecodeType</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_GetLinkFrequency"></a><code>SW_EE_GetLinkFrequency</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_GetProfileID"></a><code>SW_EE_GetProfileID</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_GetDeviceID"></a><code>SW_EE_GetDeviceID</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_DirectIO"></a><code>SW_EE_DirectIO</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
                             <dt><a name="" title="SW_CC_TS100_getBleDeviceName"></a><code>SW_CC_TS100_getBleDeviceName</code></dt>
 <dd>
 
@@ -634,6 +828,16 @@
 </dd>
                             
                             <dt><a name="" title="SW_CC_TS100_setBleDeviceName"></a><code>SW_CC_TS100_setBleDeviceName</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_CC_TS100_getBleMacAddress"></a><code>SW_CC_TS100_getBleMacAddress</code></dt>
 <dd>
 
     
@@ -843,7 +1047,7 @@
 	
 </dd>
                             
-                            <dt><a name="" title="SW_EE_TS100_seWifiSettings"></a><code>SW_EE_TS100_seWifiSettings</code></dt>
+                            <dt><a name="" title="SW_EE_TS100_getWifiSettings"></a><code>SW_EE_TS100_getWifiSettings</code></dt>
 <dd>
 
     
@@ -883,6 +1087,426 @@
 	
 </dd>
                             
+                            <dt><a name="" title="SW_EE_TS100_setRemoteHost"></a><code>SW_EE_TS100_setRemoteHost</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getRemoteHost"></a><code>SW_EE_TS100_getRemoteHost</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_writeTagEx"></a><code>SW_EE_TS100_writeTagEx</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_readTagEx"></a><code>SW_EE_TS100_readTagEx</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getTagMemroySelection"></a><code>SW_EE_TS100_getTagMemroySelection</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setTagMemorySelection"></a><code>SW_EE_TS100_setTagMemorySelection</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getBarcodeReadFormat"></a><code>SW_EE_TS100_getBarcodeReadFormat</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setBarcodeReadFormat"></a><code>SW_EE_TS100_setBarcodeReadFormat</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getFieldSeparator"></a><code>SW_EE_TS100_getFieldSeparator</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setFieldSeparator"></a><code>SW_EE_TS100_setFieldSeparator</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getPrefix"></a><code>SW_EE_TS100_getPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setPrefix"></a><code>SW_EE_TS100_setPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getSuffix"></a><code>SW_EE_TS100_getSuffix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setSuffix"></a><code>SW_EE_TS100_setSuffix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getDeactivateEpcPrefix"></a><code>SW_EE_TS100_getDeactivateEpcPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setDeactivateEpcPrefix"></a><code>SW_EE_TS100_setDeactivateEpcPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getReactivateEpcPrefix"></a><code>SW_EE_TS100_getReactivateEpcPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setReactivateEpcPrefix"></a><code>SW_EE_TS100_setReactivateEpcPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getTransformEpcState"></a><code>SW_EE_TS100_getTransformEpcState</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setTransformEpcState"></a><code>SW_EE_TS100_setTransformEpcState</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getTransformEpcPrefix"></a><code>SW_EE_TS100_getTransformEpcPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setTransformEpcPrefix"></a><code>SW_EE_TS100_setTransformEpcPrefix</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getEncodeType"></a><code>SW_EE_TS100_getEncodeType</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setEncodeType"></a><code>SW_EE_TS100_setEncodeType</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getTagProtection"></a><code>SW_EE_TS100_getTagProtection</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setTagProtection"></a><code>SW_EE_TS100_setTagProtection</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setTagProtectionAccessPassword"></a><code>SW_EE_TS100_setTagProtectionAccessPassword</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getTagProtectionAccessPassword"></a><code>SW_EE_TS100_getTagProtectionAccessPassword</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getUsbInterface"></a><code>SW_EE_TS100_getUsbInterface</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setUsbInterface"></a><code>SW_EE_TS100_setUsbInterface</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getOutputFormat"></a><code>SW_EE_TS100_getOutputFormat</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setOutputFormat"></a><code>SW_EE_TS100_setOutputFormat</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_getEpcNormalize"></a><code>SW_EE_TS100_getEpcNormalize</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS100_setEpcNormalize"></a><code>SW_EE_TS100_setEpcNormalize</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_getIOState"></a><code>SW_EE_TS800_getIOState</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_setIOState"></a><code>SW_EE_TS800_setIOState</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_setOutputInterface"></a><code>SW_EE_TS800_setOutputInterface</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_getOutputInterface"></a><code>SW_EE_TS800_getOutputInterface</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_setCommandTriggerState"></a><code>SW_EE_TS800_setCommandTriggerState</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_getCommandTriggerState"></a><code>SW_EE_TS800_getCommandTriggerState</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_EE_TS800_getIpAddress"></a><code>SW_EE_TS800_getIpAddress</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="SW_CC_TS100_protectTagPrivacy"></a><code>SW_CC_TS100_protectTagPrivacy</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">GNPSwAPICode.h</code>.
+	</p>
+	
+</dd>
+                            
                         </dl>
                     </div>
                     
@@ -896,7 +1520,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-08</p>
+						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-26</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

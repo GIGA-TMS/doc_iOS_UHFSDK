@@ -1,16 +1,629 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GNPDecodedTagData.html">
+	<File path="Classes/GCDAsyncUdpSocket.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GNPDecodedTagData</TokenIdentifier>
-			<Abstract type="html">Decoded Tag Data Format</Abstract>
-			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncUdpSocket</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/init</TokenIdentifier>
+			<Abstract type="html">GCDAsyncUdpSocket uses the standard delegate paradigm,
+but executes all delegate callbacks on a given delegate dispatch queue.
+This allows for maximum concurrency, while at the same time providing easy thread safety.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/isIPv4Enabled</TokenIdentifier>
+			<Abstract type="html">By default, both IPv4 and IPv6 are enabled.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isIPv4Enabled</Declaration>
+			
+			
+			<Anchor>//api/name/isIPv4Enabled</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/maxReceiveIPv4BufferSize</TokenIdentifier>
+			<Abstract type="html">Gets/Sets the maximum size of the buffer that will be allocated for receive operations.
+The default maximum size is 65535 bytes.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (uint16_t)maxReceiveIPv4BufferSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxReceiveIPv4BufferSize</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/maxSendBufferSize</TokenIdentifier>
+			<Abstract type="html">Gets/Sets the maximum size of the buffer that will be allocated for send operations.
+The default maximum size is 65535 bytes.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (uint16_t)maxSendBufferSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxSendBufferSize</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/userData</TokenIdentifier>
+			<Abstract type="html">User data allows you to associate arbitrary information with the socket.
+This data is not used internally in any way.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (id)userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/sendTimeoutError</TokenIdentifier>
+			<Abstract type="html">Returns a standard send timeout error.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (NSError *)sendTimeoutError</Declaration>
+			
+			
+			<Anchor>//api/name/sendTimeoutError</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/asyncResolveHost:port:withCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">This method executes on a global concurrent queue.
+When complete, it executes the given completion block on the socketQueue.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)asyncResolveHost:(NSString *)aHost port:(uint16_t)port withCompletionBlock:(void ( ^ ) ( NSArray *addresses , NSError *error ))completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/asyncResolveHost:port:withCompletionBlock:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/getAddress:error:fromAddresses:</TokenIdentifier>
+			<Abstract type="html">This method picks an address from the given list of addresses.
+The address picked depends upon which protocols are disabled, deactived, &amp;amp; preferred.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (int)getAddress:(NSData **)addressPtr error:(NSError **)errorPtr fromAddresses:(NSArray *)addresses</Declaration>
+			
+			
+			<Anchor>//api/name/getAddress:error:fromAddresses:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/convertIntefaceDescription:port:intoAddress4:address6:</TokenIdentifier>
+			<Abstract type="html">Finds the address(es) of an interface description.
+An inteface description may be an interface name (en0, en1, lo0) or corresponding IP (192.168.4.34).</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)convertIntefaceDescription:(NSString *)interfaceDescription port:(uint16_t)port intoAddress4:(NSData **)interfaceAddr4Ptr address6:(NSData **)interfaceAddr6Ptr</Declaration>
+			
+			
+			<Anchor>//api/name/convertIntefaceDescription:port:intoAddress4:address6:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/convertNumericHost:port:intoAddress4:address6:</TokenIdentifier>
+			<Abstract type="html">Converts a numeric hostname into its corresponding address.
+The hostname is expected to be an IPv4 or IPv6 address represented as a human-readable string. (e.g. 192.168.4.34)</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)convertNumericHost:(NSString *)numericHost port:(uint16_t)port intoAddress4:(NSData **)addr4Ptr address6:(NSData **)addr6Ptr</Declaration>
+			
+			
+			<Anchor>//api/name/convertNumericHost:port:intoAddress4:address6:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/createSockets:</TokenIdentifier>
+			<Abstract type="html">The theoretical maximum size of any IPv4 UDP packet is UINT16_MAX = 65535.
+The theoretical maximum size of any IPv6 UDP packet is UINT32_MAX = 4294967295.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)createSockets:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/createSockets:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/localAddress</TokenIdentifier>
+			<Abstract type="html">Returns the local address info for the socket.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)localAddress</Declaration>
+			
+			
+			<Anchor>//api/name/localAddress</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/connectedAddress</TokenIdentifier>
+			<Abstract type="html">Returns the remote address info for the socket.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)connectedAddress</Declaration>
+			
+			
+			<Anchor>//api/name/connectedAddress</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/isConnected</TokenIdentifier>
+			<Abstract type="html">Returns whether or not this socket has been connected to a single host.
+By design, UDP is a connectionless protocol, and connecting is not needed.
+If connected, the socket will only be able to send/receive data to/from the connected host.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isConnected</Declaration>
+			
+			
+			<Anchor>//api/name/isConnected</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/isClosed</TokenIdentifier>
+			<Abstract type="html">Returns whether or not this socket has been closed.
+The only way a socket can be closed is if you explicitly call one of the close methods.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isClosed</Declaration>
+			
+			
+			<Anchor>//api/name/isClosed</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/isIPv4</TokenIdentifier>
+			<Abstract type="html">Returns whether or not this socket is IPv4.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isIPv4</Declaration>
+			
+			
+			<Anchor>//api/name/isIPv4</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/isIPv6</TokenIdentifier>
+			<Abstract type="html">Returns whether or not this socket is IPv6.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isIPv6</Declaration>
+			
+			
+			<Anchor>//api/name/isIPv6</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/preBind:</TokenIdentifier>
+			<Abstract type="html">This method runs through the various checks required prior to a bind attempt.
+It is shared between the various bind methods.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)preBind:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/preBind:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/bindToPort:error:</TokenIdentifier>
+			<Abstract type="html">Binds the UDP socket to the given port.
+Binding should be done for server sockets that receive data prior to sending it.
+Client sockets can skip binding,
+as the OS will automatically assign the socket an available port when it starts sending data.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)bindToPort:(uint16_t)port error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/bindToPort:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/bindToPort:interface:error:</TokenIdentifier>
+			<Abstract type="html">Binds the UDP socket to the given port and optional interface.
+Binding should be done for server sockets that receive data prior to sending it.
+Client sockets can skip binding,
+as the OS will automatically assign the socket an available port when it starts sending data.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)bindToPort:(uint16_t)port interface:(NSString *)interface error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/bindToPort:interface:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/bindToAddress:error:</TokenIdentifier>
+			<Abstract type="html">Binds the UDP socket to the given address, specified as a sockaddr structure wrapped in a NSData object.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)bindToAddress:(NSData *)localAddr error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/bindToAddress:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/preConnect:</TokenIdentifier>
+			<Abstract type="html">This method runs through the various checks required prior to a connect attempt.
+It is shared between the various connect methods.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)preConnect:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/preConnect:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/connectToHost:onPort:error:</TokenIdentifier>
+			<Abstract type="html">Connects the UDP socket to the given host and port.
+By design, UDP is a connectionless protocol, and connecting is not needed.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectToHost:(NSString *)host onPort:(uint16_t)port error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/connectToHost:onPort:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/connectToAddress:error:</TokenIdentifier>
+			<Abstract type="html">Connects the UDP socket to the given address, specified as a sockaddr structure wrapped in a NSData object.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectToAddress:(NSData *)remoteAddr error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/connectToAddress:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/joinMulticastGroup:error:</TokenIdentifier>
+			<Abstract type="html">Join multicast group.
+Group should be an IP address (eg @&quot;225.228.0.1&quot;).</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)joinMulticastGroup:(NSString *)group error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/joinMulticastGroup:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/joinMulticastGroup:onInterface:error:</TokenIdentifier>
+			<Abstract type="html">Join multicast group.
+Group should be an IP address (eg @&quot;225.228.0.1&quot;).
+The interface may be a name (e.g. &quot;en1&quot; or &quot;lo0&quot;) or the corresponding IP address (e.g. &quot;192.168.4.35&quot;).</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)joinMulticastGroup:(NSString *)group onInterface:(NSString *)interface error:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/joinMulticastGroup:onInterface:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/sendData:withTimeout:tag:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends the given data, with the given timeout and tag.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)sendData:(NSData *)data withTimeout:(NSTimeInterval)timeout tag:(long)tag</Declaration>
+			
+			
+			<Anchor>//api/name/sendData:withTimeout:tag:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/sendData:toHost:port:withTimeout:tag:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends the given data, with the given timeout and tag, to the given host and port.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)sendData:(NSData *)data toHost:(NSString *)host port:(uint16_t)port withTimeout:(NSTimeInterval)timeout tag:(long)tag</Declaration>
+			
+			
+			<Anchor>//api/name/sendData:toHost:port:withTimeout:tag:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/sendData:toAddress:withTimeout:tag:</TokenIdentifier>
+			<Abstract type="html">Asynchronously sends the given data, with the given timeout and tag, to the given address.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)sendData:(NSData *)data toAddress:(NSData *)remoteAddr withTimeout:(NSTimeInterval)timeout tag:(long)tag</Declaration>
+			
+			
+			<Anchor>//api/name/sendData:toAddress:withTimeout:tag:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/setSendFilter:withQueue:</TokenIdentifier>
+			<Abstract type="html">You may optionally set a send filter for the socket.
+A filter can provide several interesting possibilities:</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)setSendFilter:(GCDAsyncUdpSocketSendFilterBlock)filterBlock withQueue:(dispatch_queue_t)filterQueue</Declaration>
+			
+			
+			<Anchor>//api/name/setSendFilter:withQueue:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/setSendFilter:withQueue:isAsynchronous:</TokenIdentifier>
+			<Abstract type="html">The receive filter can be run via dispatchasync or dispatchsync.
+Most typical situations call for asynchronous operation.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)setSendFilter:(GCDAsyncUdpSocketSendFilterBlock)filterBlock withQueue:(dispatch_queue_t)filterQueue isAsynchronous:(BOOL)isAsynchronous</Declaration>
+			
+			
+			<Anchor>//api/name/setSendFilter:withQueue:isAsynchronous:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/doPreSend</TokenIdentifier>
+			<Abstract type="html">This method is called after a sendPacket has been dequeued.
+It performs various preprocessing checks on the packet,
+and queries the sendFilter (if set) to determine if the packet can be sent.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)doPreSend</Declaration>
+			
+			
+			<Anchor>//api/name/doPreSend</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/doSend</TokenIdentifier>
+			<Abstract type="html">This method performs the actual sending of data in the currentSend packet.
+It should only be called if the</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)doSend</Declaration>
+			
+			
+			<Anchor>//api/name/doSend</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/endCurrentSend</TokenIdentifier>
+			<Abstract type="html">Releases all resources associated with the currentSend.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)endCurrentSend</Declaration>
+			
+			
+			<Anchor>//api/name/endCurrentSend</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/doSendTimeout</TokenIdentifier>
+			<Abstract type="html">Performs the operations to timeout the current send operation, and move on.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)doSendTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/doSendTimeout</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/setupSendTimerWithTimeout:</TokenIdentifier>
+			<Abstract type="html">Sets up a timer that fires to timeout the current send operation.
+This method should only be called once per send packet.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.m</DeclaredIn>
+			
+			<Declaration>- (void)setupSendTimerWithTimeout:(NSTimeInterval)timeout</Declaration>
+			
+			
+			<Anchor>//api/name/setupSendTimerWithTimeout:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/beginReceiving:</TokenIdentifier>
+			<Abstract type="html">There are two modes of operation for receiving packets: one-at-a-time &amp;amp; continuous.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)beginReceiving:(NSError **)errPtr</Declaration>
+			
+			
+			<Anchor>//api/name/beginReceiving:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/pauseReceiving</TokenIdentifier>
+			<Abstract type="html">If the socket is currently receiving (beginReceiving has been called), this method pauses the receiving.
+That is, it won&apos;t read any more packets from the underlying OS socket until beginReceiving is called again.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)pauseReceiving</Declaration>
+			
+			
+			<Anchor>//api/name/pauseReceiving</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/setReceiveFilter:withQueue:</TokenIdentifier>
+			<Abstract type="html">You may optionally set a receive filter for the socket.
+This receive filter may be set to run in its own queue (independent of delegate queue).</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)setReceiveFilter:(GCDAsyncUdpSocketReceiveFilterBlock)filterBlock withQueue:(dispatch_queue_t)filterQueue</Declaration>
+			
+			
+			<Anchor>//api/name/setReceiveFilter:withQueue:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/setReceiveFilter:withQueue:isAsynchronous:</TokenIdentifier>
+			<Abstract type="html">The receive filter can be run via dispatchasync or dispatchsync.
+Most typical situations call for asynchronous operation.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)setReceiveFilter:(GCDAsyncUdpSocketReceiveFilterBlock)filterBlock withQueue:(dispatch_queue_t)filterQueue isAsynchronous:(BOOL)isAsynchronous</Declaration>
+			
+			
+			<Anchor>//api/name/setReceiveFilter:withQueue:isAsynchronous:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/close</TokenIdentifier>
+			<Abstract type="html">Immediately closes the underlying socket.
+Any pending send operations are discarded.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)close</Declaration>
+			
+			
+			<Anchor>//api/name/close</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/closeAfterSending</TokenIdentifier>
+			<Abstract type="html">Closes the underlying socket after all pending send operations have been sent.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)closeAfterSending</Declaration>
+			
+			
+			<Anchor>//api/name/closeAfterSending</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/markSocketQueueTargetQueue:</TokenIdentifier>
+			<Abstract type="html">See header file for big discussion of this method.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)markSocketQueueTargetQueue:(dispatch_queue_t)socketNewTargetQueue</Declaration>
+			
+			
+			<Anchor>//api/name/markSocketQueueTargetQueue:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/unmarkSocketQueueTargetQueue:</TokenIdentifier>
+			<Abstract type="html">See header file for big discussion of this method.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)unmarkSocketQueueTargetQueue:(dispatch_queue_t)socketOldTargetQueue</Declaration>
+			
+			
+			<Anchor>//api/name/unmarkSocketQueueTargetQueue:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/performBlock:</TokenIdentifier>
+			<Abstract type="html">It&apos;s not thread-safe to access certain variables from outside the socket&apos;s internal queue.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (void)performBlock:(dispatch_block_t)block</Declaration>
+			
+			
+			<Anchor>//api/name/performBlock:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/socketFD</TokenIdentifier>
+			<Abstract type="html">These methods are only available from within the context of a performBlock: invocation.
+See the documentation for the performBlock: method above.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (int)socketFD</Declaration>
+			
+			
+			<Anchor>//api/name/socketFD</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncUdpSocket/readStream</TokenIdentifier>
+			<Abstract type="html">These methods are only available from within the context of a performBlock: invocation.
+See the documentation for the performBlock: method above.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>- (CFReadStreamRef)readStream</Declaration>
+			
+			
+			<Anchor>//api/name/readStream</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/GCDAsyncUdpSocket/hostFromAddress:</TokenIdentifier>
+			<Abstract type="html">Extracting host/port/family information from raw address data.</Abstract>
+			<DeclaredIn>GCDAsyncUdpSocket.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)hostFromAddress:(NSData *)address</Declaration>
+			
+			
+			<Anchor>//api/name/hostFromAddress:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
 		
         
         

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/OutputInterface.html">
+	<File path="Constants/IONumber.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/OutputInterface</TokenIdentifier>
-			<Abstract type="html">multiple</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/IONumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_SERVER_1_0</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OI_TCP_SERVER_1_0</Declaration>
+            <Declaration>OUTPUT_PIN_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OI_Default_1_0</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_1</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OI_Default_1_0</Declaration>
+            <Declaration>OUTPUT_PIN_1</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OI_HID_N_VCOM</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OUTPUT_PIN_2</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OI_HID_N_VCOM</Declaration>
+            <Declaration>OUTPUT_PIN_2</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -44,29 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OI_BLE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/INPUT_PIN_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>OI_BLE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="45"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_CLIENT</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>OI_TCP_CLIENT</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="45"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_SERVER</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>OI_TCP_SERVER</Declaration>
+            <Declaration>INPUT_PIN_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

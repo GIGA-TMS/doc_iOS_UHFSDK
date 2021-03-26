@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>UHFScannerCallback Protocol Reference</title>
+	<title>TS100A Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">GIGATMSSDK </a>
+				<a href="../index.html">GIGATMSSDK_UHF </a>
 			</h1>
 
 			<p id="developer-home">
@@ -43,8 +43,6 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-	<option value="overview">Overview</option>
-	
 
 	
 	
@@ -60,11 +58,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/didDiscoverDevice:">- didDiscoverDevice:</option>
+		<option value="//api/name/getInventoryActiveMode:">- getInventoryActiveMode:</option>
 		
-		<option value="//api/name/didError:">- didError:</option>
-		
-		<option value="//api/name/didScanStop">- didScanStop</option>
+		<option value="//api/name/setInventoryActiveMode:InventoryActiveMode:">- setInventoryActiveMode:InventoryActiveMode:</option>
 		
 	</optgroup>
 	
@@ -81,29 +77,21 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">UHFScannerCallback Protocol Reference</h1>
+					<h1 class="title">TS100A Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Conforms to</th>
-	<td>NSObject</td>
+	<th>Inherits from</th>
+	<td><a href="../Classes/TS100.html">TS100</a> : <a href="../Classes/UHFDevice.html">UHFDevice</a> : <a href="../Classes/BaseDevice.html">BaseDevice</a> : NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>UHFScanner.h</td>
+	<td>TS100A.h<br />TS100A.m</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The callback protocol getting scanning operation result.</p>
-					</div>
-					
-					
 
 					
 					
@@ -116,8 +104,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/didScanStop" title="didScanStop"></a>
-	<h3 class="method-title"><code><a href="#//api/name/didScanStop">&ndash;&nbsp;didScanStop</a></code>
+	<a name="//api/name/getInventoryActiveMode:" title="getInventoryActiveMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInventoryActiveMode:">&ndash;&nbsp;getInventoryActiveMode:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,58 +115,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This method is called when scanning operation is stopped.</p>
+				<p>Get Active Mode of the device.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)didScanStop</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method is called when scanning operation is stopped.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFScanner.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/didDiscoverDevice:" title="didDiscoverDevice:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/didDiscoverDevice:">&ndash;&nbsp;didDiscoverDevice:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This method is called when a device is scanned.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)didDiscoverDevice:(BaseDevice *)<em>dev</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getInventoryActiveMode:(BOOL)<em>isTemp</em></code></div>
 
 		    
 			
@@ -187,8 +129,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>dev</code></th>
-						<td><p>The device which is discovered.</p></td>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</p></td>
 					</tr>
 				
 				</table>
@@ -202,7 +144,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method is called when a device is scanned.</p>
+				<p>Get Active Mode of the device.</p>
 			</div>
 			
 
@@ -213,15 +155,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFScanner.h</code></p>
+				<p><code class="declared-in-ref">TS100.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/didError:" title="didError:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/didError:">&ndash;&nbsp;didError:</a></code>
+	<a name="//api/name/setInventoryActiveMode:InventoryActiveMode:" title="setInventoryActiveMode:InventoryActiveMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setInventoryActiveMode:InventoryActiveMode:">&ndash;&nbsp;setInventoryActiveMode:InventoryActiveMode:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -231,14 +173,31 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This method is called when an error is happended.</p>
+				<p>Set Active Mode of the device.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)didError:(NSString *)<em>strError</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setInventoryActiveMode:(BOOL)<em>isTemp</em> InventoryActiveMode:(ActiveMode)<em>activeMode</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isTemp</code></th>
+						<td><p>True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>activeMode</code></th>
+						<td><p>The Active mode of the connected remote device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -248,7 +207,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method is called when an error is happended.</p>
+				<p>Set Active Mode of the device.</p>
 			</div>
 			
 
@@ -259,7 +218,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UHFScanner.h</code></p>
+				<p><code class="declared-in-ref">TS100.h</code></p>
 			</div>
 			
 			
@@ -280,7 +239,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-08</p>
+						<p class="copyright">Copyright &copy; 2021 GIGATMS.INC. All rights reserved. Updated: 2021-03-26</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

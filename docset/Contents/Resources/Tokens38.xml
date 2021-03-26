@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/GTDevConnStatus.html">
+	<File path="Constants/ErrorCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/GTDevConnStatus</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/ErrorCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
 			
 			<NodeRef refid="38"/>
@@ -14,51 +14,181 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConntPwdError</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_GTP_SUCCESS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevConntPwdError</Declaration>
+            <Declaration>ERR_GTP_SUCCESS</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConntError</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_BUSY</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevConntError</Declaration>
+            <Declaration>ERR_BUSY</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevDisconnected</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_ACCESS_DENIED</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevDisconnected</Declaration>
+            <Declaration>ERR_ACCESS_DENIED</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConnecting</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_INVALID_PARAMETER</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevConnecting</Declaration>
+            <Declaration>ERR_INVALID_PARAMETER</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DevConnected</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_CHECK</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DevConnected</Declaration>
+            <Declaration>ERR_CHECK</Declaration>
             
-            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_UNKNOWN</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_UNKNOWN</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_INVALID_COMMAND</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_INVALID_COMMAND</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_TIMEOUT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_TIMEOUT</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_MEMORY_FULL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_MEMORY_FULL</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_REQUEST</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_REQUEST</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_COMMAND_LENGTH</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_COMMAND_LENGTH</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_UNEXPECTED_PACKET_NUMBER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_UNEXPECTED_PACKET_NUMBER</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_NOT_SUPPORT_SECURITY_BLOCK</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_NOT_SUPPORT_SECURITY_BLOCK</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_SECURITY_STATUS_NOT_MET</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_SECURITY_STATUS_NOT_MET</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_BIO_TYPE_NOT_SUPPORTED</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_BIO_TYPE_NOT_SUPPORTED</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_BIO_FORMAT_NOT_SUPPORTED</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_BIO_FORMAT_NOT_SUPPORTED</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ERR_UNABLE_PROCESS_CMD_DATA</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ERR_UNABLE_PROCESS_CMD_DATA</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NO_DEFINE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>NO_DEFINE</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>

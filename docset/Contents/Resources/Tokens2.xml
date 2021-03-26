@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/GCDAsyncReadPacket.html">
+	<File path="Classes/BaseScanner.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/GCDAsyncReadPacket</TokenIdentifier>
-			<Abstract type="html">The GCDAsyncReadPacket encompasses the instructions for any given read.
-The content of a read packet allows the code to determine if we&apos;re:
-- reading to a certain length
-- reading to a certain separator
-- or simply reading the first chunk of available data</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/BaseScanner</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>BaseScanner.h</DeclaredIn>
             
 			
 			<NodeRef refid="2"/>
@@ -17,80 +13,43 @@ The content of a read packet allows the code to determine if we&apos;re:
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/ensureCapacityForAdditionalDataOfLength:</TokenIdentifier>
-			<Abstract type="html">Increases the length of the buffer (if needed) to ensure a read of the given size will fit.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseScanner/startScanDevice</TokenIdentifier>
+			<Abstract type="html">Start to scan for devices.</Abstract>
+			<DeclaredIn>BaseScanner.h</DeclaredIn>
 			
-			<Declaration>- (void)ensureCapacityForAdditionalDataOfLength:(NSUInteger)bytesToRead</Declaration>
+			<Declaration>- (void)startScanDevice</Declaration>
 			
 			
-			<Anchor>//api/name/ensureCapacityForAdditionalDataOfLength:</Anchor>
+			<Anchor>//api/name/startScanDevice</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/optimalReadLengthWithDefault:shouldPreBuffer:</TokenIdentifier>
-			<Abstract type="html">This method is used when we do NOT know how much data is available to be read from the socket.
-This method returns the default value unless it exceeds the specified readLength or maxLength.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseScanner/setScanTime:</TokenIdentifier>
+			<Abstract type="html">Set timeout and scan for UHF device through this timeout.</Abstract>
+			<DeclaredIn>BaseScanner.h</DeclaredIn>
 			
-			<Declaration>- (NSUInteger)optimalReadLengthWithDefault:(NSUInteger)defaultValue shouldPreBuffer:(BOOL *)shouldPreBufferPtr</Declaration>
+			<Declaration>- (void)setScanTime:(double)time</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>time</Name>
+					<Abstract type="html">The timeout.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/optimalReadLengthWithDefault:shouldPreBuffer:</Anchor>
+			<Anchor>//api/name/setScanTime:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/readLengthForNonTermWithHint:</TokenIdentifier>
-			<Abstract type="html">For read packets without a set terminator, returns the amount of data
-that can be read without exceeding the readLength or maxLength.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseScanner/stopScan</TokenIdentifier>
+			<Abstract type="html">Stop scanning for UHF devices.</Abstract>
+			<DeclaredIn>BaseScanner.h</DeclaredIn>
 			
-			<Declaration>- (NSUInteger)readLengthForNonTermWithHint:(NSUInteger)bytesAvailable</Declaration>
-			
-			
-			<Anchor>//api/name/readLengthForNonTermWithHint:</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/readLengthForTermWithHint:shouldPreBuffer:</TokenIdentifier>
-			<Abstract type="html">For read packets with a set terminator, returns the amount of data
-that can be read without exceeding the maxLength.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
-			
-			<Declaration>- (NSUInteger)readLengthForTermWithHint:(NSUInteger)bytesAvailable shouldPreBuffer:(BOOL *)shouldPreBufferPtr</Declaration>
+			<Declaration>- (void)stopScan</Declaration>
 			
 			
-			<Anchor>//api/name/readLengthForTermWithHint:shouldPreBuffer:</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/readLengthForTermWithPreBuffer:found:</TokenIdentifier>
-			<Abstract type="html">For read packets with a set terminator,
-returns the amount of data that can be read from the given preBuffer,
-without going over a terminator or the maxLength.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
-			
-			<Declaration>- (NSUInteger)readLengthForTermWithPreBuffer:(GCDAsyncSocketPreBuffer *)preBuffer found:(BOOL *)foundPtr</Declaration>
-			
-			
-			<Anchor>//api/name/readLengthForTermWithPreBuffer:found:</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/GCDAsyncReadPacket/searchForTermAfterPreBuffering:</TokenIdentifier>
-			<Abstract type="html">For read packets with a set terminator, scans the packet buffer for the term.
-It is assumed the terminator had not been fully read prior to the new bytes.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.m</DeclaredIn>
-			
-			<Declaration>- (NSInteger)searchForTermAfterPreBuffering:(ssize_t)numBytes</Declaration>
-			
-			
-			<Anchor>//api/name/searchForTermAfterPreBuffering:</Anchor>
+			<Anchor>//api/name/stopScan</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

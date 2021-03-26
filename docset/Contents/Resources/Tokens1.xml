@@ -37,6 +37,30 @@ https://forums.developer.apple.com/thread/54510</Abstract>
             <NodeRef refid="1"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseDevice/Connect</TokenIdentifier>
+			<Abstract type="html">Connect to remote device.</Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)Connect</Declaration>
+			
+			
+			<Anchor>//api/name/Connect</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BaseDevice/DisConnect</TokenIdentifier>
+			<Abstract type="html">Disconnect to remote device.</Abstract>
+			<DeclaredIn>BaseDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)DisConnect</Declaration>
+			
+			
+			<Anchor>//api/name/DisConnect</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
         
         
 	</File>

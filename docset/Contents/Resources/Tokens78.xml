@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/Untraceable_Range.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_Range</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="78"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Range_NORMAL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Range_NORMAL</Declaration>
+            
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Range_TOGGLE_TEMPORARILY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Range_TOGGLE_TEMPORARILY</Declaration>
+            
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Range_REDUCE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Range_REDUCE</Declaration>
+            
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+            <NodeRef refid="78"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

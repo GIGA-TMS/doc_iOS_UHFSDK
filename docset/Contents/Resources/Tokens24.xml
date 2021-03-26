@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/BuzzerOperationMode.html">
+	<File path="Constants/ActiveMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/BuzzerOperationMode</TokenIdentifier>
-			<Abstract type="html">Specifies the repeats mode of sounding the buzzer.</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/ActiveMode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BOM_Off</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/AM_READ</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BOM_Off</Declaration>
+            <Declaration>AM_READ</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BOM_Once</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/AM_COMMAND</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BOM_Once</Declaration>
+            <Declaration>AM_COMMAND</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,79 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BOM_Repeat</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/AM_TAG_ANALYSIS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BOM_Repeat</Declaration>
+            <Declaration>AM_TAG_ANALYSIS</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_VERIFY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_VERIFY</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_ENCODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_ENCODE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_CUSTOMIZED_READ</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_CUSTOMIZED_READ</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_DEACTIVATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_DEACTIVATE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_REACTIVATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_REACTIVATE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_DEACTIVATE_USER_BANK</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_DEACTIVATE_USER_BANK</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="24"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AM_REACTIVATE_USER_BANK</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AM_REACTIVATE_USER_BANK</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

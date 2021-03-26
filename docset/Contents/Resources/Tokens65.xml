@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/ShortRange_ShortRangeType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/ShortRange_ShortRangeType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ShortRangeParameter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/NORMAL_RANGE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>NORMAL_RANGE</Declaration>
+            
+            <DeclaredIn>ShortRangeParameter.h</DeclaredIn>
+            
+            <NodeRef refid="65"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SHORT_RANGE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SHORT_RANGE</Declaration>
+            
+            <DeclaredIn>ShortRangeParameter.h</DeclaredIn>
+            
+            <NodeRef refid="65"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CompanyPrefixLength.html">
+	<File path="Constants/BuzzerOperationMode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CompanyPrefixLength</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/BuzzerOperationMode</TokenIdentifier>
+			<Abstract type="html">Specifies the repeats mode of sounding the buzzer.</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="27"/>
@@ -14,71 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_6</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BOM_Off</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_6</Declaration>
+            <Declaration>BOM_Off</Declaration>
             
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="27"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_7</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BOM_Once</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_7</Declaration>
+            <Declaration>BOM_Once</Declaration>
             
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="27"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_8</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/BOM_Repeat</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_8</Declaration>
+            <Declaration>BOM_Repeat</Declaration>
             
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="27"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_9</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_9</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="27"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_10</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_10</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="27"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_11</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_11</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
-            
-            <NodeRef refid="27"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/DIGITS_12</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>DIGITS_12</Declaration>
-            
-            <DeclaredIn>SGTIN96TagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="27"/>
         </Token>

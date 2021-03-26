@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/EventType.html">
+	<File path="Constants/DeviceDataProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/EventType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/DeviceDataProtocol</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresented</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DD_RemoteHost_TCP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>ET_TagPresented</Declaration>
+            <Declaration>DD_RemoteHost_TCP</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedWithRemoved</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DD_RemoteHost_UDP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>ET_TagPresentedWithRemoved</Declaration>
+            <Declaration>DD_RemoteHost_UDP</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedEx</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DD_RemoteHost_SSL</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>ET_TagPresentedEx</Declaration>
+            <Declaration>DD_RemoteHost_SSL</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

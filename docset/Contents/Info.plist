@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>GIGATMS.GIGATMSSDK</string>
+	<string>gigatms.GIGATMSSDK_UHF</string>
 	<key>CFBundleName</key>
-	<string>GIGATMSSDK Documentation</string>
+	<string>GIGATMSSDK_UHF Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -17,7 +17,7 @@
 	
 	
 	<key>DocSetFeedName</key>
-	<string>GIGATMSSDK Documentation</string>
+	<string>GIGATMSSDK_UHF Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>
@@ -25,7 +25,7 @@
 	<key>DashDocSetFamily</key>
 	<string>appledoc</string>
 	<key>DocSetPublisherIdentifier</key>
-	<string>GIGATMS.documentation</string>
+	<string>gigatms.documentation</string>
 	<key>DocSetPublisherName</key>
 	<string>GIGATMS.INC</string>
 	<key>NSHumanReadableCopyright</key>

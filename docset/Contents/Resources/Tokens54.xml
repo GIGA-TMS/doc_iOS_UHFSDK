@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/TagDataEncodeType.html">
+	<File path="Constants/OutputInterface.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/TagDataEncodeType</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/OutputInterface</TokenIdentifier>
+			<Abstract type="html">multiple</Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_UDC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_SERVER_1_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TDE_UDC</Declaration>
+            <Declaration>OI_TCP_SERVER_1_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_EAN_UPC_EAS</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_Default_1_0</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TDE_EAN_UPC_EAS</Declaration>
+            <Declaration>OI_Default_1_0</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_EAN_UPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_HID_N_VCOM</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TDE_EAN_UPC</Declaration>
+            <Declaration>OI_HID_N_VCOM</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -44,9 +44,29 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/TDE_RAW_DATA</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/OI_BLE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>TDE_RAW_DATA</Declaration>
+            <Declaration>OI_BLE</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="54"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_CLIENT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OI_TCP_CLIENT</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="54"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OI_TCP_SERVER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OI_TCP_SERVER</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UHFScanner.html">
+	<File path="Classes/TS100.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UHFScanner</TokenIdentifier>
-			<Abstract type="html">UHFScanner scans UHF Device.</Abstract>
-			<DeclaredIn>UHFScanner.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/TS100</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
             
 			
 			<NodeRef refid="15"/>
@@ -13,14 +13,1087 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UHFScanner/changeClassVer:</TokenIdentifier>
-			<Abstract type="html">start Scan Device</Abstract>
-			<DeclaredIn>UHFScanner.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/cmdInitializeSettings</TokenIdentifier>
+			<Abstract type="html">Initialize setting of TS100, please call it after connected with remote TS100.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
 			
-			<Declaration>- (void)changeClassVer:(Byte)classVer</Declaration>
+			<Declaration>- (void)cmdInitializeSettings</Declaration>
 			
 			
-			<Anchor>//api/name/changeClassVer:</Anchor>
+			<Anchor>//api/name/cmdInitializeSettings</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/startInventoryEx:</TokenIdentifier>
+			<Abstract type="html">Start inventory tags with specific encoded data type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)startInventoryEx:(NSMutableSet *)tagDataEncodeTypes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagDataEncodeTypes</Name>
+					<Abstract type="html">The filter of the tag data encode type.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startInventoryEx:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getInventoryActiveMode:</TokenIdentifier>
+			<Abstract type="html">Get Active Mode of the device.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getInventoryActiveMode:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getInventoryActiveMode:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setInventoryActiveMode:InventoryActiveMode:</TokenIdentifier>
+			<Abstract type="html">Set Active Mode of the device.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setInventoryActiveMode:(BOOL)isTemp InventoryActiveMode:(ActiveMode)activeMode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</Abstract>
+				</Parameter><Parameter>
+					<Name>activeMode</Name>
+					<Abstract type="html">The Active mode of the connected remote device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setInventoryActiveMode:InventoryActiveMode:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/controlBuzzer:</TokenIdentifier>
+			<Abstract type="html">Control the buzzer action of remote TS100.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)controlBuzzer:(BuzzerAction)buzzerAct</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buzzerAct</Name>
+					<Abstract type="html">The buzzer action.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/controlBuzzer:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/writeTagEx:</TokenIdentifier>
+			<Abstract type="html">Transform barcode to EPC. The command would transform barcode data to EPC and write into the tag.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)writeTagEx:(BaseTagData *)baseTagData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseTagData</Name>
+					<Abstract type="html">Barcode data which is going to write to the EPC bank of the tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeTagEx:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/writeTagEx:HexAccessPassword:</TokenIdentifier>
+			<Abstract type="html">Transform barcode to EPC. The command would transform barcode data to EPC and write into the tag with hexAccessPassword.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)writeTagEx:(BaseTagData *)baseTagData HexAccessPassword:(NSString *)hexAccessPassword</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>baseTagData</Name>
+					<Abstract type="html">Barcode data which is going to write to the EPC bank of the tag.</Abstract>
+				</Parameter><Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">The access password of the tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeTagEx:HexAccessPassword:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/readTagEx</TokenIdentifier>
+			<Abstract type="html">Read the data from EPC bank and transform the data into barcode data. The data could get from IUHFDeviceListner.didReadTagEx The transform format would influences by the default BarcodeFormat setting. Please see also getBarcodeReadFormat and setBarcodeReadFormat.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)readTagEx</Declaration>
+			
+			
+			<Anchor>//api/name/readTagEx</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/readTagEx:</TokenIdentifier>
+			<Abstract type="html">Read the data from EPC bank with hexAccessPassword and transform the data into barcode data. The data could get from IUHFDeviceListner.didReadTagEx The transform format would influences by the default BarcodeFormat setting. Please see also getBarcodeReadFormat and setBarcodeReadFormat.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)readTagEx:(NSString *)strPwd</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strPwd</Name>
+					<Abstract type="html">The access password of the tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/readTagEx:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getBarcodeReadFormat:</TokenIdentifier>
+			<Abstract type="html">Get the default barcode format of readRagEx command.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getBarcodeReadFormat:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getBarcodeReadFormat:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setBarcodeReadFormat:BarcodeFormat:</TokenIdentifier>
+			<Abstract type="html">Set the default barcode format of readRagEx command.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setBarcodeReadFormat:(BOOL)isTemp BarcodeFormat:(BarcodeFormat)barcodeFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>barcodeFormat</Name>
+					<Abstract type="html">The default format of barcode while reading a tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBarcodeReadFormat:BarcodeFormat:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getBleDeviceName</TokenIdentifier>
+			<Abstract type="html">Get the device name of BLE through BLE interface.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getBleDeviceName</Declaration>
+			
+			
+			<Anchor>//api/name/getBleDeviceName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setBleDeviceName:</TokenIdentifier>
+			<Abstract type="html">Set the device name of BLE through BLE interface.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setBleDeviceName:(NSString *)devName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>devName</Name>
+					<Abstract type="html">The device name.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBleDeviceName:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getBleMacAddress</TokenIdentifier>
+			<Abstract type="html">Get BLE Mac Address.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getBleMacAddress</Declaration>
+			
+			
+			<Anchor>//api/name/getBleMacAddress</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getBleRomVersion</TokenIdentifier>
+			<Abstract type="html">Get Firmware version of the ble module of the remote device.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getBleRomVersion</Declaration>
+			
+			
+			<Anchor>//api/name/getBleRomVersion</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getBuzzerOperationMode:</TokenIdentifier>
+			<Abstract type="html">Get the BuzzerAdapter Operation Mode of remote TS100.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getBuzzerOperationMode:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getBuzzerOperationMode:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setBuzzerOperationMode:BuzzerOperationMode:</TokenIdentifier>
+			<Abstract type="html">Set the BuzzerAdapter Operation Mode of remote TS100.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setBuzzerOperationMode:(BOOL)isTemp BuzzerOperationMode:(BuzzerOperationMode)bom</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</Abstract>
+				</Parameter><Parameter>
+					<Name>bom</Name>
+					<Abstract type="html">Buzzer Operation Mode: Specifies the repeats mode of sounding the beep with the same pattern.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBuzzerOperationMode:BuzzerOperationMode:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getDeactivateEpcPrefix:</TokenIdentifier>
+			<Abstract type="html">Get deactivate epc prefix.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getDeactivateEpcPrefix:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getDeactivateEpcPrefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setDeactivateEpcPrefix:Prefix:</TokenIdentifier>
+			<Abstract type="html">Set deactivate epc prefix.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setDeactivateEpcPrefix:(BOOL)isTemp Prefix:(NSData *)prefix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDeactivateEpcPrefix:Prefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getFieldSeparator:</TokenIdentifier>
+			<Abstract type="html">Get Field Separator of keyboard output format.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getFieldSeparator:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFieldSeparator:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setFieldSeparator:FieldSeparator:</TokenIdentifier>
+			<Abstract type="html">Set Field Separator of keyboard output format.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setFieldSeparator:(BOOL)isTemp FieldSeparator:(NSData *)separator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>separator</Name>
+					<Abstract type="html">Seperator of ascii.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFieldSeparator:FieldSeparator:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getFilter:</TokenIdentifier>
+			<Abstract type="html">Get the Filters of inventorying tags.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getFilter:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFilter:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setFilter:TagDataEncodeType:</TokenIdentifier>
+			<Abstract type="html">Set the Filters of inventorying tags.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setFilter:(BOOL)isTemp TagDataEncodeType:(NSMutableSet *)filterTypes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>filterTypes</Name>
+					<Abstract type="html">Specifies the decoded type for reading tag data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFilter:TagDataEncodeType:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getOutputFormat:</TokenIdentifier>
+			<Abstract type="html">Get output format of tag.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getOutputFormat:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getOutputFormat:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setOutputFormat:OutputFormat:</TokenIdentifier>
+			<Abstract type="html">Set output format of tag.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setOutputFormat:(BOOL)isTemp OutputFormat:(OutputFormat)outputFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>outputFormat</Name>
+					<Abstract type="html">The output format.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOutputFormat:OutputFormat:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getOutputInterfaces:</TokenIdentifier>
+			<Abstract type="html">Gets the data output interface.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getOutputInterfaces:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getOutputInterfaces:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setOutputInterfaces:KeyboardSimulation:OutputInterface:</TokenIdentifier>
+			<Abstract type="html">Set the data output interface.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setOutputInterfaces:(BOOL)isTemp KeyboardSimulation:(KeyboardSimulation)keyboardSimulation OutputInterface:(NSMutableSet *)outputInterface</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyboardSimulation</Name>
+					<Abstract type="html">Keyboard Simulation.</Abstract>
+				</Parameter><Parameter>
+					<Name>outputInterface</Name>
+					<Abstract type="html">The set of data output interface. also can &apos;outputInterface = OIHIDNVCOM | OIBLE;&apos;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOutputInterfaces:KeyboardSimulation:OutputInterface:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getPostDataDelimiter:</TokenIdentifier>
+			<Abstract type="html">Get Post Data Delimiter &amp;amp; Memory Bank Selection setting.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getPostDataDelimiter:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getPostDataDelimiter:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setPostDataDelimiter:PostDataDelimiter:</TokenIdentifier>
+			<Abstract type="html">Set Post Data Delimiter.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setPostDataDelimiter:(BOOL)isTemp PostDataDelimiter:(NSMutableSet *)postDataDelimiter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>postDataDelimiter</Name>
+					<Abstract type="html">Specifies the delimiter append to the end of output data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPostDataDelimiter:PostDataDelimiter:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getPrefix:</TokenIdentifier>
+			<Abstract type="html">Get prefix of keyboard output format.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getPrefix:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getPrefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setPrefix:Prefix:</TokenIdentifier>
+			<Abstract type="html">Set prefix of keyboard output format.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setPrefix:(BOOL)isTemp Prefix:(NSData *)prefix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPrefix:Prefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getReactivateEpcPrefix:</TokenIdentifier>
+			<Abstract type="html">Get reactivate epc prefix.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getReactivateEpcPrefix:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getReactivateEpcPrefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setReactivateEpcPrefix:Prefix:</TokenIdentifier>
+			<Abstract type="html">Set reactivate epc prefix.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setReactivateEpcPrefix:(BOOL)isTemp Prefix:(NSData *)prefix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setReactivateEpcPrefix:Prefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getRemoteHost</TokenIdentifier>
+			<Abstract type="html">Get Remote Host IP, Port and Connect timeout The data would get from IUHFDeviceListner.didGetRemoteHost While socketAddress is null, it means that there is no remote host.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getRemoteHost</Declaration>
+			
+			
+			<Anchor>//api/name/getRemoteHost</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setRemoteHost:InetSocketAddress:</TokenIdentifier>
+			<Abstract type="html">Set the remote host connect timeout, IP and Port. If socketAddress is null, it would clear the remote host setting.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setRemoteHost:(int)connectTimeout InetSocketAddress:(InetSocketAddress *)inetSocketAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connectTimeout</Name>
+					<Abstract type="html">The time to disconnect with remote host. Unit: 100ms.</Abstract>
+				</Parameter><Parameter>
+					<Name>inetSocketAddress</Name>
+					<Abstract type="html">IP and Port data of remote host.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRemoteHost:InetSocketAddress:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getSuffix:</TokenIdentifier>
+			<Abstract type="html">Get prefix of keyboard output format.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getSuffix:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getSuffix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setSuffix:Suffix:</TokenIdentifier>
+			<Abstract type="html">Set prefix of keyboard output format.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setSuffix:(BOOL)isTemp Suffix:(NSData *)suffix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>suffix</Name>
+					<Abstract type="html">The suffix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSuffix:Suffix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getEventType:</TokenIdentifier>
+			<Abstract type="html">Gets the event command type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getEventType:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getEventType:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setEventType:EventType:</TokenIdentifier>
+			<Abstract type="html">Sets the event command type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setEventType:(BOOL)isTemp EventType:(BaseTagEvent *)eventType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">isTemp True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>eventType</Name>
+					<Abstract type="html">The type for the event command.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setEventType:EventType:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getTagMemorySelection:</TokenIdentifier>
+			<Abstract type="html">Get Memory Bank Selection setting. The setting works at keyboard output and didDiscoverTagInfoEx.
+When the filter is disable (disableFilter.This setting decides the output memory bank data. The data will get from IUHFDeviceListner.didDiscoverTagInfoEx` and KeyboardSimulation.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getTagMemorySelection:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTagMemorySelection:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setTagMemorySelection:TagMemory:</TokenIdentifier>
+			<Abstract type="html">Set Memory Bank Selections setting. The setting works at keyboard output and didDiscoverTagInfoEx.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setTagMemorySelection:(BOOL)isTemp TagMemory:(NSMutableSet *)tagMemory</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrites for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrites for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>tagMemory</Name>
+					<Abstract type="html">Memory Bank Selections setting.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTagMemorySelection:TagMemory:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getTagPresentedRepeatInterval:</TokenIdentifier>
+			<Abstract type="html">Get the threshold to raise a TagRemovedEvent(IUHFDeviceListner.didDiscoveredTag).</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getTagPresentedRepeatInterval:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTagPresentedRepeatInterval:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setTagPresentedRepeatInterval:Time:</TokenIdentifier>
+			<Abstract type="html">Set the threshold to raise a TagPresentedEvent(IUHFDeviceListner.didDiscoveredTag).</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setTagPresentedRepeatInterval:(BOOL)isTemp Time:(int)time</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>time</Name>
+					<Abstract type="html">The period to raising a TagPresentedEvent. range: 1~255 (Unit: 100ms), 0:Always repeating raising event, 255: Never repeating raising event.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTagPresentedRepeatInterval:Time:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getTagProtection:</TokenIdentifier>
+			<Abstract type="html">Get Tag Protection Mode.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getTagProtection:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTagProtection:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setTagProtection:TagProtection:</TokenIdentifier>
+			<Abstract type="html">Set Tag Protection Mode.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setTagProtection:(BOOL)isTemp TagProtection:(TagProtection)tagProtection</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>tagProtection</Name>
+					<Abstract type="html">The tag protection mode.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTagProtection:TagProtection:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getTagProtectionAccessPassword</TokenIdentifier>
+			<Abstract type="html">Get Tag Protection Access Password which is stored in device.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getTagProtectionAccessPassword</Declaration>
+			
+			
+			<Anchor>//api/name/getTagProtectionAccessPassword</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setTagProtectionAccessPassword:</TokenIdentifier>
+			<Abstract type="html">Set Tag Protection Access Password which is stored in device.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setTagProtectionAccessPassword:(NSData *)accessPassword</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessPassword</Name>
+					<Abstract type="html">Access Password.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTagProtectionAccessPassword:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getUsbInterface:</TokenIdentifier>
+			<Abstract type="html">Get USB Interface. VCOM or HID.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getUsbInterface:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getUsbInterface:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setUsbInterface:UsbInterface:</TokenIdentifier>
+			<Abstract type="html">Set USB Interface. VCOM or HID.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setUsbInterface:(BOOL)isTemp UsbInterface:(UsbInterface)usbInterface</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>usbInterface</Name>
+					<Abstract type="html">The USB interface.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUsbInterface:UsbInterface:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getWiFiMacAddress</TokenIdentifier>
+			<Abstract type="html">Get the mac address of the Wi-Fi module The data would get from IUHFDeviceListner.didGetWiFiMacAddress.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getWiFiMacAddress</Declaration>
+			
+			
+			<Anchor>//api/name/getWiFiMacAddress</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setWifiSettings:PWD:</TokenIdentifier>
+			<Abstract type="html">Connect to AP with SSID and PasswordFlag. Can&apos;t use while connecting device through wi-fi.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setWifiSettings:(NSString *)strSSID PWD:(NSString *)strPwd</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strSSID</Name>
+					<Abstract type="html">The SSID of the Wi-Fi.</Abstract>
+				</Parameter><Parameter>
+					<Name>strPwd</Name>
+					<Abstract type="html">The password of the Wi-Fi.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setWifiSettings:PWD:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setWifiSettings:PWD:IP:Gateway:SubNetMask:</TokenIdentifier>
+			<Abstract type="html">Connect to AP with SSID and PasswordFlag. Disable DHCP and specifies IO, Gateway and subnetMask. Can&apos;t use while connecting device through wi-fi.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setWifiSettings:(NSString *)strSSID PWD:(NSString *)strPwd IP:(NSString *)strIP Gateway:(NSString *)strGateway SubNetMask:(NSString *)strSubNetMask</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>strSSID</Name>
+					<Abstract type="html">The SSID of the Wi-Fi.</Abstract>
+				</Parameter><Parameter>
+					<Name>strPwd</Name>
+					<Abstract type="html">The password of the Wi-Fi..</Abstract>
+				</Parameter><Parameter>
+					<Name>strIP</Name>
+					<Abstract type="html">Define IP.</Abstract>
+				</Parameter><Parameter>
+					<Name>strGateway</Name>
+					<Abstract type="html">Define Gateway.</Abstract>
+				</Parameter><Parameter>
+					<Name>strSubNetMask</Name>
+					<Abstract type="html">Define SubNetMask.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setWifiSettings:PWD:IP:Gateway:SubNetMask:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getEncodeType:</TokenIdentifier>
+			<Abstract type="html">Get Encode Type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getEncodeType:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getEncodeType:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setEncodeType:EncodeType:</TokenIdentifier>
+			<Abstract type="html">Set Encode Type.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setEncodeType:(BOOL)isTemp EncodeType:(EncodeType)encodeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>encodeType</Name>
+					<Abstract type="html">The encode type.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setEncodeType:EncodeType:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getTransformEpcState:</TokenIdentifier>
+			<Abstract type="html">Gets the rule of determining to normalize the reading EPC data.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getTransformEpcState:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTransformEpcState:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setTransformEpcState:State:</TokenIdentifier>
+			<Abstract type="html">Sets to determine to normalize the reading EPC data.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setTransformEpcState:(BOOL)isTemp State:(EpcPrefixState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The EPC prefix state.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTransformEpcState:State:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getTransformEpcPrefix:</TokenIdentifier>
+			<Abstract type="html">Gets the company length used to normalize the EPC data. This setting is only used when the TransformEpcState set to EAN/UPC.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getTransformEpcPrefix:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTransformEpcPrefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setTransformEpcPrefix:Prefix:</TokenIdentifier>
+			<Abstract type="html">Sets the company length used to normalize the EPC data. This setting is only used when the TransformEpcState set to EAN/UPC.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setTransformEpcPrefix:(BOOL)isTemp Prefix:(NSData *)prefix</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>prefix</Name>
+					<Abstract type="html">The prefix.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTransformEpcPrefix:Prefix:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/protectTagPrivacy:</TokenIdentifier>
+			<Abstract type="html">Control the untraceable features for a tag.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)protectTagPrivacy:(TagAccessParameter *)tagAccessParameter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagAccessParameter</Name>
+					<Abstract type="html">The tag access parameter.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/protectTagPrivacy:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/getEpcNormalize:</TokenIdentifier>
+			<Abstract type="html">Gets the setting used to enable/disable the EPC normalization function.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)getEpcNormalize:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getEpcNormalize:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100/setEpcNormalize:Enable:</TokenIdentifier>
+			<Abstract type="html">Sets the setting used to enable/disable the EPC normalization function.</Abstract>
+			<DeclaredIn>TS100.h</DeclaredIn>
+			
+			<Declaration>- (void)setEpcNormalize:(BOOL)isTemp Enable:(BOOL)enable</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>enable</Name>
+					<Abstract type="html">The setting to enable/disable the EPC normalization.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setEpcNormalize:Enable:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

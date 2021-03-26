@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/TS800.html">
+	<File path="Classes/GNetPlus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/TS800</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/GNetPlus</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>TS800.h</DeclaredIn>
+			<DeclaredIn>GNetPlus.h</DeclaredIn>
             
 			
 			<NodeRef refid="13"/>
@@ -13,14 +13,41 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/TS800/cmdInitializeSettings</TokenIdentifier>
-			<Abstract type="html">Initialize setting of TS800, please call it after connected with remote TS800.</Abstract>
-			<DeclaredIn>TS800.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/GNetPlus/setUM800LListener:</TokenIdentifier>
+			<Abstract type="html">The &quot;Access Password&quot; part of reserve bank(For Lock command only)
+     </Abstract>
+			<DeclaredIn>GNetPlus.h</DeclaredIn>
 			
-			<Declaration>- (void)cmdInitializeSettings</Declaration>
+			<Declaration>@property (nonatomic, assign) id&lt;IUM800LListener&gt; UM800LListener</Declaration>
 			
 			
-			<Anchor>//api/name/cmdInitializeSettings</Anchor>
+			<Anchor>//api/name/UM800LListener</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GNetPlus/UM800LListener</TokenIdentifier>
+			<Abstract type="html">The &quot;Access Password&quot; part of reserve bank(For Lock command only)
+     </Abstract>
+			<DeclaredIn>GNetPlus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;IUM800LListener&gt; UM800LListener</Declaration>
+			
+			
+			<Anchor>//api/name/UM800LListener</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GNetPlus/UM800LListener</TokenIdentifier>
+			<Abstract type="html">The &quot;Access Password&quot; part of reserve bank(For Lock command only)
+     </Abstract>
+			<DeclaredIn>GNetPlus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;IUM800LListener&gt; UM800LListener</Declaration>
+			
+			
+			<Anchor>//api/name/UM800LListener</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		

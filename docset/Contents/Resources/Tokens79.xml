@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/Untraceable_TID.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/Untraceable_TID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+			
+			<NodeRef refid="79"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TID_SHOW</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TID_SHOW</Declaration>
+            
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TID_HIDE_SHOME</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TID_HIDE_SHOME</Declaration>
+            
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TID_HIDE_ALL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TID_HIDE_ALL</Declaration>
+            
+            <DeclaredIn>UntraceableParameter.h</DeclaredIn>
+            
+            <NodeRef refid="79"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

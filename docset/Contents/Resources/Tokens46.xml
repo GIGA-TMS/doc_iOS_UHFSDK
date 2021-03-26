@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/PostDataDelimiter.html">
+	<File path="Constants/IOState.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/PostDataDelimiter</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/IOState</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_NONE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/LOW</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_NONE</Declaration>
+            <Declaration>LOW</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
@@ -24,39 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/HIGHT</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>PDD_CARRIAGE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="46"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_LINE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PDD_LINE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="46"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_CARRIAGE_LINE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PDD_CARRIAGE_LINE</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="46"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/PDD_TAB</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>PDD_TAB</Declaration>
+            <Declaration>HIGHT</Declaration>
             
             <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             

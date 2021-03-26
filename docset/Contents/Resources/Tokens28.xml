@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Control.html">
+	<File path="Constants/CMDFormat.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Control</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/CMDFormat</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_GET</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mHEADER</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_GET</Declaration>
+            <Declaration>mHEADER</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_SET</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mCTRL_CODE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_SET</Declaration>
+            <Declaration>mCTRL_CODE</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -34,9 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_METHOD</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mPACKET_LENGTH</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_METHOD</Declaration>
+            <Declaration>mPACKET_LENGTH</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -44,9 +44,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_NOTIFY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mADDRESS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_NOTIFY</Declaration>
+            <Declaration>mADDRESS</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -54,9 +54,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CMD_POST</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mPACKET_NUMBER</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CMD_POST</Declaration>
+            <Declaration>mPACKET_NUMBER</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -64,9 +64,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CTRL_SECURITY</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_LENGTH</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CTRL_SECURITY</Declaration>
+            <Declaration>mSECURITY_BLOCK_LENGTH</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -74,9 +74,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CTRL_PACKET</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_TYPE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CTRL_PACKET</Declaration>
+            <Declaration>mSECURITY_BLOCK_TYPE</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -84,9 +84,59 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CTRL_ADDRESS</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_DATA</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CTRL_ADDRESS</Declaration>
+            <Declaration>mSECURITY_BLOCK_DATA</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/mREPLY_STATUS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>mREPLY_STATUS</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/mCMD_CODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>mCMD_CODE</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/mDATA</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>mDATA</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/mMAC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>mMAC</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="28"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/mCRC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>mCRC</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             

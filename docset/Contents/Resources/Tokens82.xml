@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/_TS100_EEPROM_Address.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/_TS100_EEPROM_Address</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+			
+			<NodeRef refid="82"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_RF_POWER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_RF_POWER</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_RF_SENSITIVITY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_RF_SENSITIVITY</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_RX_DECODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_RX_DECODE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_SESSION_AND_TARGET</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_SESSION_AND_TARGET</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_LINK_FREQUENCY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_LINK_FREQUENCY</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_TRIGGER_SOURCE_A</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_TRIGGER_SOURCE_A</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_TRIGGER_SOURCE_B</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_TRIGGER_SOURCE_B</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_EPC_TREXT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_EPC_TREXT</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_EPC_Q_BEGIN</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_EPC_Q_BEGIN</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_VIBRATOR</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_VIBRATOR</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_BuzzerOperationMode</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_BuzzerOperationMode</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_DeviceEventMask</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_DeviceEventMask</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_EVENT_TYPE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_EVENT_TYPE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_MODEL_NUMBER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_MODEL_NUMBER</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_BAUDRATE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_BAUDRATE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_ADDRESS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_ADDRESS</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_ACTIVE_MODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_ACTIVE_MODE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_TIME_TO_REMOVE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_TIME_TO_REMOVE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_REPEAT_INTERVAL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_REPEAT_INTERVAL</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_INTERFACE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_INTERFACE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_DECODE</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_DECODE</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_READ_EPC_FORMAT</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_READ_EPC_FORMAT</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_19_ScanMode</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_19_ScanMode</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_SCAN_TIMEOUT_LOW</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_SCAN_TIMEOUT_LOW</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_SCAN_TIMEOUT_HIGH</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_SCAN_TIMEOUT_HIGH</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_PROFILE_ID</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_PROFILE_ID</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_NUMBER_OF_FREQUENCY</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_NUMBER_OF_FREQUENCY</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_LISTEN_TIME_BYTE_HIGH</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_LISTEN_TIME_BYTE_HIGH</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_LISTEN_TIME_BYTE_LOW</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_LISTEN_TIME_BYTE_LOW</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_ALLOCATION_TIME_BYTE_HIGH</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_ALLOCATION_TIME_BYTE_HIGH</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_ALLOCATION_TIME_BYTE_LOW</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_ALLOCATION_TIME_BYTE_LOW</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_IDLE_TIME_BYTE_HIGH</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_IDLE_TIME_BYTE_HIGH</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_IDLE_TIME_BYTE_LOW</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_IDLE_TIME_BYTE_LOW</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_RSSI_THRESHOLD</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_RSSI_THRESHOLD</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/_TS100__EPR_Addr_FREQUENCY_START_ADDRESS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>_TS100__EPR_Addr_FREQUENCY_START_ADDRESS</Declaration>
+            
+            <DeclaredIn>GNPEEPROM.h</DeclaredIn>
+            
+            <NodeRef refid="82"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

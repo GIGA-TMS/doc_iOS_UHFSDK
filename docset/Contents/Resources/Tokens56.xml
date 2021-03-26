@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/Target.html">
+	<File path="Constants/ProtocolType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/Target</TokenIdentifier>
-			<Abstract type="html">Target</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/ProtocolType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
 			
 			<NodeRef refid="56"/>
@@ -14,61 +14,41 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/A</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GigaTms</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>A</Declaration>
+            <Declaration>PT_GigaTms</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/B</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GNetPlus</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>B</Declaration>
+            <Declaration>PT_GNetPlus</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/A_B</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PT_GNet</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>A_B</Declaration>
+            <Declaration>PT_GNet</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/deSL</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/PT_OSDP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>deSL</Declaration>
+            <Declaration>PT_OSDP</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="56"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SL</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="56"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SL_deSL</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SL_deSL</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="56"/>
         </Token>

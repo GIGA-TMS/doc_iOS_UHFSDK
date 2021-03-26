@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/SoftwareAPINameCode.html">
+	<File path="Constants/MemoryBankSelection.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/SoftwareAPINameCode</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/MemoryBankSelection</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="52"/>
@@ -14,661 +14,61 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_GetFirmwareVersion</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_GetFirmwareVersion</Declaration>
+            <Declaration>MBS_EPC</Declaration>
             
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="52"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_StartInventory</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_TID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_StartInventory</Declaration>
+            <Declaration>MBS_TID</Declaration>
             
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="52"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_StartInventoryEx</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_PC_EPC</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_StartInventoryEx</Declaration>
+            <Declaration>MBS_PC_EPC</Declaration>
             
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="52"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_StopInventory</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC_TID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_StopInventory</Declaration>
+            <Declaration>MBS_EPC_TID</Declaration>
             
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="52"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_WriteEPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_PC_EPC_TID</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_WriteEPC</Declaration>
+            <Declaration>MBS_PC_EPC_TID</Declaration>
             
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="52"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_WriteTag</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC_ASCII</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_WriteTag</Declaration>
+            <Declaration>MBS_EPC_ASCII</Declaration>
             
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_ReadEPC</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_ReadEPC</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_ReadTag</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_ReadTag</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_LockTag</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_LockTag</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_KillTag</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_KillTag</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_ControlBuzzer</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_ControlBuzzer</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_Extra3</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_Extra3</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_Extra4</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_Extra4</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_InitializeSettings</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_InitializeSettings</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetBuzzerOperationMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetBuzzerOperationMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetRepeatTime</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetRepeatTime</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetScanMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetScanMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetTriggerType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetTriggerType</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetQValue</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetQValue</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetSessionAndTarget</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetSessionAndTarget</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetRfPower</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetRfPower</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetSensitivity</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetSensitivity</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetFrequencyList</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetFrequencyList</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetTagPresentRepeatInterval</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetTagPresentRepeatInterval</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetTagRemoveThreshold</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetTagRemoveThreshold</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetInventoryRoundInterval</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetInventoryRoundInterval</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_SetSpecialSetting</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_SetSpecialSetting</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetBuzzerOperationMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetBuzzerOperationMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetRepeatTime</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetRepeatTime</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetScanMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetScanMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetTriggerType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetTriggerType</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetQValue</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetQValue</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetSessionAndTarget</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetSessionAndTarget</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetRfPower</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetRfPower</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetSensitivity</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetSensitivity</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetFrequencyList</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetFrequencyList</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetTagPresentRepeatInterval</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetTagPresentRepeatInterval</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetTagRemoveThreshold</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetTagRemoveThreshold</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetInventoryRoundInterval</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetInventoryRoundInterval</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_GetSpecialSetting</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_GetSpecialSetting</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_TS100_getBleDeviceName</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_TS100_getBleDeviceName</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_TS100_setBleDeviceName</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_TS100_setBleDeviceName</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_TS100_getBleRomVersion</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_TS100_getBleRomVersion</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_CC_TS100_startInventoryEx</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_CC_TS100_startInventoryEx</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getInventoryActiveMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getInventoryActiveMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setInventoryActiveMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setInventoryActiveMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getBuzzerOperationMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getBuzzerOperationMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setBuzzerOperationMode</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setBuzzerOperationMode</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setFilter</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setFilter</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getFilter</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getFilter</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_controlBuzzer</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_controlBuzzer</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getEventType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getEventType</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setEventType</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setEventType</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setOutputInterfaces</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setOutputInterfaces</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getOutputInterfaces</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getOutputInterfaces</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getPostDataDelimiterAndMemoryBankSelection</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getPostDataDelimiterAndMemoryBankSelection</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setPostDataDelimiterAndMemoryBankSelection</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setPostDataDelimiterAndMemoryBankSelection</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getPostDataDelimiter</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getPostDataDelimiter</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setPostDataDelimiter</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setPostDataDelimiter</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getMemoryBankSelection</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getMemoryBankSelection</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setMemoryBankSelection</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setMemoryBankSelection</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setWifiSettings</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setWifiSettings</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_seWifiSettings</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_seWifiSettings</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_setTagPresentedRepeatInterval</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_setTagPresentedRepeatInterval</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getTagPresentedRepeatInterval</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getTagPresentedRepeatInterval</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
-            
-            <NodeRef refid="52"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/SW_EE_TS100_getWiFiMacAddress</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>SW_EE_TS100_getWiFiMacAddress</Declaration>
-            
-            <DeclaredIn>GNPSwAPICode.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="52"/>
         </Token>

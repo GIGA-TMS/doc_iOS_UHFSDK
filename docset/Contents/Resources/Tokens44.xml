@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/MemoryBankSelection.html">
+	<File path="Constants/GTDevConnStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/MemoryBankSelection</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/GTDevConnStatus</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
 			
 			<NodeRef refid="44"/>
@@ -14,61 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConntPwdError</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBS_EPC</Declaration>
+            <Declaration>DevConntPwdError</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBS_TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConntError</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBS_TID</Declaration>
+            <Declaration>DevConntError</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBS_PC_EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevDisconnected</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBS_PC_EPC</Declaration>
+            <Declaration>DevDisconnected</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC_TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConnecting</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBS_EPC_TID</Declaration>
+            <Declaration>DevConnecting</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBS_PC_EPC_TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/DevConnected</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBS_PC_EPC_TID</Declaration>
+            <Declaration>DevConnected</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="44"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBS_EPC_ASCII</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>MBS_EPC_ASCII</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/FindTagAction.html">
+	<File path="Constants/EncodeType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/FindTagAction</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/EncodeType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>XEPCLentT.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="35"/>
@@ -14,41 +14,51 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindAnyTagAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindAnyTagAction</Declaration>
+            <Declaration>EM_SGTIN_96</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindPreviousTagWithoutXepcResponseAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EPC_PRERIX</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindPreviousTagWithoutXepcResponseAction</Declaration>
+            <Declaration>EM_SGTIN_96_AND_EPC_PRERIX</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindSpecificTagXepcWithExtendHeaderAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EAS</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindSpecificTagXepcWithExtendHeaderAction</Declaration>
+            <Declaration>EM_SGTIN_96_AND_EAS</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/FindSpecificTagAction</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/EM_SGTIN_96_AND_EAS_AND_EPC_PRERIX</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>FindSpecificTagAction</Declaration>
+            <Declaration>EM_SGTIN_96_AND_EAS_AND_EPC_PRERIX</Declaration>
             
-            <DeclaredIn>XEPCLentT.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="35"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/EM_ALL</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>EM_ALL</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>

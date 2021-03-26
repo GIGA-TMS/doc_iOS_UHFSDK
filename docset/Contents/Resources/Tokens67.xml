@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/State.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/State</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/ON</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>ON</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="67"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/OFF</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>OFF</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="67"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

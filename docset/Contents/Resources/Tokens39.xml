@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/InfoOutputDataType.html">
+	<File path="Constants/EventType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/InfoOutputDataType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/EventType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
 			
 			<NodeRef refid="39"/>
@@ -14,51 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/CARD_TYPE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresented</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>CARD_TYPE</Declaration>
+            <Declaration>ET_TagPresented</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="39"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ISSUE_DATA</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedWithRemoved</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>ISSUE_DATA</Declaration>
+            <Declaration>ET_TagPresentedWithRemoved</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="39"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BCD_USER_ID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/ET_TagPresentedEx</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BCD_USER_ID</Declaration>
+            <Declaration>ET_TagPresentedEx</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
-            
-            <NodeRef refid="39"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/ASCII_USER_ID</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>ASCII_USER_ID</Declaration>
-            
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
-            
-            <NodeRef refid="39"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/USER_NAME</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>USER_NAME</Declaration>
-            
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
             
             <NodeRef refid="39"/>
         </Token>

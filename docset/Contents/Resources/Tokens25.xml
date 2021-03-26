@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/CMDFormat.html">
+	<File path="Constants/ApplicationCmdCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/CMDFormat</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/ApplicationCmdCode</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mHEADER</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Broadcast_Ethernet_Device</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>mHEADER</Declaration>
+            <Declaration>Broadcast_Ethernet_Device</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             
@@ -24,119 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mCTRL_CODE</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Output_AccountAndPassword</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>mCTRL_CODE</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mPACKET_LENGTH</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mPACKET_LENGTH</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mADDRESS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mADDRESS</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mPACKET_NUMBER</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mPACKET_NUMBER</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_LENGTH</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mSECURITY_BLOCK_LENGTH</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_TYPE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mSECURITY_BLOCK_TYPE</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mSECURITY_BLOCK_DATA</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mSECURITY_BLOCK_DATA</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mREPLY_STATUS</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mREPLY_STATUS</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mCMD_CODE</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mCMD_CODE</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mDATA</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mDATA</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mMAC</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mMAC</Declaration>
-            
-            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
-            
-            <NodeRef refid="25"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/mCRC</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>mCRC</Declaration>
+            <Declaration>Output_AccountAndPassword</Declaration>
             
             <DeclaredIn>GTPacketUtility.h</DeclaredIn>
             

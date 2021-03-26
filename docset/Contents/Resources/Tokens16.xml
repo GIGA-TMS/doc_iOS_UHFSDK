@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/UR0250.html">
+	<File path="Classes/TS100A.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/UR0250</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/TS100A</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>UR0250.h</DeclaredIn>
+			<DeclaredIn>TS100A.h</DeclaredIn>
             
 			
 			<NodeRef refid="16"/>
@@ -13,14 +13,39 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UR0250/cmdInitializeSettings</TokenIdentifier>
-			<Abstract type="html">Initialize setting of UR0250, please call it after connected with remote UR0250.</Abstract>
-			<DeclaredIn>UR0250.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100A/getInventoryActiveMode:</TokenIdentifier>
+			<Abstract type="html">Get Active Mode of the device.</Abstract>
+			<DeclaredIn>TS100A.h</DeclaredIn>
 			
-			<Declaration>- (void)cmdInitializeSettings</Declaration>
+			<Declaration>- (void)getInventoryActiveMode:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/getInventoryActiveMode:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TS100A/setInventoryActiveMode:InventoryActiveMode:</TokenIdentifier>
+			<Abstract type="html">Set Active Mode of the device.</Abstract>
+			<DeclaredIn>TS100A.h</DeclaredIn>
 			
-			<Anchor>//api/name/cmdInitializeSettings</Anchor>
+			<Declaration>- (void)setInventoryActiveMode:(BOOL)isTemp InventoryActiveMode:(ActiveMode)activeMode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device. Please make sure the setting of frequency is conform to standards.</Abstract>
+				</Parameter><Parameter>
+					<Name>activeMode</Name>
+					<Abstract type="html">The Active mode of the connected remote device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setInventoryActiveMode:InventoryActiveMode:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/GCDAsyncSocketDelegate.html">
+	<File path="Classes/UHFDevice.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/GCDAsyncSocketDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/UHFDevice</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
             
 			
 			<NodeRef refid="18"/>
@@ -13,186 +13,979 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/newSocketQueueForConnectionFromAddress:onSocket:</TokenIdentifier>
-			<Abstract type="html">This method is called immediately prior to socket:didAcceptNewSocket:.
-It optionally allows a listening socket to specify the socketQueue for a new accepted socket.
-If this method is not implemented, or returns NULL, the new accepted socket will create its own default queue.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setUhfListener:</TokenIdentifier>
+			<Abstract type="html">UHF Device callback</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (nullable dispatch_queue_t)newSocketQueueForConnectionFromAddress:(NSData *)address onSocket:(GCDAsyncSocket *)sock</Declaration>
+			<Declaration>@property (nonatomic, assign, nullable) id&lt;IUHFDeviceListener&gt; uhfListener</Declaration>
 			
 			
-			<Anchor>//api/name/newSocketQueueForConnectionFromAddress:onSocket:</Anchor>
+			<Anchor>//api/name/uhfListener</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didAcceptNewSocket:</TokenIdentifier>
-			<Abstract type="html">Called when a socket accepts a connection.
-Another socket is automatically spawned to handle it.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/uhfListener</TokenIdentifier>
+			<Abstract type="html">UHF Device callback</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didAcceptNewSocket:(GCDAsyncSocket *)newSocket</Declaration>
+			<Declaration>@property (nonatomic, assign, nullable) id&lt;IUHFDeviceListener&gt; uhfListener</Declaration>
 			
 			
-			<Anchor>//api/name/socket:didAcceptNewSocket:</Anchor>
+			<Anchor>//api/name/uhfListener</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didConnectToHost:port:</TokenIdentifier>
-			<Abstract type="html">Called when a socket connects and is ready for reading and writing.
-The host parameter will be an IP address, not a DNS name.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/UHFDevice/uhfListener</TokenIdentifier>
+			<Abstract type="html">UHF Device callback</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port</Declaration>
+			<Declaration>@property (nonatomic, assign, nullable) id&lt;IUHFDeviceListener&gt; uhfListener</Declaration>
 			
 			
-			<Anchor>//api/name/socket:didConnectToHost:port:</Anchor>
+			<Anchor>//api/name/uhfListener</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didConnectToUrl:</TokenIdentifier>
-			<Abstract type="html">Called when a socket connects and is ready for reading and writing.
-The host parameter will be an IP address, not a DNS name.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getSDKVersion</TokenIdentifier>
+			<Abstract type="html">Gets the version of SDK library</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didConnectToUrl:(NSURL *)url</Declaration>
+			<Declaration>- (NSString *)getSDKVersion</Declaration>
 			
-			
-			<Anchor>//api/name/socket:didConnectToUrl:</Anchor>
+			<ReturnValue><Abstract type="html">Version</Abstract></ReturnValue>
+			<Anchor>//api/name/getSDKVersion</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didReadData:withTag:</TokenIdentifier>
-			<Abstract type="html">Called when a socket has completed reading the requested data into memory.
-Not called if there is an error.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setListener:</TokenIdentifier>
+			<Abstract type="html">Set ts800 reply listener</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag</Declaration>
+			<Declaration>- (void)setListener:(id&lt;IUHFDeviceListener&gt;)listener</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>listener</Name>
+					<Abstract type="html">see IUHFDeviceListener</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socket:didReadData:withTag:</Anchor>
+			<Anchor>//api/name/setListener:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didReadPartialDataOfLength:tag:</TokenIdentifier>
-			<Abstract type="html">Called when a socket has read in data, but has not yet completed the read.
-This would occur if using readToData: or readToLength: methods.
-It may be used for things such as updating progress bars.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/Connect</TokenIdentifier>
+			<Abstract type="html">Connect to remote device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didReadPartialDataOfLength:(NSUInteger)partialLength tag:(long)tag</Declaration>
+			<Declaration>- (void)Connect</Declaration>
 			
 			
-			<Anchor>//api/name/socket:didReadPartialDataOfLength:tag:</Anchor>
+			<Anchor>//api/name/Connect</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didWriteDataWithTag:</TokenIdentifier>
-			<Abstract type="html">Called when a socket has completed writing the requested data. Not called if there is an error.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/cmdInitializeSettings:</TokenIdentifier>
+			<Abstract type="html">Initializes the device settings.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag</Declaration>
+			<Declaration>- (void)cmdInitializeSettings:(ClassVer)classVer</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>classVer</Name>
+					<Abstract type="html">The UHF device.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socket:didWriteDataWithTag:</Anchor>
+			<Anchor>//api/name/cmdInitializeSettings:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didWritePartialDataOfLength:tag:</TokenIdentifier>
-			<Abstract type="html">Called when a socket has written some data, but has not yet completed the entire write.
-It may be used for things such as updating progress bars.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/cmdSetScanMode:ScanMode:</TokenIdentifier>
+			<Abstract type="html">Only for TS800 &amp;amp; UR0250
+Set Scan Mode</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didWritePartialDataOfLength:(NSUInteger)partialLength tag:(long)tag</Declaration>
+			<Declaration>- (void)cmdSetScanMode:(BOOL)isTemp ScanMode:(ScanMode)scanMode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">If the value is true, this setting will write into EEPROM.</Abstract>
+				</Parameter><Parameter>
+					<Name>scanMode</Name>
+					<Abstract type="html">Scan Mode</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socket:didWritePartialDataOfLength:tag:</Anchor>
+			<Anchor>//api/name/cmdSetScanMode:ScanMode:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:shouldTimeoutReadWithTag:elapsed:bytesDone:</TokenIdentifier>
-			<Abstract type="html">Called if a read operation has reached its timeout without completing.
-This method allows you to optionally extend the timeout.
-If you return a positive time interval (&gt; 0) the read&apos;s timeout will be extended by the given amount.
-If you don&apos;t implement this method, or return a non-positive time interval (&lt;= 0) the read will timeout as usual.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/cmdGetTriggerType:</TokenIdentifier>
+			<Abstract type="html">Only for TS800 &amp;amp; UR0250
+Get Trigger Source</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (NSTimeInterval)socket:(GCDAsyncSocket *)sock shouldTimeoutReadWithTag:(long)tag elapsed:(NSTimeInterval)elapsed bytesDone:(NSUInteger)length</Declaration>
+			<Declaration>- (void)cmdGetTriggerType:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">If the value is true, this setting will write into EEPROM.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socket:shouldTimeoutReadWithTag:elapsed:bytesDone:</Anchor>
+			<Anchor>//api/name/cmdGetTriggerType:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:shouldTimeoutWriteWithTag:elapsed:bytesDone:</TokenIdentifier>
-			<Abstract type="html">Called if a write operation has reached its timeout without completing.
-This method allows you to optionally extend the timeout.
-If you return a positive time interval (&gt; 0) the write&apos;s timeout will be extended by the given amount.
-If you don&apos;t implement this method, or return a non-positive time interval (&lt;= 0) the write will timeout as usual.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/cmdSetTriggerType:TriggerType:</TokenIdentifier>
+			<Abstract type="html">Only for TS800 &amp;amp; UR0250
+Set Trigger Sourec</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (NSTimeInterval)socket:(GCDAsyncSocket *)sock shouldTimeoutWriteWithTag:(long)tag elapsed:(NSTimeInterval)elapsed bytesDone:(NSUInteger)length</Declaration>
+			<Declaration>- (void)cmdSetTriggerType:(BOOL)isTemp TriggerType:(TriggerType)triggerType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">If the value is true, this setting will write into EEPROM.</Abstract>
+				</Parameter><Parameter>
+					<Name>triggerType</Name>
+					<Abstract type="html">The trigger source of inventory.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socket:shouldTimeoutWriteWithTag:elapsed:bytesDone:</Anchor>
+			<Anchor>//api/name/cmdSetTriggerType:TriggerType:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socketDidCloseReadStream:</TokenIdentifier>
-			<Abstract type="html">Conditionally called if the read stream closes, but the write stream may still be writeable.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/controlBuzzer:</TokenIdentifier>
+			<Abstract type="html">Only for TS100
+Control reader to make a specified sound beep.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socketDidCloseReadStream:(GCDAsyncSocket *)sock</Declaration>
+			<Declaration>- (void)controlBuzzer:(BuzzerAction)buzzerAct</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buzzerAct</Name>
+					<Abstract type="html">Buzze ActionbuzzerAct</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socketDidCloseReadStream:</Anchor>
+			<Anchor>//api/name/controlBuzzer:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socketDidDisconnect:withError:</TokenIdentifier>
-			<Abstract type="html">Called when a socket disconnects with or without error.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/cmdMarkMultiCMD:CMDCode:CMDCount:</TokenIdentifier>
+			<Abstract type="html">send  Special Multi CMD</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(nullable NSError *)err</Declaration>
+			<Declaration>- (void)cmdMarkMultiCMD:(NSMutableArray *)datas CMDCode:(Byte)apiCode CMDCount:(int)cmdCount</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>datas</Name>
+					<Abstract type="html">Special CMD format</Abstract>
+				</Parameter><Parameter>
+					<Name>apiCode</Name>
+					<Abstract type="html">software api code</Abstract>
+				</Parameter><Parameter>
+					<Name>cmdCount</Name>
+					<Abstract type="html">cmd conunt</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socketDidDisconnect:withError:</Anchor>
+			<Anchor>//api/name/cmdMarkMultiCMD:CMDCode:CMDCount:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socketDidSecure:</TokenIdentifier>
-			<Abstract type="html">Called after the socket has successfully completed SSL/TLS negotiation.
-This method is not called unless you use the provided startTLS method.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/sendGNetCMD:</TokenIdentifier>
+			<Abstract type="html">send  Special CMD</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socketDidSecure:(GCDAsyncSocket *)sock</Declaration>
+			<Declaration>- (void)sendGNetCMD:(NSData *)cmdData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cmdData</Name>
+					<Abstract type="html">Special CMD format</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/socketDidSecure:</Anchor>
+			<Anchor>//api/name/sendGNetCMD:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/GCDAsyncSocketDelegate/socket:didReceiveTrust:completionHandler:</TokenIdentifier>
-			<Abstract type="html">Allows a socket delegate to hook into the TLS handshake and manually validate the peer it&apos;s connecting to.</Abstract>
-			<DeclaredIn>GCDAsyncSocket.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/directIO:Data:</TokenIdentifier>
+			<Abstract type="html">Used by manufacture only.
+Send direct data to device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
 			
-			<Declaration>- (void)socket:(GCDAsyncSocket *)sock didReceiveTrust:(SecTrustRef)trust completionHandler:(void ( ^ ) ( BOOL shouldTrustPeer ))completionHandler</Declaration>
+			<Declaration>- (void)directIO:(Byte)command Data:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>command</Name>
+					<Abstract type="html">Command code of command.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Parameter of command.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/directIO:Data:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/startInventory:</TokenIdentifier>
+			<Abstract type="html">Start Inventory mEPC Tag.
+Starts the process of tag inventory using specified trigger source.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/IUHFDeviceListener</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/GNPTagInfo</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)startInventory:(TagPresentedType)tagPresentedType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagPresentedType</Name>
+					<Abstract type="html">Specify the way of triggering the RF power to read tag data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startInventory:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/stopInventory</TokenIdentifier>
+			<Abstract type="html">Stop Inventory mEPC Tag.
+Stops the process of tag inventory.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)stopInventory</Declaration>
 			
 			
-			<Anchor>//api/name/socket:didReceiveTrust:completionHandler:</Anchor>
+			<Anchor>//api/name/stopInventory</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/startInventoryEx:</TokenIdentifier>
+			<Abstract type="html">* Start inventory tags with specific encoded data type.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)startInventoryEx:(TagDataEncodeType)tagDataEncodeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagDataEncodeType</Name>
+					<Abstract type="html">ex:tagDataEncodeType = UDC | EANUPCEAS;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startInventoryEx:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/writeEpc:EPCData:</TokenIdentifier>
+			<Abstract type="html">Writes specified data to EPC memory bank. This command would calculate PC and write the PC and EPC data to the tag.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)writeEpc:(NSString *)hexAccessPassword EPCData:(NSData *)epcData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">Specifies the password to write data.</Abstract>
+				</Parameter><Parameter>
+					<Name>epcData</Name>
+					<Abstract type="html">Specifies the data to write to memory bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeEpc:EPCData:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/writeEpc:HexAccessPassword:EPCData:</TokenIdentifier>
+			<Abstract type="html">Selects a tag and writes specified data to EPC memory bank. * This command would calculate PC and write the PC and EPC data to the tag.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)writeEpc:(NSString *)hexSelectedPcEpc HexAccessPassword:(NSString *)hexAccessPassword EPCData:(NSData *)epcData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexSelectedPcEpc</Name>
+					<Abstract type="html">Specifies the tag PC EPC to be selected.</Abstract>
+				</Parameter><Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">Specifies the password to write data.</Abstract>
+				</Parameter><Parameter>
+					<Name>epcData</Name>
+					<Abstract type="html">Specifies the data to write to memory bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeEpc:HexAccessPassword:EPCData:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/writeTag:MemoryBank:StartAddr:Data:</TokenIdentifier>
+			<Abstract type="html">Writes specified data to given memory bank.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)writeTag:(NSString *)hexAccessPassword MemoryBank:(MemoryBank)memoryBank StartAddr:(int)startWordAddress Data:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">Specifies the password to write data.</Abstract>
+				</Parameter><Parameter>
+					<Name>memoryBank</Name>
+					<Abstract type="html">Specifies which memory bank to write.</Abstract>
+				</Parameter><Parameter>
+					<Name>startWordAddress</Name>
+					<Abstract type="html">Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Specifies the data to write to memory bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeTag:MemoryBank:StartAddr:Data:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/writeTag:PWD:MemoryBank:StartAddr:Data:</TokenIdentifier>
+			<Abstract type="html">Writes specified data to given memory bank.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)writeTag:(NSString *)hexSelectedPcEpc PWD:(NSString *)hexAccessPassword MemoryBank:(MemoryBank)memoryBank StartAddr:(int)startWordAddress Data:(NSData *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexSelectedPcEpc</Name>
+					<Abstract type="html">Specifies the tag PC EPC to be selected.</Abstract>
+				</Parameter><Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">Specifies the password to write data.</Abstract>
+				</Parameter><Parameter>
+					<Name>memoryBank</Name>
+					<Abstract type="html">Specifies which memory bank to write.</Abstract>
+				</Parameter><Parameter>
+					<Name>startWordAddress</Name>
+					<Abstract type="html">Specifies the start word address of memory bank to write data.When write EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Specifies the data to write to memory bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeTag:PWD:MemoryBank:StartAddr:Data:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/cmdReadEPC:</TokenIdentifier>
+			<Abstract type="html">Reads EPC memory bank data of tag.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)cmdReadEPC:(NSString *)password</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>password</Name>
+					<Abstract type="html">Password of the tag that is going to read. (4 byte/2 Hex String)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cmdReadEPC:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/readTag:PWD:MemoryBank:StartAddr:ReadLen:</TokenIdentifier>
+			<Abstract type="html">Reads tag data from given memory bank.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)readTag:(NSString *)hexSelectedPcEpc PWD:(NSString *)hexAccessPassword MemoryBank:(MemoryBank)memoryBank StartAddr:(int)startWordAddress ReadLen:(int)readLength</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexSelectedPcEpc</Name>
+					<Abstract type="html">Specifies the tag PC EPC to be selected.</Abstract>
+				</Parameter><Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">Specifies the password to write data.</Abstract>
+				</Parameter><Parameter>
+					<Name>memoryBank</Name>
+					<Abstract type="html">Specifies which memory bank to write.</Abstract>
+				</Parameter><Parameter>
+					<Name>startWordAddress</Name>
+					<Abstract type="html">Specifies the start word address of memory bank to read data.When read EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</Abstract>
+				</Parameter><Parameter>
+					<Name>readLength</Name>
+					<Abstract type="html">Specifies the length to read from memory bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/readTag:PWD:MemoryBank:StartAddr:ReadLen:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/readTag:MemoryBank:StartAddr:ReadLen:</TokenIdentifier>
+			<Abstract type="html">Reads tag data from given memory bank.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)readTag:(NSString *)hexAccessPassword MemoryBank:(MemoryBank)memoryBank StartAddr:(int)startWordAddress ReadLen:(int)readLength</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexAccessPassword</Name>
+					<Abstract type="html">Specifies the password to write data.</Abstract>
+				</Parameter><Parameter>
+					<Name>memoryBank</Name>
+					<Abstract type="html">Specifies which memory bank to write.</Abstract>
+				</Parameter><Parameter>
+					<Name>startWordAddress</Name>
+					<Abstract type="html">Specifies the start word address of memory bank to read data.When read EPC bank, notice that EPC starts from address 02, the first two 2 words are for CRC and PC.</Abstract>
+				</Parameter><Parameter>
+					<Name>readLength</Name>
+					<Abstract type="html">Specifies the length to read from memory bank.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/readTag:MemoryBank:StartAddr:ReadLen:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/lockTag:</TokenIdentifier>
+			<Abstract type="html">Lock the first tag that is inventoried.
+The Access password is decided by the remote connected device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)lockTag:(NSMutableArray *)lockInfos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lockInfos</Name>
+					<Abstract type="html">The Lock Action to specified memory bank. see GNPLockInfos.h</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/lockTag:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/lockTag:LockInfos:</TokenIdentifier>
+			<Abstract type="html">Use accessPassword to Lock the first tag that is inventoried.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)lockTag:(NSString *)accessPassword LockInfos:(NSMutableArray *)lockInfos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessPassword</Name>
+					<Abstract type="html">Access Password.</Abstract>
+				</Parameter><Parameter>
+					<Name>lockInfos</Name>
+					<Abstract type="html">The Lock Action to specified memory bank. see GNPLockInfos.h</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/lockTag:LockInfos:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/killTag:</TokenIdentifier>
+			<Abstract type="html">Use hexKillPassword to kill tag. The access password is decided byte the remote connected device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)killTag:(NSString *)hexKillPassword</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hexKillPassword</Name>
+					<Abstract type="html">Kill Password.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/killTag:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/killTag:KillPWD:</TokenIdentifier>
+			<Abstract type="html">Use hexAccessPassword to access tag and use hexKillPassword to kill tag.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)killTag:(nullable NSString *)accessPassword KillPWD:(nullable NSString *)hexKillPassword</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessPassword</Name>
+					<Abstract type="html">Access Password.</Abstract>
+				</Parameter><Parameter>
+					<Name>hexKillPassword</Name>
+					<Abstract type="html">Kill Password.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/killTag:KillPWD:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getDeviceID:</TokenIdentifier>
+			<Abstract type="html">Get ID of device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getDeviceID:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getDeviceID:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setDeviceID:DeviceID:</TokenIdentifier>
+			<Abstract type="html">Set ID of device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setDeviceID:(BOOL)isTemp DeviceID:(Byte)deviceID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>deviceID</Name>
+					<Abstract type="html">Device ID.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDeviceID:DeviceID:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getFirmwareVersion</TokenIdentifier>
+			<Abstract type="html">Get Device Information
+Gets the firmware program version running on the device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getFirmwareVersion</Declaration>
+			
+			
+			<Anchor>//api/name/getFirmwareVersion</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getFrequency:</TokenIdentifier>
+			<Abstract type="html">Get Frequency List
+Gets the channel of hopping frequency in MHz.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getFrequency:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFrequency:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setFrequency:List:</TokenIdentifier>
+			<Abstract type="html">Set Frequency List
+Sets the channel of hopping frequency in MHz.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setFrequency:(BOOL)isTemp List:(NSArray *)frequencyList</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>frequencyList</Name>
+					<Abstract type="html">Specifies the channel of hopping frequency for reading tag data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFrequency:List:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getInventoryRoundInterval:</TokenIdentifier>
+			<Abstract type="html">Get the InventoryRoundInterval.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getInventoryRoundInterval:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getInventoryRoundInterval:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setInventoryRoundInterval:InventoryRoundInterval:</TokenIdentifier>
+			<Abstract type="html">Set the InventoryRoundInterval.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setInventoryRoundInterval:(BOOL)isTemp InventoryRoundInterval:(int)tenMilliSeconds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>tenMilliSeconds</Name>
+					<Abstract type="html">The period to start an inventory round. Range: 0~254*10s. 255 represent 0;</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setInventoryRoundInterval:InventoryRoundInterval:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getLinkFrequency:</TokenIdentifier>
+			<Abstract type="html">Gets the link frequency of tag backscatter (tag to reader).</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getLinkFrequency:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getLinkFrequency:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setLinkFrequency:LinkFrequency:</TokenIdentifier>
+			<Abstract type="html">Sets the link frequency of tag backscatter (tag to reader).</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setLinkFrequency:(BOOL)isTemp LinkFrequency:(LinkFrequency)linkFrequency</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>linkFrequency</Name>
+					<Abstract type="html">The link frequency in KHz.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLinkFrequency:LinkFrequency:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getProfile:</TokenIdentifier>
+			<Abstract type="html">Get the frequency profile of the device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getProfile:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getProfile:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setProfile:Profile:</TokenIdentifier>
+			<Abstract type="html">Set the frequency profile of the device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setProfile:(BOOL)isTemp Profile:(Profile)profile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>profile</Name>
+					<Abstract type="html">Specifies the RF input sensitivity level.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setProfile:Profile:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getQValue:</TokenIdentifier>
+			<Abstract type="html">Get Q Value.
+Gets the starting Q value for the number of slots in the round.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getQValue:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getQValue:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setQValue:QValue:</TokenIdentifier>
+			<Abstract type="html">Set Q Value.
+Sets the starting Q value for the number of slots in the round.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setQValue:(BOOL)isTemp QValue:(Byte)qvalue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>qvalue</Name>
+					<Abstract type="html">The starting Q value for the number of slots in the round. The value ranges from 0 to 15.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setQValue:QValue:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getRfPower:</TokenIdentifier>
+			<Abstract type="html">Read the RF power of remote device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getRfPower:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRfPower:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setRfPower:RFPower:</TokenIdentifier>
+			<Abstract type="html">Set the RF Power of remote device.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setRfPower:(BOOL)isTemp RFPower:(Byte)rfPower</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>rfPower</Name>
+					<Abstract type="html">Specifies the RF Power strength. The value is ranging from 1 to 27. The default value is 11. (Range:1~27)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRfPower:RFPower:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getRfSensitivity:</TokenIdentifier>
+			<Abstract type="html">Get the RX RF input sensitivity level.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getRfSensitivity:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRfSensitivity:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setRfSensitivity:RfSensitivityLevel:</TokenIdentifier>
+			<Abstract type="html">Define the RX RF input sensitivity level.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setRfSensitivity:(BOOL)isTemp RfSensitivityLevel:(RfSensitivityLevel)sensitivity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">Write the sensitivity value to RAM or not. It the value is true, the sensitivity value will be write to RAM.</Abstract>
+				</Parameter><Parameter>
+					<Name>sensitivity</Name>
+					<Abstract type="html">Specifies the RF input sensitivity level.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRfSensitivity:RfSensitivityLevel:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getRxDecode:</TokenIdentifier>
+			<Abstract type="html">Gets the encoding of backscattered data (tag to reader).
+Tags shall encode the backscattered data as either FM0 baseband or Miller modulation of a subcarrier at the data rate.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getRxDecode:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getRxDecode:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setRxDecode:RxDecodeType:</TokenIdentifier>
+			<Abstract type="html">Sets the encoding of backscattered data (tag to reader).
+Tags shall encode the backscattered data as either FM0 baseband or Miller modulation of a subcarrier at the data rate.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setRxDecode:(BOOL)isTemp RxDecodeType:(RxDecodeType)rxDecodeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>rxDecodeType</Name>
+					<Abstract type="html">Specifies the encoding of backscattered data (tag to reader).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setRxDecode:RxDecodeType:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getSessionAndTarget:</TokenIdentifier>
+			<Abstract type="html">Get Session &amp;amp; Target
+Gets the session flag used for inventory round.
+Gets the target for inventory round.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getSessionAndTarget:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getSessionAndTarget:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setSessionAndTarget:Session:Target:</TokenIdentifier>
+			<Abstract type="html">Set Session &amp;amp; Target
+Sets the target for inventory round.
+Sets the session flag used for inventory round.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setSessionAndTarget:(BOOL)isTemp Session:(Session)session Target:(Target)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>session</Name>
+					<Abstract type="html">The session flag to be selected for an inventory round.</Abstract>
+				</Parameter><Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target indicates whether the Select modifies a Tag’s SL flag or its inventoried flag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setSessionAndTarget:Session:Target:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/getTagRemovedThreshold:</TokenIdentifier>
+			<Abstract type="html">Get the threshold to raise a TagRemovedEvent(IUHFDeviceListener.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)getTagRemovedThreshold:(BOOL)isTemp</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTagRemovedThreshold:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/setTagRemovedThreshold:Round:</TokenIdentifier>
+			<Abstract type="html">Set the threshold to raise a TagRemovedEvent(IUHFDeviceListener.</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setTagRemovedThreshold:(BOOL)isTemp Round:(int)round</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isTemp</Name>
+					<Abstract type="html">True value specifies the changes are temporary overwrides for settings. The changes are not saved into the EEPROM and take immediate effect (no rebooting required). False value specifies the changes are permanently overwrides for settings And also saved into the EEPROM. The changes will keep after rebooting the device.</Abstract>
+				</Parameter><Parameter>
+					<Name>round</Name>
+					<Abstract type="html">The count of missing discovering tag threshold of inventory rounds.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTagRemovedThreshold:Round:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHFDevice/UM800LdidGeneralERROR:ErrMessage:</TokenIdentifier>
+			<Abstract type="html">for TS100</Abstract>
+			<DeclaredIn>UHFDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)UM800LdidGeneralERROR:(SoftwareAPINameCode)apiCode ErrMessage:(NSString *)strErrorMessage</Declaration>
+			
+			
+			<Anchor>//api/name/UM800LdidGeneralERROR:ErrMessage:</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

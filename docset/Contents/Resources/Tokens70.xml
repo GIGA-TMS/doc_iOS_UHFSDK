@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TagMemorySelection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TagMemorySelection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="70"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TM_PC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TM_PC</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="70"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TM_EPC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TM_EPC</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="70"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TM_TID</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TM_TID</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="70"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TM_EPC_ASCII</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TM_EPC_ASCII</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="70"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TM_USER</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TM_USER</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="70"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

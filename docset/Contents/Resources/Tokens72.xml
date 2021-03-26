@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TagProtection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TagProtection</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="72"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TP_Specified_Password</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TP_Specified_Password</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TP_Dynamic_Password</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TP_Dynamic_Password</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TP_Disabled</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TP_Disabled</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="72"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

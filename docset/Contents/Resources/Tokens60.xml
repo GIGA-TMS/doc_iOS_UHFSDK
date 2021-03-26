@@ -1,8 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="">
+	<File path="Constants/RfSensitivityLevel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/RfSensitivityLevel</TokenIdentifier>
+			<Abstract type="html">RfSensitivityLevel</Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="60"/>
+		</Token>
 		
 		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_14_HIGHEST</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_14_HIGHEST</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_13</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_13</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_12</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_12</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_11</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_11</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_10</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_10</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_9</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_9</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_8</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_8</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_7</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_7</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_6</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_6</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_5</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_5</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_4</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_4</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_3</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_3</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_2</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_2</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/LEVEL_1_LOWEST</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>LEVEL_1_LOWEST</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="60"/>
+        </Token>
         
         
 	</File>

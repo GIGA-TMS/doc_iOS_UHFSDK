@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SecurityCmdCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SecurityCmdCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Set_Base_Key</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Set_Base_Key</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="63"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Challenge_And_Initialize</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Challenge_And_Initialize</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="63"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/Synchronize_Encryption_Key</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>Synchronize_Encryption_Key</Declaration>
+            
+            <DeclaredIn>GTPacketUtility.h</DeclaredIn>
+            
+            <NodeRef refid="63"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

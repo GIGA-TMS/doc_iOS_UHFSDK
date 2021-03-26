@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/TagDataEncodeType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/TagDataEncodeType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+			
+			<NodeRef refid="69"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_UDC</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TDE_UDC</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_SGTIN_96_EAS</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TDE_SGTIN_96_EAS</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_SGTIN_96</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TDE_SGTIN_96</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_RAW_DATA</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TDE_RAW_DATA</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/TDE_ADI</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>TDE_ADI</Declaration>
+            
+            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            
+            <NodeRef refid="69"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

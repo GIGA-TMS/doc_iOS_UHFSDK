@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/MemoryBank.html">
+	<File path="Constants/GTConnectType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/MemoryBank</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/GTConnectType</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
 			
 			<NodeRef refid="43"/>
@@ -14,61 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_Reserve</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_UDP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_Reserve</Declaration>
+            <Declaration>Type_WiFi_UDP</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="43"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_EPC</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Type_WiFi_TCP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_EPC</Declaration>
+            <Declaration>Type_WiFi_TCP</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="43"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_TID</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/Type_BLE</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>MBC_TID</Declaration>
+            <Declaration>Type_BLE</Declaration>
             
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="43"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_UserMemory</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>MBC_UserMemory</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="43"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_KILL_PASSWORD</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>MBC_KILL_PASSWORD</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-            
-            <NodeRef refid="43"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/MBC_ACCESS_PASSWORD</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>MBC_ACCESS_PASSWORD</Declaration>
-            
-            <DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+            <DeclaredIn>GTCommonHeader.h</DeclaredIn>
             
             <NodeRef refid="43"/>
         </Token>

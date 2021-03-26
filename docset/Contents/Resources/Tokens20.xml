@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/IUHFDeviceListener.html">
+	<File path="Classes/UR0250.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/IUHFDeviceListener</TokenIdentifier>
-			<Abstract type="html">The callback protocol getting UHF operation result.</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/UR0250</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
             
 			
 			<NodeRef refid="20"/>
@@ -13,377 +13,56 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGeneralSuccess:</TokenIdentifier>
-			<Abstract type="html">The operating of invokeApi is success.</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UR0250/cmdInitializeSettings</TokenIdentifier>
+			<Abstract type="html">Initialize setting of UR0250, please call it after connected with remote UR0250.</Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
 			
-			<Declaration>- (void)didGeneralSuccess:(NSString *)strCMDName</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>strCMDName</Name>
-					<Abstract type="html">CMD Name</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)cmdInitializeSettings</Declaration>
 			
-			<Anchor>//api/name/didGeneralSuccess:</Anchor>
+			
+			<Anchor>//api/name/cmdInitializeSettings</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGeneralERROR:ErrMessage:</TokenIdentifier>
-			<Abstract type="html">The operating of invokeApi is error.
-Notifies the application that an error has been detected and a suitable response is necessary to process the error condition.</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UR0250/getBleDeviceName</TokenIdentifier>
+			<Abstract type="html">Get Device BLE Neme</Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
 			
-			<Declaration>- (void)didGeneralERROR:(NSString *)strCMDName ErrMessage:(NSString *)strErrorMessage</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>strCMDName</Name>
-					<Abstract type="html">CMD Name</Abstract>
-				</Parameter><Parameter>
-					<Name>strErrorMessage</Name>
-					<Abstract type="html">Error Message</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (void)getBleDeviceName</Declaration>
 			
-			<Anchor>//api/name/didGeneralERROR:ErrMessage:</Anchor>
+			
+			<Anchor>//api/name/getBleDeviceName</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFirmwareVersion:</TokenIdentifier>
-			<Abstract type="html">Callback of cmdGetFirmwareVersion</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UR0250/setBleDeviceName:</TokenIdentifier>
+			<Abstract type="html">Set Device BLE Neme</Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
 			
-			<Declaration>- (void)didGetFirmwareVersion:(NSString *)fwVer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>fwVer</Name>
-					<Abstract type="html">The firmware version of the remote device.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetFirmwareVersion:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBLEFirmwareVersion:</TokenIdentifier>
-			<Abstract type="html">Callback of cmdGetBLEFirmwareVersion</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetBLEFirmwareVersion:(NSString *)fwVer</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>fwVer</Name>
-					<Abstract type="html">The firmware version of the remote device.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetBLEFirmwareVersion:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBLEDeviceName:</TokenIdentifier>
-			<Abstract type="html">Callback of cmdGetBLEDeviceName</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetBLEDeviceName:(NSString *)devName</Declaration>
+			<Declaration>- (void)setBleDeviceName:(NSString *)devName</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>devName</Name>
-					<Abstract type="html">The firmware name of the remote device.</Abstract>
+					<Abstract type="html">Device BLE Neme</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/didGetBLEDeviceName:</Anchor>
+			<Anchor>//api/name/setBleDeviceName:</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetRfPower:</TokenIdentifier>
-			<Abstract type="html">Callback of GetRfPower</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UR0250/getBleRomVersion</TokenIdentifier>
+			<Abstract type="html">Get Device BLE module
+Gets the firmware program version running on the device BLE module.</Abstract>
+			<DeclaredIn>UR0250.h</DeclaredIn>
 			
-			<Declaration>- (void)didGetRfPower:(int)rfPower</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>rfPower</Name>
-					<Abstract type="html">rf power of TX</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetRfPower:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetSensitivity:</TokenIdentifier>
-			<Abstract type="html">Callback of GetSensitivity</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetSensitivity:(RfSensitivityLevel)rfSensitivity</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>rfSensitivity</Name>
-					<Abstract type="html">sensitivity of RX</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetSensitivity:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTriggerType:</TokenIdentifier>
-			<Abstract type="html">only TS800 &amp;amp; UR0250
-Callback of GetTriggerType</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetTriggerType:(TriggerType)triggerType</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>triggerType</Name>
-					<Abstract type="html">The trigger source of inventory.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetTriggerType:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFrequencyList:</TokenIdentifier>
-			<Abstract type="html">Callback of GetFrequencyList</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetFrequencyList:(NSArray *)frequencys</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>frequencys</Name>
-					<Abstract type="html">The frequency list of TX RF</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetFrequencyList:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didReadTag:</TokenIdentifier>
-			<Abstract type="html">Callback of ReadEPC</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didReadTag:(NSData *)data</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>data</Name>
-					<Abstract type="html">the Tag data which is going to write to the tag.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didReadTag:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetSessionAnd:Target:</TokenIdentifier>
-			<Abstract type="html">**</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetSessionAnd:(Session)session Target:(Target)target</Declaration>
+			<Declaration>- (void)getBleRomVersion</Declaration>
 			
 			
-			<Anchor>//api/name/didGetSessionAnd:Target:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetQValue:</TokenIdentifier>
-			<Abstract type="html">Callback of GetQValue</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetQValue:(Byte)qValue</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>qValue</Name>
-					<Abstract type="html">&lt;#qValue description#&gt;</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetQValue:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetBuzzerOperationMode:</TokenIdentifier>
-			<Abstract type="html">Callback of GetBuzzerOperationMode</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetBuzzerOperationMode:(BuzzerOperationMode)bom</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>bom</Name>
-					<Abstract type="html">Buzzer Operation Mode</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetBuzzerOperationMode:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didEventTagPresented:</TokenIdentifier>
-			<Abstract type="html">Indicates that the reader reads a new tag.
-If the remote device is invertory and has detected a tag.</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didEventTagPresented:(GNPTagInfo *)taginfo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>taginfo</Name>
-					<Abstract type="html">The tag which is inventoried.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didEventTagPresented:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didEventTagRemoved:</TokenIdentifier>
-			<Abstract type="html">The tag which is inventoried.</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didEventTagRemoved:(GNPTagInfo *)taginfo</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>taginfo</Name>
-					<Abstract type="html">The tag which is inventoried.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didEventTagRemoved:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetTagPresentRepeatInterval:</TokenIdentifier>
-			<Abstract type="html">Callback of didGetTagPresentRepeatInterval</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetTagPresentRepeatInterval:(int)period</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>period</Name>
-					<Abstract type="html">Unit: 0.1 seconds
-0: Immediately
-1~253: 0.1~25.3 seconds
-*254: Never repeat</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetTagPresentRepeatInterval:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetFilter:</TokenIdentifier>
-			<Abstract type="html">Callback function of getFilterType
-&lt;p&gt;
-Supported: TS100</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetFilter:(TagDataEncodeType)tagDataEncodeTypes</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>tagDataEncodeTypes</Name>
-					<Abstract type="html">Filter of Inventory Event Ex.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetFilter:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetPostDataDelimiter:MemoryBankSelection:</TokenIdentifier>
-			<Abstract type="html">Callback function of getPostDataDelimiterAndMemoryBankSelection
-&lt;p&gt;
-Supported: TS100</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetPostDataDelimiter:(PostDataDelimiter)postDataDelimiter MemoryBankSelection:(MemoryBankSelection)memoryBankSelection</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>postDataDelimiter</Name>
-					<Abstract type="html">Specifies the delimiter append to the end of output data.</Abstract>
-				</Parameter><Parameter>
-					<Name>memoryBankSelection</Name>
-					<Abstract type="html">Memory Bank Selection setting.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetPostDataDelimiter:MemoryBankSelection:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetEventType:</TokenIdentifier>
-			<Abstract type="html">Callback function of UHFDevice
-&lt;p&gt;
-Supported: TS800, UR0250</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetEventType:(EventType)eventType</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>eventType</Name>
-					<Abstract type="html">The event command is in simple mode type.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetEventType:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGet:OutputInterfaces:</TokenIdentifier>
-			<Abstract type="html">Callback function of getOutputInterfaces
-&lt;p&gt;
-Supported: TS100</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGet:(KeyboardSimulation)keyboardSimulation OutputInterfaces:(OutputInterface)outputInterfaces</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>keyboardSimulation</Name>
-					<Abstract type="html">Specifies the data keyboard simulation.</Abstract>
-				</Parameter><Parameter>
-					<Name>outputInterfaces</Name>
-					<Abstract type="html">Specifies the data output interface.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGet:OutputInterfaces:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/IUHFDeviceListener/didGetInventoryActiveMode:</TokenIdentifier>
-			<Abstract type="html">Callback function of GetInventoryActiveMode</Abstract>
-			<DeclaredIn>IUHFDeviceListener.h</DeclaredIn>
-			
-			<Declaration>- (void)didGetInventoryActiveMode:(ActiveMode)activeMode</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>activeMode</Name>
-					<Abstract type="html">Specifies the data  active mode</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/didGetInventoryActiveMode:</Anchor>
+			<Anchor>//api/name/getBleRomVersion</Anchor>
             <NodeRef refid="20"/>
 		</Token>
 		

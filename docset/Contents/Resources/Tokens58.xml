@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/UdcOutputDataType.html">
+	<File path="Constants/QTWrite_QT_MEM.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/UdcOutputDataType</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/QTWrite_QT_MEM</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+			<DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
 			
 			<NodeRef refid="58"/>
@@ -14,21 +14,21 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/BCD</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/QT_MEM_USE_PRIVATE_MEMORY_MAP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>BCD</Declaration>
+            <Declaration>QT_MEM_USE_PRIVATE_MEMORY_MAP</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
             <NodeRef refid="58"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/UDC_ASCII</TokenIdentifier>
+            <TokenIdentifier>//apple_ref/c/econst/QT_MEM_USE_PUBLIC_MEMORY_MAP</TokenIdentifier>
             <Abstract type="html"></Abstract>
-            <Declaration>UDC_ASCII</Declaration>
+            <Declaration>QT_MEM_USE_PUBLIC_MEMORY_MAP</Declaration>
             
-            <DeclaredIn>GNPDecodedTagData.h</DeclaredIn>
+            <DeclaredIn>QTWriteParameter.h</DeclaredIn>
             
             <NodeRef refid="58"/>
         </Token>
